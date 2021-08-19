@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.boot.build.optional.OptionalDependenciesPluginIntegrationTests" tests="5" skipped="0" failures="0" errors="0" timestamp="2021-05-20T05:44:38" hostname="e0c1209b-c195-482a-5631-737c2f0472a1" time="16.19">
+  <properties/>
+  <testcase name="optionalDependenciesAreAddedToMainSourceSetsRuntimeClasspath()" classname="org.springframework.boot.build.optional.OptionalDependenciesPluginIntegrationTests" time="15.088"/>
+  <testcase name="optionalConfigurationIsCreated()" classname="org.springframework.boot.build.optional.OptionalDependenciesPluginIntegrationTests" time="0.44"/>
+  <testcase name="optionalDependenciesAreAddedToTestSourceSetsRuntimeClasspath()" classname="org.springframework.boot.build.optional.OptionalDependenciesPluginIntegrationTests" time="0.281"/>
+  <testcase name="optionalDependenciesAreAddedToMainSourceSetsCompileClasspath()" classname="org.springframework.boot.build.optional.OptionalDependenciesPluginIntegrationTests" time="0.181"/>
+  <testcase name="optionalDependenciesAreAddedToTestSourceSetsCompileClasspath()" classname="org.springframework.boot.build.optional.OptionalDependenciesPluginIntegrationTests" time="0.198"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

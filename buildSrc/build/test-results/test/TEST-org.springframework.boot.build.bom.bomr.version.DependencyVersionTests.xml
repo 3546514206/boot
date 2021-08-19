@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.boot.build.bom.bomr.version.DependencyVersionTests" tests="8" skipped="0" failures="0" errors="0" timestamp="2021-05-20T05:45:10" hostname="e0c1209b-c195-482a-5631-737c2f0472a1" time="0.004">
+  <properties/>
+  <testcase name="parseWhenCalendarVersionShouldReturnArticatVersionDependencyVersion()" classname="org.springframework.boot.build.bom.bomr.version.DependencyVersionTests" time="0.001"/>
+  <testcase name="parseWhenMavenLikeVersionWithNumericQualifierShouldReturnNumericQualifierDependencyVersion()" classname="org.springframework.boot.build.bom.bomr.version.DependencyVersionTests" time="0.0"/>
+  <testcase name="parseWhenVersionWithLeadingZeroesShouldReturnLeadingZeroesDependencyVersion()" classname="org.springframework.boot.build.bom.bomr.version.DependencyVersionTests" time="0.001"/>
+  <testcase name="calendarVersionShouldBeNewerThanAReleaseCalendarVersion()" classname="org.springframework.boot.build.bom.bomr.version.DependencyVersionTests" time="0.0"/>
+  <testcase name="parseWhenCalendarVersionWithModifierShouldReturnArticatVersionDependencyVersion()" classname="org.springframework.boot.build.bom.bomr.version.DependencyVersionTests" time="0.001"/>
+  <testcase name="parseWhenValidMavenVersionShouldReturnArtifactVersionDependencyVersion()" classname="org.springframework.boot.build.bom.bomr.version.DependencyVersionTests" time="0.0"/>
+  <testcase name="parseWhenReleaseTrainShouldReturnReleaseTrainDependencyVersion()" classname="org.springframework.boot.build.bom.bomr.version.DependencyVersionTests" time="0.0"/>
+  <testcase name="parseWhenVersionWithCombinedPatchAndQualifierShouldReturnCombinedPatchAndQualifierDependencyVersion()" classname="org.springframework.boot.build.bom.bomr.version.DependencyVersionTests" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

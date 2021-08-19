@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.boot.build.bom.bomr.version.ReleaseTrainDependencyVersionTests" tests="17" skipped="0" failures="0" errors="0" timestamp="2021-05-20T05:45:10" hostname="e0c1209b-c195-482a-5631-737c2f0472a1" time="0.012">
+  <properties/>
+  <testcase name="isSameMajorAndNewerThanWhenVersionIsNewerShouldReturnTrue()" classname="org.springframework.boot.build.bom.bomr.version.ReleaseTrainDependencyVersionTests" time="0.002"/>
+  <testcase name="releaseTrainVersionIsNotSameMinorAsCalendarVersion()" classname="org.springframework.boot.build.bom.bomr.version.ReleaseTrainDependencyVersionTests" time="0.0"/>
+  <testcase name="isSameMinorAndNewerThanWhenReleaseTrainAndVersionAreTheSameShouldReturnFalse()" classname="org.springframework.boot.build.bom.bomr.version.ReleaseTrainDependencyVersionTests" time="0.0"/>
+  <testcase name="isNewerThanWhenVersionIsOlderShouldReturnFalse()" classname="org.springframework.boot.build.bom.bomr.version.ReleaseTrainDependencyVersionTests" time="0.001"/>
+  <testcase name="parsingOfAReleaseTrainVersionReturnsVersion()" classname="org.springframework.boot.build.bom.bomr.version.ReleaseTrainDependencyVersionTests" time="0.0"/>
+  <testcase name="releaseTrainVersionIsNotNewerThanCalendarVersion()" classname="org.springframework.boot.build.bom.bomr.version.ReleaseTrainDependencyVersionTests" time="0.0"/>
+  <testcase name="whenComparedWithADifferentDependencyVersionTypeThenTheResultsAreNonZero()" classname="org.springframework.boot.build.bom.bomr.version.ReleaseTrainDependencyVersionTests" time="0.002"/>
+  <testcase name="releaseTrainVersionIsNotSameMajorAsCalendarTrainVersion()" classname="org.springframework.boot.build.bom.bomr.version.ReleaseTrainDependencyVersionTests" time="0.0"/>
+  <testcase name="isSameMajorAndNewerWhenWhenReleaseTrainIsNewerShouldReturnTrue()" classname="org.springframework.boot.build.bom.bomr.version.ReleaseTrainDependencyVersionTests" time="0.0"/>
+  <testcase name="isSameMinorAndNewerThanWhenReleaseTrainIsTheSameAndVersionIsNewerShouldReturnTrue()" classname="org.springframework.boot.build.bom.bomr.version.ReleaseTrainDependencyVersionTests" time="0.0"/>
+  <testcase name="isNewerThanWhenReleaseTrainIsNewerShouldReturnTrue()" classname="org.springframework.boot.build.bom.bomr.version.ReleaseTrainDependencyVersionTests" time="0.0"/>
+  <testcase name="isSameMinorAndNewerThanWhenReleaseTrainIsTheSameAndVersionIsOlderShouldReturnFalse()" classname="org.springframework.boot.build.bom.bomr.version.ReleaseTrainDependencyVersionTests" time="0.0"/>
+  <testcase name="isSameMajorAndNewerThanWhenReleaseTrainIsOlderShouldReturnFalse()" classname="org.springframework.boot.build.bom.bomr.version.ReleaseTrainDependencyVersionTests" time="0.0"/>
+  <testcase name="isSameMinorAndNewerThanWhenReleaseTrainIsNewerShouldReturnFalse()" classname="org.springframework.boot.build.bom.bomr.version.ReleaseTrainDependencyVersionTests" time="0.0"/>
+  <testcase name="isNewerThanWhenVersionIsNewerShouldReturnTrue()" classname="org.springframework.boot.build.bom.bomr.version.ReleaseTrainDependencyVersionTests" time="0.001"/>
+  <testcase name="isNewerThanWhenReleaseTrainIsOlderShouldReturnFalse()" classname="org.springframework.boot.build.bom.bomr.version.ReleaseTrainDependencyVersionTests" time="0.0"/>
+  <testcase name="parsingOfANonReleaseTrainVersionReturnsNull()" classname="org.springframework.boot.build.bom.bomr.version.ReleaseTrainDependencyVersionTests" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

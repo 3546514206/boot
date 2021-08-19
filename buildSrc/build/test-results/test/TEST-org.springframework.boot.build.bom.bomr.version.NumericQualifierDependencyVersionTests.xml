@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.boot.build.bom.bomr.version.NumericQualifierDependencyVersionTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-05-20T05:45:10" hostname="e0c1209b-c195-482a-5631-737c2f0472a1" time="0.015">
+  <properties/>
+  <testcase name="isNewerThanOnVersionWithNumericQualifierWhenInputHasNoQualifierShouldReturnTrue()" classname="org.springframework.boot.build.bom.bomr.version.NumericQualifierDependencyVersionTests" time="0.014"/>
+  <testcase name="isNewerThanOnVersionWithNumericQualifierWhenInputHasOlderQualifierShouldReturnTrue()" classname="org.springframework.boot.build.bom.bomr.version.NumericQualifierDependencyVersionTests" time="0.0"/>
+  <testcase name="isNewerThanOnVersionWithNumericQualifierWhenInputHasNewerQualifierShouldReturnFalse()" classname="org.springframework.boot.build.bom.bomr.version.NumericQualifierDependencyVersionTests" time="0.0"/>
+  <testcase name="isNewerThanOnVersionWithNumericQualifierWhenInputHasSameQualifierShouldReturnFalse()" classname="org.springframework.boot.build.bom.bomr.version.NumericQualifierDependencyVersionTests" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

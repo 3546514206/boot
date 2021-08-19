@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Implementation-Title: Spring Boot Jetty JSP smoke test
+Automatic-Module-Name: spring.boot.smoke.test.jetty.jsp
+Implementation-Version: 2.5.0
+Built-By: Spring
+Build-Jdk-Spec: 1.8
+
