@@ -1,8 +1,0 @@
-Manifest-Version: 1.0
-Implementation-Title: Spring Boot AutoConfigure Annotation Processor
-Automatic-Module-Name: spring.boot.autoconfigure.processor
-Implementation-Version: 2.5.0
-Built-By: Spring
-Spring-Boot-Jar-Type: annotation-processor
-Build-Jdk-Spec: 1.8
-

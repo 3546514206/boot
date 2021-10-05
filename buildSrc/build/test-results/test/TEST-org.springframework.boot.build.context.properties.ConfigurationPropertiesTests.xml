@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.springframework.boot.build.context.properties.ConfigurationPropertiesTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-20T05:45:09" hostname="e0c1209b-c195-482a-5631-737c2f0472a1" time="0.19">
-  <properties/>
-  <testcase name="whenJsonHasAnIntegerDefaultValueThenItRemainsAnIntegerWhenRead()" classname="org.springframework.boot.build.context.properties.ConfigurationPropertiesTests" time="0.19"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

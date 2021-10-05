@@ -1,7 +1,0 @@
-Manifest-Version: 1.0
-Implementation-Title: Source for spring-boot-actuator-autoconfigure
-Automatic-Module-Name: spring.boot.actuator.autoconfigure
-Implementation-Version: 2.5.0
-Built-By: Spring
-Build-Jdk-Spec: 1.8
-
