@@ -76,7 +76,20 @@ public class DispatcherServletAutoConfiguration {
      * 有关这些内容的讨论可以参考附录。到这里，应该明白为什么几乎在没有任何配置下就能用Spring Boot启动Spring MVC项目，
      * 这些都是SpringBoot通过Maven依赖找到对应的jar包和嵌入的服务器，然后使用默认自动配置类来创建默认的开发环境。
      * 但是有时候，我们需要对这些默认的环境进行修改以适应个性化的要求，这些在Spring Boot中也是非常简单的，
-     * 正如@EnableConfigurationProperties注解那样，它允许读入配置文件的内容来自定义自动初始化所需的内容.
+     * 正如@EnableConfigurationProperties注解那样，它允许读入配置文件的内容来自定义自动初始化所需的内容。这里扩展说明一下配置的加载顺序
+     * 事实上，Spring Boot的参数配置除了使用properties文件之外，还可以使用yml文件等，它会以下列的优先级顺序进行加载：
+     * 1）命令行参数；
+     * 2）来自java:comp/env的JNDI属性；
+     * 3）Java系统属性（System.getProperties()）；
+     * 4）操作系统环境变量；
+     * 5）RandomValuePropertySource配置的random.
+     * 6）属性值；
+     * 7）jar包外部的application-{profile}.properties或application.yml（带spring.profile）配置文件；
+     * 8）jar包内部的application-{profile}.properties或application.ym（带spring.profile）配置文件；
+     * 9）jar包外部的application.properties或application.yml（不带spring.profile）配置文件；
+     * 10）jar包内部的application.properties或application.ym（不带spring.profile）配置文件；
+     * 11）@Configuration注解类上的@PropertySource；
+     * 12）通过SpringApplication.setDefaultProperties指定的默认属性。
      */
     @Configuration
     @Conditional(DefaultDispatcherServletCondition.class)
