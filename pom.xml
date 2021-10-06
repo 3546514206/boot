@@ -10,9 +10,10 @@
 	<name>Spring Boot Build</name>
 	<description>Spring Boot Build</description>
 	<properties>
-		<revision>2.1.0.RELEASE</revision>
-		<main.basedir>${basedir}</main.basedir>
-	</properties>
+        <revision>2.1.0.RELEASE</revision>
+        <main.basedir>${basedir}</main.basedir>
+        <disable.checks>true</disable.checks>
+    </properties>
 	<!-- Most elements are in profiles so they are stripped out during maven-flatten -->
 	<profiles>
 		<!-- Default profile for command line build -->
@@ -79,12 +80,13 @@
 					</plugin>
 				</plugins>
 			</build>
-			<modules>
-				<module>spring-boot-project</module>
-				<!-- Samples are built via the invoker plugin -->
-				<module>spring-boot-samples-invoker</module>
-				<module>spring-boot-tests</module>
-			</modules>
+            <modules>
+                <module>spring-boot-project</module>
+                <!-- Samples are built via the invoker plugin -->
+                <module>spring-boot-samples-invoker</module>
+                <module>spring-boot-tests</module>
+                <module>spring-boot-samples</module>
+            </modules>
 		</profile>
 		<!-- M2E profile to allow easy import into Eclipse -->
 		<profile>

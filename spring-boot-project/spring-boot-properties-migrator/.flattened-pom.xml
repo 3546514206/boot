@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+         xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-parent</artifactId>
+        <version>2.1.0.RELEASE</version>
+        <relativePath>../spring-boot-parent</relativePath>
+    </parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-properties-migrator</artifactId>
+    <version>2.1.0.RELEASE</version>
+    <name>Spring Boot Properties Migrator</name>
+    <description>Spring Boot Properties Migrator</description>
+    <url>https://projects.spring.io/spring-boot/#/spring-boot-parent/spring-boot-properties-migrator</url>
+    <organization>
+        <name>Pivotal Software, Inc.</name>
+        <url>https://spring.io</url>
+    </organization>
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+        </license>
+    </licenses>
+    <developers>
+        <developer>
+            <name>Pivotal</name>
+            <email>info@pivotal.io</email>
+            <organization>Pivotal Software, Inc.</organization>
+            <organizationUrl>http://www.spring.io</organizationUrl>
+        </developer>
+    </developers>
+    <scm>
+        <connection>scm:git:git://github.com/spring-projects/spring-boot.git/spring-boot-properties-migrator
+        </connection>
+        <developerConnection>
+            scm:git:ssh://git@github.com/spring-projects/spring-boot.git/spring-boot-properties-migrator
+        </developerConnection>
+        <url>http://github.com/spring-projects/spring-boot/spring-boot-properties-migrator</url>
+    </scm>
+    <issueManagement>
+        <system>Github</system>
+        <url>https://github.com/spring-projects/spring-boot/issues</url>
+    </issueManagement>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot</artifactId>
+            <version>2.1.0.RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-metadata</artifactId>
+            <version>2.1.0.RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+</project>

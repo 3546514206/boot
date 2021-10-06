@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+         xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starters</artifactId>
+        <version>2.1.0.RELEASE</version>
+    </parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-undertow</artifactId>
+    <version>2.1.0.RELEASE</version>
+    <name>Spring Boot Undertow Starter</name>
+    <description>Starter for using Undertow as the embedded servlet container. An
+        alternative to spring-boot-starter-tomcat
+    </description>
+    <url>https://projects.spring.io/spring-boot/#/spring-boot-parent/spring-boot-starters/spring-boot-starter-undertow
+    </url>
+    <organization>
+        <name>Pivotal Software, Inc.</name>
+        <url>https://spring.io</url>
+    </organization>
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+        </license>
+    </licenses>
+    <developers>
+        <developer>
+            <name>Pivotal</name>
+            <email>info@pivotal.io</email>
+            <organization>Pivotal Software, Inc.</organization>
+            <organizationUrl>http://www.spring.io</organizationUrl>
+        </developer>
+    </developers>
+    <scm>
+        <connection>
+            scm:git:git://github.com/spring-projects/spring-boot.git/spring-boot-starters/spring-boot-starter-undertow
+        </connection>
+        <developerConnection>
+            scm:git:ssh://git@github.com/spring-projects/spring-boot.git/spring-boot-starters/spring-boot-starter-undertow
+        </developerConnection>
+        <url>http://github.com/spring-projects/spring-boot/spring-boot-starters/spring-boot-starter-undertow</url>
+    </scm>
+    <issueManagement>
+        <system>Github</system>
+        <url>https://github.com/spring-projects/spring-boot/issues</url>
+    </issueManagement>
+    <dependencies>
+        <dependency>
+            <groupId>io.undertow</groupId>
+            <artifactId>undertow-core</artifactId>
+            <version>2.0.14.Final</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.undertow</groupId>
+            <artifactId>undertow-servlet</artifactId>
+            <version>2.0.14.Final</version>
+            <scope>compile</scope>
+            <exclusions>
+                <exclusion>
+                    <artifactId>jboss-servlet-api_4.0_spec</artifactId>
+                    <groupId>org.jboss.spec.javax.servlet</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>io.undertow</groupId>
+            <artifactId>undertow-websockets-jsr</artifactId>
+            <version>2.0.14.Final</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>4.0.1</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.glassfish</groupId>
+            <artifactId>javax.el</artifactId>
+            <version>3.0.0</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+</project>

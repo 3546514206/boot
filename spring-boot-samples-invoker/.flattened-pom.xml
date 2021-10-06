@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+         xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-parent</artifactId>
+        <version>2.1.0.RELEASE</version>
+        <relativePath>../spring-boot-project/spring-boot-parent</relativePath>
+    </parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-samples-invoker</artifactId>
+    <version>2.1.0.RELEASE</version>
+    <packaging>pom</packaging>
+    <name>Spring Boot Samples Invoker</name>
+    <description>Spring Boot Samples Invoker</description>
+    <url>https://projects.spring.io/spring-boot/#/spring-boot-parent/spring-boot-samples-invoker</url>
+    <organization>
+        <name>Pivotal Software, Inc.</name>
+        <url>https://spring.io</url>
+    </organization>
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+        </license>
+    </licenses>
+    <developers>
+        <developer>
+            <name>Pivotal</name>
+            <email>info@pivotal.io</email>
+            <organization>Pivotal Software, Inc.</organization>
+            <organizationUrl>http://www.spring.io</organizationUrl>
+        </developer>
+    </developers>
+    <scm>
+        <connection>scm:git:git://github.com/spring-projects/spring-boot.git/spring-boot-samples-invoker</connection>
+        <developerConnection>scm:git:ssh://git@github.com/spring-projects/spring-boot.git/spring-boot-samples-invoker
+        </developerConnection>
+        <url>http://github.com/spring-projects/spring-boot/spring-boot-samples-invoker</url>
+    </scm>
+    <issueManagement>
+        <system>Github</system>
+        <url>https://github.com/spring-projects/spring-boot/issues</url>
+    </issueManagement>
+</project>
