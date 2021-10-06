@@ -10,12 +10,17 @@
 	<artifactId>spring-boot-starter-web</artifactId>
 	<name>Spring Boot Web Starter</name>
 	<description>Starter for building web, including RESTful, applications using Spring
-		MVC. Uses Tomcat as the default embedded container</description>
+		MVC. Uses Tomcat as the default embedded container
+	</description>
 	<properties>
 		<main.basedir>${basedir}/../../..</main.basedir>
 	</properties>
+
+	<!--	当加入spring-boot-starter-web后，它会通过Maven将对应的资源加载到我们的工程中，
+    这样便能够形成依赖。但是这样还不足以运行Spring MVC项目，要运行它还需要对Spring MVC进行配置，
+    让它能够生产Spring MVC所需的对象，才能启用Spring MVC，-->
 	<dependencies>
-<!--		Spring boot 依赖 -->
+		<!--		Spring boot 依赖 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
