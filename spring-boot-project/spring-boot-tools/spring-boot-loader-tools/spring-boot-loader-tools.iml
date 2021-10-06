@@ -49,7 +49,6 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module" module-name="spring-boot-loader" />
     <orderEntry type="module-library">
       <library>
         <CLASSES>

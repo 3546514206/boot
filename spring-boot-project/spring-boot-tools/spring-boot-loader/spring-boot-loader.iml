@@ -70,7 +70,6 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module" module-name="spring-boot-test-support" />
     <orderEntry type="module-library">
       <library>
         <CLASSES>

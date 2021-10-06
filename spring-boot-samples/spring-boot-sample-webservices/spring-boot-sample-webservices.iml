@@ -43,9 +43,6 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module" module-name="spring-boot-starter-test" />
-    <orderEntry type="module" module-name="spring-boot-starter" />
-    <orderEntry type="module" module-name="spring-boot" />
     <orderEntry type="module-library">
       <library>
         <CLASSES>
@@ -100,8 +97,6 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module" module-name="spring-boot-autoconfigure" />
-    <orderEntry type="module" module-name="spring-boot-starter-logging" />
     <orderEntry type="module-library">
       <library>
         <CLASSES>
@@ -174,8 +169,6 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module" module-name="spring-boot-test" />
-    <orderEntry type="module" module-name="spring-boot-test-autoconfigure" />
     <orderEntry type="module-library">
       <library>
         <CLASSES>
@@ -320,9 +313,6 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module" module-name="spring-boot-starter-web-services" />
-    <orderEntry type="module" module-name="spring-boot-starter-web" />
-    <orderEntry type="module" module-name="spring-boot-starter-json" />
     <orderEntry type="module-library">
       <library>
         <CLASSES>
@@ -386,7 +376,6 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module" module-name="spring-boot-starter-tomcat" />
     <orderEntry type="module-library">
       <library>
         <CLASSES>

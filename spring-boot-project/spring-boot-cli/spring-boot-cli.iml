@@ -253,7 +253,6 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module" module-name="spring-boot-test-support" />
     <orderEntry type="module-library">
       <library>
         <CLASSES>
@@ -686,7 +685,6 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module" module-name="spring-boot-loader-tools" />
     <orderEntry type="module-library">
       <library>
         <CLASSES>
@@ -723,8 +721,6 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module" module-name="spring-boot-test" />
-    <orderEntry type="module" module-name="spring-boot" />
     <orderEntry type="module-library">
       <library>
         <CLASSES>

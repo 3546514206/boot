@@ -350,9 +350,6 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module" module-name="spring-boot-starter-artemis" />
-    <orderEntry type="module" module-name="spring-boot-starter" />
-    <orderEntry type="module" module-name="spring-boot" />
     <orderEntry type="module-library">
       <library>
         <CLASSES>
@@ -380,8 +377,6 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module" module-name="spring-boot-autoconfigure" />
-    <orderEntry type="module" module-name="spring-boot-starter-logging" />
     <orderEntry type="module-library">
       <library>
         <CLASSES>
@@ -472,9 +467,6 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module" module-name="spring-boot-starter-test" />
-    <orderEntry type="module" module-name="spring-boot-test" />
-    <orderEntry type="module" module-name="spring-boot-test-autoconfigure" />
     <orderEntry type="module-library">
       <library>
         <CLASSES>
@@ -619,8 +611,6 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module" module-name="spring-boot-starter-data-jpa" />
-    <orderEntry type="module" module-name="spring-boot-starter-aop" />
     <orderEntry type="module-library">
       <library>
         <CLASSES>
@@ -630,7 +620,6 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module" module-name="spring-boot-starter-jdbc" />
     <orderEntry type="module-library">
       <library>
         <CLASSES>
@@ -784,7 +773,6 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module" module-name="spring-boot-starter-jta-bitronix" />
     <orderEntry type="module-library">
       <library>
         <CLASSES>
