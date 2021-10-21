@@ -20,7 +20,10 @@ import java.time.Duration;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Component;
+
+import javax.annotation.Resource;
 
 @Component
 public class HelloWorldService {
@@ -31,14 +34,12 @@ public class HelloWorldService {
 	@Value("${duration:10s}")
 	private Duration duration;
 
-	@Autowired
-	private RedisTemplate redisTemplate;
 
 	public String getHelloMessage() {
 		return "Hello " + this.name + " for " + this.duration.getSeconds() + " seconds";
 	}
 
 	public useRedisTemplate (){
-		redisTemplate
+		RedisTemplate redisTemplate = new RedisTemplate();
 	}
 }
