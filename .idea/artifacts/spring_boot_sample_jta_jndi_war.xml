@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="spring-boot-sample-jta-jndi:war">
+    <output-path>$PROJECT_DIR$/spring-boot-samples/spring-boot-sample-jta-jndi/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>spring-boot-sample-jta-jndi</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="spring-boot-sample-jta-jndi.war">
+      <element id="artifact" artifact-name="spring-boot-sample-jta-jndi:war exploded" />
+    </root>
+  </artifact>
+</component>
