@@ -1,0 +1,1 @@
+2022-03-04 21:10:03.616  WARN ???? --- [           main] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath

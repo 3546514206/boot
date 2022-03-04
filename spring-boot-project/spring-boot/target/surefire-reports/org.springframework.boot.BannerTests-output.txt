@@ -1,0 +1,46 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                        
+
+2022-03-04 21:09:04.573  INFO 22994 --- [           main] o.a.m.s.b.ForkedBooter                   : Starting ForkedBooter v2.22.1 on SetsunaYangMacbookPro.local with PID 22994 (started by SetsunaYang in /Users/SetsunaYang/Documents/learning/boot/spring-boot-project/spring-boot)
+2022-03-04 21:09:04.595  INFO 22994 --- [           main] o.a.m.s.b.ForkedBooter                   : No active profile set, falling back to default profiles: default
+2022-03-04 21:09:05.806  INFO 22994 --- [           main] o.a.m.s.b.ForkedBooter                   : Started ForkedBooter in 2.798 seconds (JVM running for 6.613)
+2022-03-04 21:09:06.138  INFO 22994 --- [           main] o.a.m.s.b.ForkedBooter                   : Starting ForkedBooter v2.22.1 on SetsunaYangMacbookPro.local with PID 22994 (started by SetsunaYang in /Users/SetsunaYang/Documents/learning/boot/spring-boot-project/spring-boot)
+2022-03-04 21:09:06.140  INFO 22994 --- [           main] o.a.m.s.b.ForkedBooter                   : No active profile set, falling back to default profiles: default
+2022-03-04 21:09:06.150  INFO 22994 --- [           main] o.a.m.s.b.ForkedBooter                   : Started ForkedBooter in 0.169 seconds (JVM running for 6.958)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                        
+
+2022-03-04 21:09:06.436  INFO 22994 --- [           main] o.a.m.s.b.ForkedBooter                   : Starting ForkedBooter v2.22.1 on SetsunaYangMacbookPro.local with PID 22994 (started by SetsunaYang in /Users/SetsunaYang/Documents/learning/boot/spring-boot-project/spring-boot)
+2022-03-04 21:09:06.437  INFO 22994 --- [           main] o.a.m.s.b.ForkedBooter                   : No active profile set, falling back to default profiles: default
+2022-03-04 21:09:06.446  INFO 22994 --- [           main] o.a.m.s.b.ForkedBooter                   : Started ForkedBooter in 0.288 seconds (JVM running for 7.253)
+2022-03-04 21:09:07.470  INFO 22994 --- [           main] o.a.m.s.b.ForkedBooter                   : Starting ForkedBooter v2.22.1 on SetsunaYangMacbookPro.local with PID 22994 (started by SetsunaYang in /Users/SetsunaYang/Documents/learning/boot/spring-boot-project/spring-boot)
+2022-03-04 21:09:07.471  INFO 22994 --- [           main] o.a.m.s.b.ForkedBooter                   : No active profile set, falling back to default profiles: default
+2022-03-04 21:09:07.482  INFO 22994 --- [           main] o.a.m.s.b.ForkedBooter                   : Started ForkedBooter in 0.324 seconds (JVM running for 8.29)
+My Banner
+2022-03-04 21:09:08.002  INFO 22994 --- [           main] o.a.m.s.b.ForkedBooter                   : Starting ForkedBooter v2.22.1 on SetsunaYangMacbookPro.local with PID 22994 (started by SetsunaYang in /Users/SetsunaYang/Documents/learning/boot/spring-boot-project/spring-boot)
+2022-03-04 21:09:08.003  INFO 22994 --- [           main] o.a.m.s.b.ForkedBooter                   : No active profile set, falling back to default profiles: default
+2022-03-04 21:09:08.011  INFO 22994 --- [           main] o.a.m.s.b.ForkedBooter                   : Started ForkedBooter in 0.411 seconds (JVM running for 8.819)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                        
+
+2022-03-04 21:09:08.159  INFO 22994 --- [           main] o.a.m.s.b.ForkedBooter                   : Starting ForkedBooter v2.22.1 on SetsunaYangMacbookPro.local with PID 22994 (started by SetsunaYang in /Users/SetsunaYang/Documents/learning/boot/spring-boot-project/spring-boot)
+2022-03-04 21:09:08.160  INFO 22994 --- [           main] o.a.m.s.b.ForkedBooter                   : No active profile set, falling back to default profiles: default
+2022-03-04 21:09:08.173  INFO 22994 --- [           main] o.a.m.s.b.ForkedBooter                   : Started ForkedBooter in 0.158 seconds (JVM running for 8.981)

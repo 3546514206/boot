@@ -1,0 +1,11 @@
+2022-03-04 21:10:01.578  INFO ???? --- [           main] o.h.Version                              : HHH000412: Hibernate Core {5.3.7.Final}
+2022-03-04 21:10:01.581  INFO ???? --- [           main] o.h.c.Environment                        : HHH000206: hibernate.properties not found
+2022-03-04 21:10:01.669  INFO ???? --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2022-03-04 21:10:01.870  WARN ???? --- [           main] o.h.e.j.c.i.ConnectionProviderInitiator  : HHH000181: No appropriate connection provider encountered, assuming application will be supplying connections
+2022-03-04 21:10:01.873  WARN ???? --- [           main] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata : The application must supply JDBC connections
+2022-03-04 21:10:01.899  INFO ???? --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-03-04 21:10:01.940  INFO ???? --- [           main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000422: Disabling contextual LOB creation as connection was null
+2022-03-04 21:10:02.210  WARN ???? --- [           main] o.h.e.j.c.i.ConnectionProviderInitiator  : HHH000181: No appropriate connection provider encountered, assuming application will be supplying connections
+2022-03-04 21:10:02.210  WARN ???? --- [           main] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata : The application must supply JDBC connections
+2022-03-04 21:10:02.210  INFO ???? --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-03-04 21:10:02.211  INFO ???? --- [           main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000422: Disabling contextual LOB creation as connection was null

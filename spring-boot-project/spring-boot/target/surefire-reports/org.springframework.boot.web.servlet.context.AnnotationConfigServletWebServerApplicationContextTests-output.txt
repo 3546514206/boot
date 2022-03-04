@@ -1,0 +1,20 @@
+2022-03-04 21:10:46.254  INFO ???? --- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 13 ms
+2022-03-04 21:10:46.256  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet servlet mapped to [/]
+2022-03-04 21:10:46.275  INFO ???? --- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 15 ms
+2022-03-04 21:10:46.346  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet annotationConfigServletWebServerApplicationContextTests.ExampleServletWithAutowired mapped to [/annotationConfigServletWebServerApplicationContextTests.ExampleServletWithAutowired/]
+2022-03-04 21:10:46.346  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet servlet mapped to [/servlet/]
+2022-03-04 21:10:46.461  INFO ???? --- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 106 ms
+2022-03-04 21:10:46.470  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet servlet mapped to [/]
+2022-03-04 21:10:46.801  INFO ???? --- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 4 ms
+2022-03-04 21:10:46.803  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet servlet mapped to [/]
+2022-03-04 21:10:46.818  INFO ???? --- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 12 ms
+2022-03-04 21:10:46.819  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet servlet mapped to [/]
+2022-03-04 21:10:46.903  INFO ???? --- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 7 ms
+2022-03-04 21:10:46.904  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet servlet mapped to [/]
+2022-03-04 21:10:46.922  INFO ???? --- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 3 ms
+2022-03-04 21:10:46.923  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet servlet mapped to [/]
+2022-03-04 21:10:46.929  INFO ???? --- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 3 ms
+2022-03-04 21:10:46.947  INFO ???? --- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 14 ms
+2022-03-04 21:10:46.949  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet servlet mapped to [/]
+2022-03-04 21:10:47.019  INFO ???? --- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 8 ms
+2022-03-04 21:10:47.019  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet servlet mapped to [/]

@@ -1,0 +1,159 @@
+2022-03-04 21:10:41.641  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet exampleServlet mapped to [/hello]
+2022-03-04 21:10:41.726  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 64014 (https) with context path ''
+2022-03-04 21:10:41.816  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet exampleServlet mapped to [/hello]
+2022-03-04 21:10:41.821  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 64016 (https) with context path ''
+2022-03-04 21:10:41.873  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 64018 (https) with context path ''
+2022-03-04 21:10:41.930  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet exampleServlet mapped to [/hello]
+2022-03-04 21:10:41.933  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 64020 (http) with context path ''
+2022-03-04 21:10:41.953  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet exampleServlet mapped to [/hello]
+2022-03-04 21:10:41.957  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 64023 (https) with context path ''
+2022-03-04 21:10:41.970  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet exampleServlet mapped to [/hello]
+2022-03-04 21:10:41.976  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 64025 (https) with context path ''
+2022-03-04 21:10:42.009  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet exampleServlet mapped to [/hello]
+2022-03-04 21:10:42.018  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 64027 (http) with context path ''
+2022-03-04 21:10:42.145  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet exampleServlet mapped to [/hello]
+2022-03-04 21:10:42.150  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 64029 (http) with context path ''
+2022-03-04 21:10:42.259  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet exampleServlet mapped to [/hello]
+2022-03-04 21:10:42.262  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 64031 (http) with context path ''
+2022-03-04 21:10:42.290  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet exampleServlet mapped to [/hello]
+2022-03-04 21:10:42.294  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 64033 (https) with context path ''
+2022-03-04 21:10:42.309  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet exampleServlet mapped to [/hello]
+2022-03-04 21:10:42.311  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 64035 (http) with context path ''
+2022-03-04 21:10:42.324  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet exampleServlet mapped to [/hello]
+2022-03-04 21:10:42.325  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet error mapped to [/bang]
+2022-03-04 21:10:42.329  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 64037 (http) with context path ''
+2022-03-04 21:10:42.340 ERROR ???? --- [ XNIO-31 task-2] i.u.request                              : UT005023: Exception handling request to /bang
+
+java.lang.RuntimeException: Planned
+	at org.springframework.boot.web.servlet.server.AbstractServletWebServerFactoryTests$4.service(AbstractServletWebServerFactoryTests.java:1243) ~[test-classes/:?]
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74) ~[undertow-servlet-2.0.14.Final.jar:2.0.14.Final]
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62) ~[undertow-servlet-2.0.14.Final.jar:2.0.14.Final]
+	at io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68) ~[undertow-servlet-2.0.14.Final.jar:2.0.14.Final]
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36) ~[undertow-servlet-2.0.14.Final.jar:2.0.14.Final]
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:132) ~[undertow-servlet-2.0.14.Final.jar:2.0.14.Final]
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57) ~[undertow-servlet-2.0.14.Final.jar:2.0.14.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) ~[undertow-core-2.0.14.Final.jar:2.0.14.Final]
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46) ~[undertow-core-2.0.14.Final.jar:2.0.14.Final]
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64) ~[undertow-servlet-2.0.14.Final.jar:2.0.14.Final]
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60) ~[undertow-core-2.0.14.Final.jar:2.0.14.Final]
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77) ~[undertow-servlet-2.0.14.Final.jar:2.0.14.Final]
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43) ~[undertow-core-2.0.14.Final.jar:2.0.14.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) ~[undertow-core-2.0.14.Final.jar:2.0.14.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) ~[undertow-core-2.0.14.Final.jar:2.0.14.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:292) [undertow-servlet-2.0.14.Final.jar:2.0.14.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:81) [undertow-servlet-2.0.14.Final.jar:2.0.14.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:138) [undertow-servlet-2.0.14.Final.jar:2.0.14.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135) [undertow-servlet-2.0.14.Final.jar:2.0.14.Final]
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48) [undertow-servlet-2.0.14.Final.jar:2.0.14.Final]
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43) [undertow-servlet-2.0.14.Final.jar:2.0.14.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:272) [undertow-servlet-2.0.14.Final.jar:2.0.14.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81) [undertow-servlet-2.0.14.Final.jar:2.0.14.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:104) [undertow-servlet-2.0.14.Final.jar:2.0.14.Final]
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:360) [undertow-core-2.0.14.Final.jar:2.0.14.Final]
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:830) [undertow-core-2.0.14.Final.jar:2.0.14.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_202]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_202]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_202]
+
+2022-03-04 21:10:42.440  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 64040 (http) with context path ''
+2022-03-04 21:10:42.452  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 64042 (http) with context path ''
+2022-03-04 21:10:42.465  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 64044 (https) with context path ''
+2022-03-04 21:10:43.002  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 64048 (http) with context path ''
+2022-03-04 21:10:43.007  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet exampleServlet mapped to [/hello]
+2022-03-04 21:10:43.009  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 63850 (http) with context path ''
+2022-03-04 21:10:43.026  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet httpServlet mapped to [/test.txt]
+2022-03-04 21:10:43.028  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 64050 (http) with context path ''
+2022-03-04 21:10:43.043  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 64052 (https) with context path ''
+2022-03-04 21:10:43.069  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet exampleServlet mapped to [/hello]
+2022-03-04 21:10:43.074  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 64054 (http) with context path ''
+2022-03-04 21:10:43.087  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 64056 (https) with context path ''
+2022-03-04 21:10:43.116  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet exampleServlet mapped to [/hello]
+2022-03-04 21:10:43.125  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 64058 (http) with context path ''
+2022-03-04 21:10:43.136  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet exampleServlet mapped to [/hello]
+2022-03-04 21:10:43.136  INFO ???? --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'exampleFilter' to: [/*]
+2022-03-04 21:10:43.142  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 64060 (http) with context path ''
+2022-03-04 21:10:43.155  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 64062 (http) with context path ''
+2022-03-04 21:10:43.158  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet exampleServlet mapped to [/hello]
+2022-03-04 21:10:43.193  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet session mapped to [/session]
+2022-03-04 21:10:43.197  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 64063 (http) with context path ''
+2022-03-04 21:10:43.259  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet session mapped to [/session]
+2022-03-04 21:10:43.261  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 64066 (http) with context path ''
+2022-03-04 21:10:43.269  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet exampleServlet mapped to [/hello]
+2022-03-04 21:10:43.271  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 64068 (http) with context path ''
+2022-03-04 21:10:43.275  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet exampleServlet mapped to [/hello]
+2022-03-04 21:10:43.278  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 64069 (https) with context path ''
+2022-03-04 21:10:43.311  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet session mapped to [/session]
+2022-03-04 21:10:43.317  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 64071 (http) with context path ''
+2022-03-04 21:10:43.326  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet exampleServlet mapped to [/hello]
+2022-03-04 21:10:43.333  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 64073 (https) with context path ''
+2022-03-04 21:10:43.365  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet exampleServlet mapped to [/hello]
+2022-03-04 21:10:43.366  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet error mapped to [/bang]
+2022-03-04 21:10:43.368  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 64075 (http) with context path ''
+2022-03-04 21:10:43.374 ERROR ???? --- [ XNIO-50 task-2] i.u.request                              : UT005023: Exception handling request to /bang
+
+java.lang.RuntimeException: Planned
+	at org.springframework.boot.web.servlet.server.AbstractServletWebServerFactoryTests$4.service(AbstractServletWebServerFactoryTests.java:1243) ~[test-classes/:?]
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74) ~[undertow-servlet-2.0.14.Final.jar:2.0.14.Final]
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62) ~[undertow-servlet-2.0.14.Final.jar:2.0.14.Final]
+	at io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68) ~[undertow-servlet-2.0.14.Final.jar:2.0.14.Final]
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36) ~[undertow-servlet-2.0.14.Final.jar:2.0.14.Final]
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:132) ~[undertow-servlet-2.0.14.Final.jar:2.0.14.Final]
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57) ~[undertow-servlet-2.0.14.Final.jar:2.0.14.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) ~[undertow-core-2.0.14.Final.jar:2.0.14.Final]
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46) ~[undertow-core-2.0.14.Final.jar:2.0.14.Final]
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64) ~[undertow-servlet-2.0.14.Final.jar:2.0.14.Final]
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60) ~[undertow-core-2.0.14.Final.jar:2.0.14.Final]
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77) ~[undertow-servlet-2.0.14.Final.jar:2.0.14.Final]
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43) ~[undertow-core-2.0.14.Final.jar:2.0.14.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) ~[undertow-core-2.0.14.Final.jar:2.0.14.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) ~[undertow-core-2.0.14.Final.jar:2.0.14.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:292) [undertow-servlet-2.0.14.Final.jar:2.0.14.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:81) [undertow-servlet-2.0.14.Final.jar:2.0.14.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:138) [undertow-servlet-2.0.14.Final.jar:2.0.14.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135) [undertow-servlet-2.0.14.Final.jar:2.0.14.Final]
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48) [undertow-servlet-2.0.14.Final.jar:2.0.14.Final]
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43) [undertow-servlet-2.0.14.Final.jar:2.0.14.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:272) [undertow-servlet-2.0.14.Final.jar:2.0.14.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81) [undertow-servlet-2.0.14.Final.jar:2.0.14.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:104) [undertow-servlet-2.0.14.Final.jar:2.0.14.Final]
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:360) [undertow-core-2.0.14.Final.jar:2.0.14.Final]
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:830) [undertow-core-2.0.14.Final.jar:2.0.14.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_202]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_202]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_202]
+
+2022-03-04 21:10:43.384  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet exampleServlet mapped to [/hello]
+2022-03-04 21:10:43.401  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 64078 (http) with context path '/custom'
+2022-03-04 21:10:43.407  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 64079 (https) with context path ''
+2022-03-04 21:10:43.447  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 64081 (http) with context path ''
+2022-03-04 21:10:43.452  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet exampleServlet mapped to [/hello]
+2022-03-04 21:10:43.455  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 64082 (http) with context path ''
+2022-03-04 21:10:43.466  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet exampleServlet mapped to [/hello]
+2022-03-04 21:10:43.469  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 64084 (http) with context path ''
+2022-03-04 21:10:43.474  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet exampleServlet mapped to [/hello]
+2022-03-04 21:10:43.477  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 64087 (https) with context path ''
+2022-03-04 21:10:43.524  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 64089 (http) with context path ''
+2022-03-04 21:10:43.537  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 64090 (http) with context path ''
+2022-03-04 21:10:43.557  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 64091 (https) with context path ''
+2022-03-04 21:10:43.591  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet exampleServlet mapped to [/hello]
+2022-03-04 21:10:43.600  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 64093 (http) with context path ''
+2022-03-04 21:10:43.621  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 64095 (https) with context path ''
+2022-03-04 21:10:43.648  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet httpServlet mapped to [/test.txt]
+2022-03-04 21:10:43.653  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 64097 (http) with context path ''
+2022-03-04 21:10:43.667  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet exampleServlet mapped to [/hello]
+2022-03-04 21:10:43.672  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 64099 (https) with context path ''
+2022-03-04 21:10:43.717  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 64101 (http) with context path ''
+2022-03-04 21:10:43.737  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet httpServlet mapped to [/test.txt]
+2022-03-04 21:10:43.741  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 64102 (http) with context path ''
+2022-03-04 21:10:43.777  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 64104 (https) with context path ''
+2022-03-04 21:10:43.830  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet exampleServlet mapped to [/hello]
+2022-03-04 21:10:43.834  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 64107 (http) with context path ''
+2022-03-04 21:10:43.843  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet exampleServlet mapped to [/hello]
+2022-03-04 21:10:43.845  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 64109 (http) with context path ''
+2022-03-04 21:10:43.856  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 64111 (https) with context path ''
+2022-03-04 21:10:43.879  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet exampleServlet mapped to [/hello]
+2022-03-04 21:10:43.883  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 64113 (http) with context path '/say'
+2022-03-04 21:10:43.987  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet httpServlet mapped to [/test.txt]
+2022-03-04 21:10:43.989  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 64115 (http) with context path ''
+2022-03-04 21:10:43.998  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet httpServlet mapped to [/test.txt]
+2022-03-04 21:10:44.000  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 64117 (http) with context path ''

@@ -1,0 +1,9 @@
+Mar 04, 2022 9:09:58 PM org.springframework.boot.logging.java.JavaLoggingSystemTests testNonDefaultConfigLocation
+INFO: Hello world
+[2022-03-04 21:09:58.706] - 1234 INFO [main] --- org.springframework.boot.logging.java.JavaLoggingSystemTests: Hello world
+[2022-03-04 21:09:58.744] - 1234 INFO [main] --- org.springframework.boot.logging.java.JavaLoggingSystemTests: Hello world
+[2022-03-04 21:09:58.770] - ???? INFO [main] --- org.springframework.boot.logging.java.JavaLoggingSystemTests: Hello world
+[2022-03-04 21:09:58.781] - ???? INFO [main] --- org.springframework.boot.logging.java.JavaLoggingSystemTests: Hello world
+[2022-03-04 21:09:58.795] - ???? FINE [main] --- org.springframework.boot.logging.java.JavaLoggingSystemTests: Hello
+[2022-03-04 21:09:58.799] - ???? INFO [main] --- org.springframework.boot.logging.java.JavaLoggingSystemTests: Hello world
+[2022-03-04 21:09:58.806] - ???? FINE [main] --- org.springframework.boot.logging.java.JavaLoggingSystemTests: Hello

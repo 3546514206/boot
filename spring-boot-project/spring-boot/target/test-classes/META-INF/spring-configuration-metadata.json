@@ -1,0 +1,594 @@
+{
+  "groups": [
+    {
+      "name": "",
+      "type": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$WithPostConstructConfiguration",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$WithPostConstructConfiguration"
+    },
+    {
+      "name": "",
+      "type": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$BasicProperties",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$BasicProperties"
+    },
+    {
+      "name": "",
+      "type": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$NestedProperties",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$NestedProperties"
+    },
+    {
+      "name": "",
+      "type": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$IgnoreUnknownFieldsFalseProperties",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$IgnoreUnknownFieldsFalseProperties"
+    },
+    {
+      "name": "",
+      "type": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$ValidatedJsr303Properties",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$ValidatedJsr303Properties"
+    },
+    {
+      "name": "",
+      "type": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$NonValidatedJsr303Properties",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$NonValidatedJsr303Properties"
+    },
+    {
+      "name": "",
+      "type": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$ValidatedNestedJsr303Properties",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$ValidatedNestedJsr303Properties"
+    },
+    {
+      "name": "",
+      "type": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$ValidatedValidNestedJsr303Properties",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$ValidatedValidNestedJsr303Properties"
+    },
+    {
+      "name": "",
+      "type": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$WithoutAnnotationValueProperties",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$WithoutAnnotationValueProperties"
+    },
+    {
+      "name": "",
+      "type": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$MapProperties",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$MapProperties"
+    },
+    {
+      "name": "",
+      "type": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$ValidatorProperties",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$ValidatorProperties"
+    },
+    {
+      "name": "FooPrefix",
+      "type": "org.springframework.boot.diagnostics.analyzer.InvalidConfigurationPropertyNameFailureAnalyzerTests$InvalidPrefixProperties",
+      "sourceType": "org.springframework.boot.diagnostics.analyzer.InvalidConfigurationPropertyNameFailureAnalyzerTests$InvalidPrefixProperties"
+    },
+    {
+      "name": "com.example",
+      "type": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$IgnoreInvalidFieldsFalseProperties",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$IgnoreInvalidFieldsFalseProperties"
+    },
+    {
+      "name": "com.example",
+      "type": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$SimplePrefixedProperties",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$SimplePrefixedProperties"
+    },
+    {
+      "name": "custom",
+      "type": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$WithCustomValidatorProperties",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$WithCustomValidatorProperties"
+    },
+    {
+      "name": "example",
+      "type": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$PrototypeBean",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$PrototypePropertiesConfiguration",
+      "sourceMethod": "prototypeBean()"
+    },
+    {
+      "name": "foo",
+      "type": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$AGenericClass",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$GenericConfiguration",
+      "sourceMethod": "aBeanToBind()"
+    },
+    {
+      "name": "foo.bar",
+      "type": "org.springframework.boot.context.properties.ConfigurationPropertiesBindHandlerAdvisorTests$BindingServiceProperties",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesBindHandlerAdvisorTests$BindingServiceProperties"
+    },
+    {
+      "name": "foo.bar",
+      "type": "org.springframework.boot.diagnostics.analyzer.BindValidationFailureAnalyzerTests$ObjectErrorFailureProperties",
+      "sourceType": "org.springframework.boot.diagnostics.analyzer.BindValidationFailureAnalyzerTests$ObjectErrorFailureProperties"
+    },
+    {
+      "name": "nested",
+      "type": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$NestedProperties$Nested",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$NestedProperties",
+      "sourceMethod": "getNested()"
+    },
+    {
+      "name": "properties",
+      "type": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$Jsr303Properties",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$ValidatedNestedJsr303Properties",
+      "sourceMethod": "getProperties()"
+    },
+    {
+      "name": "sample",
+      "type": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$MapWithNumericKeyProperties",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$MapWithNumericKeyProperties"
+    },
+    {
+      "name": "spam",
+      "type": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$PrefixProperties",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$PrefixedPropertiesReplacedOnBeanMethodConfiguration",
+      "sourceMethod": "prefixProperties()"
+    },
+    {
+      "name": "spring.bar",
+      "type": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$AnotherPrefixProperties",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$AnotherPrefixProperties"
+    },
+    {
+      "name": "spring.foo",
+      "type": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$PrefixProperties",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$PrefixProperties"
+    },
+    {
+      "name": "test",
+      "type": "org.springframework.boot.diagnostics.analyzer.ValidationExceptionFailureAnalyzerTests$TestProperties",
+      "sourceType": "org.springframework.boot.diagnostics.analyzer.ValidationExceptionFailureAnalyzerTests$TestProperties"
+    },
+    {
+      "name": "test",
+      "type": "org.springframework.boot.diagnostics.analyzer.ValidationExceptionFailureAnalyzerTests$NonValidatedTestProperties",
+      "sourceType": "org.springframework.boot.diagnostics.analyzer.ValidationExceptionFailureAnalyzerTests$NonValidatedTestProperties"
+    },
+    {
+      "name": "test",
+      "type": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$PropertiesWithResource",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$PropertiesWithResource"
+    },
+    {
+      "name": "test",
+      "type": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$ValidatedImplementationProperties",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$ValidatedImplementationProperties"
+    },
+    {
+      "name": "test",
+      "type": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$WithPropertyPlaceholderValueProperties",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$WithPropertyPlaceholderValueProperties"
+    },
+    {
+      "name": "test",
+      "type": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$WithEnumProperties",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$WithEnumProperties"
+    },
+    {
+      "name": "test",
+      "type": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$WithCharArrayProperties",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$WithCharArrayProperties"
+    },
+    {
+      "name": "test",
+      "type": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$WithRelaxedNamesProperties",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$WithRelaxedNamesProperties"
+    },
+    {
+      "name": "test",
+      "type": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$WithMapProperties",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$WithMapProperties"
+    },
+    {
+      "name": "test",
+      "type": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$WithComplexMapProperties",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$WithComplexMapProperties"
+    },
+    {
+      "name": "test",
+      "type": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$WithIntegerMapProperties",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$WithIntegerMapProperties"
+    },
+    {
+      "name": "test",
+      "type": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$PersonProperties",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$PersonProperties"
+    },
+    {
+      "name": "test",
+      "type": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$WithSetterThatThrowsValidationExceptionProperties",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$WithSetterThatThrowsValidationExceptionProperties"
+    },
+    {
+      "name": "test",
+      "type": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$ListOfGenericClassProperties",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$ListOfGenericClassProperties"
+    },
+    {
+      "name": "test",
+      "type": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$FileProperties",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$FileProperties"
+    },
+    {
+      "name": "test",
+      "type": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$DataSizeProperties",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$DataSizeProperties"
+    },
+    {
+      "name": "test.foo",
+      "type": "org.springframework.boot.diagnostics.analyzer.BindValidationFailureAnalyzerTests$FieldValidationFailureProperties",
+      "sourceType": "org.springframework.boot.diagnostics.analyzer.BindValidationFailureAnalyzerTests$FieldValidationFailureProperties"
+    },
+    {
+      "name": "test.foo",
+      "type": "org.springframework.boot.diagnostics.analyzer.UnboundConfigurationPropertyFailureAnalyzerTests$UnboundElementsFailureProperties",
+      "sourceType": "org.springframework.boot.diagnostics.analyzer.UnboundConfigurationPropertyFailureAnalyzerTests$UnboundElementsFailureProperties"
+    },
+    {
+      "name": "test.foo",
+      "type": "org.springframework.boot.diagnostics.analyzer.BindFailureAnalyzerTests$FieldValidationFailureProperties",
+      "sourceType": "org.springframework.boot.diagnostics.analyzer.BindFailureAnalyzerTests$FieldValidationFailureProperties"
+    },
+    {
+      "name": "test.foo",
+      "type": "org.springframework.boot.diagnostics.analyzer.BindFailureAnalyzerTests$UnboundElementsFailureProperties",
+      "sourceType": "org.springframework.boot.diagnostics.analyzer.BindFailureAnalyzerTests$UnboundElementsFailureProperties"
+    },
+    {
+      "name": "test.foo",
+      "type": "org.springframework.boot.diagnostics.analyzer.BindFailureAnalyzerTests$GenericFailureProperties",
+      "sourceType": "org.springframework.boot.diagnostics.analyzer.BindFailureAnalyzerTests$GenericFailureProperties"
+    },
+    {
+      "name": "test.foo",
+      "type": "org.springframework.boot.diagnostics.analyzer.BindFailureAnalyzerTests$EnumFailureProperties",
+      "sourceType": "org.springframework.boot.diagnostics.analyzer.BindFailureAnalyzerTests$EnumFailureProperties"
+    },
+    {
+      "name": "test.foo",
+      "type": "org.springframework.boot.diagnostics.analyzer.BindFailureAnalyzerTests$NestedFailureProperties",
+      "sourceType": "org.springframework.boot.diagnostics.analyzer.BindFailureAnalyzerTests$NestedFailureProperties"
+    },
+    {
+      "name": "test.foo.nested",
+      "type": "org.springframework.boot.diagnostics.analyzer.BindValidationFailureAnalyzerTests$FieldValidationFailureProperties$Nested",
+      "sourceType": "org.springframework.boot.diagnostics.analyzer.BindValidationFailureAnalyzerTests$FieldValidationFailureProperties",
+      "sourceMethod": "getNested()"
+    },
+    {
+      "name": "test.person",
+      "type": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$Person",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$PersonProperties",
+      "sourceMethod": "getPerson()"
+    }
+  ],
+  "properties": [
+    {
+      "name": "FooPrefix.value",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.diagnostics.analyzer.InvalidConfigurationPropertyNameFailureAnalyzerTests$InvalidPrefixProperties"
+    },
+    {
+      "name": "array",
+      "type": "java.lang.Integer[]",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$BasicProperties"
+    },
+    {
+      "name": "array",
+      "type": "java.lang.Integer[]",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$IgnoreUnknownFieldsFalseProperties"
+    },
+    {
+      "name": "array",
+      "type": "java.lang.Integer[]",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$ValidatedJsr303Properties"
+    },
+    {
+      "name": "array",
+      "type": "java.lang.Integer[]",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$NonValidatedJsr303Properties"
+    },
+    {
+      "name": "bar",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$WithPostConstructConfiguration"
+    },
+    {
+      "name": "com.example.bar",
+      "type": "java.lang.Long",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$IgnoreInvalidFieldsFalseProperties",
+      "defaultValue": 0
+    },
+    {
+      "name": "com.example.bar",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$SimplePrefixedProperties"
+    },
+    {
+      "name": "com.example.foo",
+      "type": "java.lang.Integer",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$SimplePrefixedProperties",
+      "defaultValue": 0
+    },
+    {
+      "name": "custom.foo",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$WithCustomValidatorProperties"
+    },
+    {
+      "name": "description",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$ValidatedJsr303Properties"
+    },
+    {
+      "name": "description",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$NonValidatedJsr303Properties"
+    },
+    {
+      "name": "duration",
+      "type": "java.time.Duration",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$BasicProperties"
+    },
+    {
+      "name": "duration",
+      "type": "java.time.Duration",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$IgnoreUnknownFieldsFalseProperties"
+    },
+    {
+      "name": "duration",
+      "type": "java.time.Duration",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$ValidatedJsr303Properties"
+    },
+    {
+      "name": "duration",
+      "type": "java.time.Duration",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$NonValidatedJsr303Properties"
+    },
+    {
+      "name": "example.one",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$PrototypeBean"
+    },
+    {
+      "name": "example.two",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$PrototypeBean"
+    },
+    {
+      "name": "foo",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$ValidatorProperties"
+    },
+    {
+      "name": "foo.bar.bindings",
+      "type": "java.util.Map<java.lang.String,org.springframework.boot.context.properties.ConfigurationPropertiesBindHandlerAdvisorTests.BindingProperties>",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesBindHandlerAdvisorTests$BindingServiceProperties"
+    },
+    {
+      "name": "list",
+      "type": "java.util.List<java.lang.Integer>",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$BasicProperties"
+    },
+    {
+      "name": "list",
+      "type": "java.util.List<java.lang.Integer>",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$IgnoreUnknownFieldsFalseProperties"
+    },
+    {
+      "name": "list",
+      "type": "java.util.List<java.lang.Integer>",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$ValidatedJsr303Properties"
+    },
+    {
+      "name": "list",
+      "type": "java.util.List<java.lang.Integer>",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$NonValidatedJsr303Properties"
+    },
+    {
+      "name": "mymap",
+      "type": "java.util.Map<java.lang.String,java.lang.String>",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$MapProperties"
+    },
+    {
+      "name": "properties",
+      "type": "java.util.List<org.springframework.boot.context.properties.ConfigurationPropertiesTests.Jsr303Properties>",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$ValidatedValidNestedJsr303Properties"
+    },
+    {
+      "name": "properties.array",
+      "type": "java.lang.Integer[]",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$Jsr303Properties"
+    },
+    {
+      "name": "properties.description",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$Jsr303Properties"
+    },
+    {
+      "name": "properties.duration",
+      "type": "java.time.Duration",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$Jsr303Properties"
+    },
+    {
+      "name": "properties.list",
+      "type": "java.util.List<java.lang.Integer>",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$Jsr303Properties"
+    },
+    {
+      "name": "sample.properties",
+      "type": "java.util.Map<java.lang.String,org.springframework.boot.context.properties.ConfigurationPropertiesTests.BasicProperties>",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$MapWithNumericKeyProperties"
+    },
+    {
+      "name": "spam.array",
+      "type": "java.lang.Integer[]",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$PrefixProperties"
+    },
+    {
+      "name": "spam.duration",
+      "type": "java.time.Duration",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$PrefixProperties"
+    },
+    {
+      "name": "spam.list",
+      "type": "java.util.List<java.lang.Integer>",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$PrefixProperties"
+    },
+    {
+      "name": "spring.bar.array",
+      "type": "java.lang.Integer[]",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$AnotherPrefixProperties"
+    },
+    {
+      "name": "spring.bar.duration",
+      "type": "java.time.Duration",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$AnotherPrefixProperties"
+    },
+    {
+      "name": "spring.bar.list",
+      "type": "java.util.List<java.lang.Integer>",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$AnotherPrefixProperties"
+    },
+    {
+      "name": "spring.foo.array",
+      "type": "java.lang.Integer[]",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$PrefixProperties"
+    },
+    {
+      "name": "spring.foo.duration",
+      "type": "java.time.Duration",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$PrefixProperties"
+    },
+    {
+      "name": "spring.foo.list",
+      "type": "java.util.List<java.lang.Integer>",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$PrefixProperties"
+    },
+    {
+      "name": "test.another-size",
+      "type": "org.springframework.util.unit.DataSize",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$DataSizeProperties"
+    },
+    {
+      "name": "test.bar-b-a-z",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$WithRelaxedNamesProperties"
+    },
+    {
+      "name": "test.chars",
+      "type": "java.lang.Character[]",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$WithCharArrayProperties"
+    },
+    {
+      "name": "test.file",
+      "type": "java.io.File",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$FileProperties"
+    },
+    {
+      "name": "test.foo",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$ValidatedImplementationProperties"
+    },
+    {
+      "name": "test.foo",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$WithSetterThatThrowsValidationExceptionProperties"
+    },
+    {
+      "name": "test.foo-bar",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$WithRelaxedNamesProperties"
+    },
+    {
+      "name": "test.foo.foo",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.diagnostics.analyzer.BindValidationFailureAnalyzerTests$FieldValidationFailureProperties"
+    },
+    {
+      "name": "test.foo.fruit",
+      "type": "java.util.Set<org.springframework.boot.diagnostics.analyzer.BindFailureAnalyzerTests.Fruit>",
+      "sourceType": "org.springframework.boot.diagnostics.analyzer.BindFailureAnalyzerTests$EnumFailureProperties"
+    },
+    {
+      "name": "test.foo.list-value",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "org.springframework.boot.diagnostics.analyzer.UnboundConfigurationPropertyFailureAnalyzerTests$UnboundElementsFailureProperties"
+    },
+    {
+      "name": "test.foo.list-value",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "org.springframework.boot.diagnostics.analyzer.BindFailureAnalyzerTests$UnboundElementsFailureProperties"
+    },
+    {
+      "name": "test.foo.nested.bar",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.diagnostics.analyzer.BindValidationFailureAnalyzerTests$FieldValidationFailureProperties$Nested"
+    },
+    {
+      "name": "test.foo.value",
+      "type": "java.lang.Integer",
+      "sourceType": "org.springframework.boot.diagnostics.analyzer.BindValidationFailureAnalyzerTests$FieldValidationFailureProperties",
+      "defaultValue": 0
+    },
+    {
+      "name": "test.foo.value",
+      "type": "java.lang.Integer",
+      "sourceType": "org.springframework.boot.diagnostics.analyzer.BindFailureAnalyzerTests$FieldValidationFailureProperties",
+      "defaultValue": 0
+    },
+    {
+      "name": "test.foo.value",
+      "type": "java.lang.Integer",
+      "sourceType": "org.springframework.boot.diagnostics.analyzer.BindFailureAnalyzerTests$GenericFailureProperties",
+      "defaultValue": 0
+    },
+    {
+      "name": "test.foo.value",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.diagnostics.analyzer.BindFailureAnalyzerTests$NestedFailureProperties"
+    },
+    {
+      "name": "test.list",
+      "type": "java.util.List<java.lang.Class<? extends java.lang.Throwable>>",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$ListOfGenericClassProperties"
+    },
+    {
+      "name": "test.map",
+      "type": "java.util.Map<java.lang.String,java.lang.String>",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$WithMapProperties"
+    },
+    {
+      "name": "test.map",
+      "type": "java.util.Map<java.lang.String,java.util.Map<java.lang.String,java.lang.String>>",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$WithComplexMapProperties"
+    },
+    {
+      "name": "test.map",
+      "type": "java.util.Map<java.lang.String,java.util.Map<java.lang.Integer,org.springframework.boot.context.properties.ConfigurationPropertiesTests.Foo>>",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$WithIntegerMapProperties"
+    },
+    {
+      "name": "test.resource",
+      "type": "org.springframework.core.io.Resource",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$PropertiesWithResource"
+    },
+    {
+      "name": "test.size",
+      "type": "org.springframework.util.unit.DataSize",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$DataSizeProperties"
+    },
+    {
+      "name": "test.the-value",
+      "type": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$FooEnum",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$WithEnumProperties"
+    },
+    {
+      "name": "test.the-values",
+      "type": "java.util.List<org.springframework.boot.context.properties.ConfigurationPropertiesTests.FooEnum>",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$WithEnumProperties"
+    },
+    {
+      "name": "test.value",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.context.properties.ConfigurationPropertiesTests$WithPropertyPlaceholderValueProperties"
+    }
+  ],
+  "hints": []
+}

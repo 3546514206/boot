@@ -1,0 +1,20 @@
+2022-03-04 21:09:40.761  WARN 22994 --- [           main] ionWarningsApplicationContextInitializer : 
+
+** WARNING ** : Your ApplicationContext is unlikely to start due to a @ComponentScan of 'org.springframework'.
+
+
+2022-03-04 21:09:40.880  WARN 22994 --- [           main] ionWarningsApplicationContextInitializer : 
+
+** WARNING ** : Your ApplicationContext is unlikely to start due to a @ComponentScan of the default package.
+
+
+2022-03-04 21:09:40.922  WARN 22994 --- [           main] ionWarningsApplicationContextInitializer : 
+
+** WARNING ** : Your ApplicationContext is unlikely to start due to a @ComponentScan of the default package.
+
+
+2022-03-04 21:09:40.946  WARN 22994 --- [           main] ionWarningsApplicationContextInitializer : 
+
+** WARNING ** : Your ApplicationContext is unlikely to start due to a @ComponentScan of the default package, 'org.springframework'.
+
+

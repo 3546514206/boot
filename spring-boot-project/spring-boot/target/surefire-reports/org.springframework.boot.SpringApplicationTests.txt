@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.springframework.boot.SpringApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 80, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.572 s - in org.springframework.boot.SpringApplicationTests

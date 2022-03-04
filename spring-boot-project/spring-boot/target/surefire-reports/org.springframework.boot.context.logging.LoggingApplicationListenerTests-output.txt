@@ -1,0 +1,240 @@
+2022-03-04 21:09:46.286 ERROR 22994 --- [           main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level: GARBAGE for 'org.springframework.boot'
+Logging system failed to initialize using configuration from 'doesnotexist.xml'
+java.io.FileNotFoundException: /Users/SetsunaYang/Documents/learning/boot/spring-boot-project/spring-boot/doesnotexist.xml (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:90)
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:188)
+	at java.net.URL.openStream(URL.java:1045)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:294)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:263)
+	at org.springframework.boot.context.logging.LoggingApplicationListenerTests.lambda$overrideConfigDoesNotExist$0(LoggingApplicationListenerTests.java:170)
+	at org.assertj.core.api.ThrowableAssert.catchThrowable(ThrowableAssert.java:62)
+	at org.assertj.core.api.ThrowableTypeAssert.isThrownBy(ThrowableTypeAssert.java:59)
+	at org.springframework.boot.context.logging.LoggingApplicationListenerTests.overrideConfigDoesNotExist(LoggingApplicationListenerTests.java:167)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.springframework.boot.testsupport.runner.classpath.ModifiedClassPathRunner$ModifiedClassPathTestClass$ModifiedClassPathFrameworkMethod.access$401(ModifiedClassPathRunner.java:341)
+	at org.springframework.boot.testsupport.runner.classpath.ModifiedClassPathRunner$ModifiedClassPathTestClass$ModifiedClassPathFrameworkMethod.lambda$invokeExplosively$0(ModifiedClassPathRunner.java:351)
+	at org.springframework.boot.testsupport.runner.classpath.ModifiedClassPathRunner$ModifiedClassPathTestClass.doWithModifiedClassPathThreadContextClassLoader(ModifiedClassPathRunner.java:320)
+	at org.springframework.boot.testsupport.runner.classpath.ModifiedClassPathRunner$ModifiedClassPathTestClass.access$000(ModifiedClassPathRunner.java:274)
+	at org.springframework.boot.testsupport.runner.classpath.ModifiedClassPathRunner$ModifiedClassPathTestClass$ModifiedClassPathFrameworkMethod.invokeExplosively(ModifiedClassPathRunner.java:350)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.springframework.boot.testsupport.rule.OutputCapture$1.evaluate(OutputCapture.java:57)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+2022-03-04 21:09:46.496  INFO 22994 --- [           main] .s.b.c.l.LoggingApplicationListenerTests : Hello world
+LOG_FILE_IS_UNDEFINED [main] 22994 o.s.b.c.l.LoggingApplicationListenerTests: Hello world
+ BOOTBOOT2022-03-04 21:09:46.567 DEBUG 22994 --- [           main] .s.b.c.l.LoggingApplicationListenerTests : testatdebug
+2022-03-04 21:09:46.568 TRACE 22994 --- [           main] .s.b.c.l.LoggingApplicationListenerTests : testattrace
+2022-03-04 21:09:46.575  INFO 22994 --- [           main] .s.b.c.l.LoggingApplicationListenerTests : Hello world
+2022-03-04 21:09:46.620  INFO 22994 --- [           main] .s.b.c.l.LoggingApplicationListenerTests : Hello world
+
+java.lang.RuntimeException: Wrapper
+	at org.springframework.boot.context.logging.LoggingApplicationListenerTests.defaultExceptionConversionWord(LoggingApplicationListenerTests.java:404) [test-classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_202]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_202]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_202]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_202]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47) [junit-4.12.jar:4.12]
+	at org.springframework.boot.testsupport.runner.classpath.ModifiedClassPathRunner$ModifiedClassPathTestClass$ModifiedClassPathFrameworkMethod.access$401(ModifiedClassPathRunner.java:341) [spring-boot-test-support-2.1.0.RELEASE.jar:2.1.0.RELEASE]
+	at org.springframework.boot.testsupport.runner.classpath.ModifiedClassPathRunner$ModifiedClassPathTestClass$ModifiedClassPathFrameworkMethod.lambda$invokeExplosively$0(ModifiedClassPathRunner.java:351) [spring-boot-test-support-2.1.0.RELEASE.jar:2.1.0.RELEASE]
+	at org.springframework.boot.testsupport.runner.classpath.ModifiedClassPathRunner$ModifiedClassPathTestClass.doWithModifiedClassPathThreadContextClassLoader(ModifiedClassPathRunner.java:320) ~[spring-boot-test-support-2.1.0.RELEASE.jar:2.1.0.RELEASE]
+	at org.springframework.boot.testsupport.runner.classpath.ModifiedClassPathRunner$ModifiedClassPathTestClass.access$000(ModifiedClassPathRunner.java:274) ~[spring-boot-test-support-2.1.0.RELEASE.jar:2.1.0.RELEASE]
+	at org.springframework.boot.testsupport.runner.classpath.ModifiedClassPathRunner$ModifiedClassPathTestClass$ModifiedClassPathFrameworkMethod.invokeExplosively(ModifiedClassPathRunner.java:350) [spring-boot-test-support-2.1.0.RELEASE.jar:2.1.0.RELEASE]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) ~[junit-4.12.jar:4.12]
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26) ~[junit-4.12.jar:4.12]
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27) ~[junit-4.12.jar:4.12]
+	at org.springframework.boot.testsupport.rule.OutputCapture$1.evaluate(OutputCapture.java:57) ~[spring-boot-test-support-2.1.0.RELEASE.jar:2.1.0.RELEASE]
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) ~[junit-4.12.jar:4.12]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.1.jar:2.22.1]
+Caused by: java.lang.RuntimeException: Expected
+	... 35 common frames omitted
+
+2022-03-04 21:09:46.650 DEBUG 22994 --- [           main] .s.b.c.l.LoggingApplicationListenerTests : testatdebug
+2022-03-04 21:09:46.657  INFO 22994 --- [           main] .s.b.c.l.LoggingApplicationListenerTests : Hello world
+2022-03-04 21:09:46.668  INFO 22994 --- [           main] .s.b.c.l.LoggingApplicationListenerTests : Hello world
+
+java.lang.RuntimeException: Expected
+	at org.springframework.boot.context.logging.LoggingApplicationListenerTests.baseConfigLocation(LoggingApplicationListenerTests.java:147) [test-classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_202]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_202]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_202]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_202]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47) [junit-4.12.jar:4.12]
+	at org.springframework.boot.testsupport.runner.classpath.ModifiedClassPathRunner$ModifiedClassPathTestClass$ModifiedClassPathFrameworkMethod.access$401(ModifiedClassPathRunner.java:341) [spring-boot-test-support-2.1.0.RELEASE.jar:2.1.0.RELEASE]
+	at org.springframework.boot.testsupport.runner.classpath.ModifiedClassPathRunner$ModifiedClassPathTestClass$ModifiedClassPathFrameworkMethod.lambda$invokeExplosively$0(ModifiedClassPathRunner.java:351) [spring-boot-test-support-2.1.0.RELEASE.jar:2.1.0.RELEASE]
+	at org.springframework.boot.testsupport.runner.classpath.ModifiedClassPathRunner$ModifiedClassPathTestClass.doWithModifiedClassPathThreadContextClassLoader(ModifiedClassPathRunner.java:320) ~[spring-boot-test-support-2.1.0.RELEASE.jar:2.1.0.RELEASE]
+	at org.springframework.boot.testsupport.runner.classpath.ModifiedClassPathRunner$ModifiedClassPathTestClass.access$000(ModifiedClassPathRunner.java:274) ~[spring-boot-test-support-2.1.0.RELEASE.jar:2.1.0.RELEASE]
+	at org.springframework.boot.testsupport.runner.classpath.ModifiedClassPathRunner$ModifiedClassPathTestClass$ModifiedClassPathFrameworkMethod.invokeExplosively(ModifiedClassPathRunner.java:350) [spring-boot-test-support-2.1.0.RELEASE.jar:2.1.0.RELEASE]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) ~[junit-4.12.jar:4.12]
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26) ~[junit-4.12.jar:4.12]
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27) ~[junit-4.12.jar:4.12]
+	at org.springframework.boot.testsupport.rule.OutputCapture$1.evaluate(OutputCapture.java:57) ~[spring-boot-test-support-2.1.0.RELEASE.jar:2.1.0.RELEASE]
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) ~[junit-4.12.jar:4.12]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.1.jar:2.22.1]
+
+2022-03-04 21:09:46.695 TRACE 22994 --- [           main] o.s.c.e.PropertySourcesPropertyResolver  : Searching for key 'logging.register-shutdown-hook' in PropertySource 'Inlined Test Properties'
+2022-03-04 21:09:46.695 TRACE 22994 --- [           main] o.s.c.e.PropertySourcesPropertyResolver  : Searching for key 'logging.register-shutdown-hook' in PropertySource 'configurationProperties'
+2022-03-04 21:09:46.695 TRACE 22994 --- [           main] o.s.c.e.PropertySourcesPropertyResolver  : Searching for key 'logging.register-shutdown-hook' in PropertySource 'systemProperties'
+2022-03-04 21:09:46.695 TRACE 22994 --- [           main] o.s.c.e.PropertySourcesPropertyResolver  : Searching for key 'logging.register-shutdown-hook' in PropertySource 'systemEnvironment'
+2022-03-04 21:09:46.695 TRACE 22994 --- [           main] o.s.c.e.PropertySourcesPropertyResolver  : Could not find key 'logging.register-shutdown-hook' in any property source
+2022-03-04 21:09:46.695 DEBUG 22994 --- [           main] .s.b.c.l.LoggingApplicationListenerTests : testatdebug
+2022-03-04 21:09:46.695 TRACE 22994 --- [           main] .s.b.c.l.LoggingApplicationListenerTests : testattrace
+2022-03-04 21:09:46.703  INFO 22994 --- [           main] .s.b.c.l.LoggingApplicationListenerTests : Hello world
+java.lang.RuntimeException: Expected
+	... 35 common frames omitted
+Wrapped by: java.lang.RuntimeException: Wrapper
+	at org.springframework.boot.context.logging.LoggingApplicationListenerTests.overrideExceptionConversionWord(LoggingApplicationListenerTests.java:417) [test-classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_202]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_202]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_202]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_202]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47) [junit-4.12.jar:4.12]
+	at org.springframework.boot.testsupport.runner.classpath.ModifiedClassPathRunner$ModifiedClassPathTestClass$ModifiedClassPathFrameworkMethod.access$401(ModifiedClassPathRunner.java:341) [spring-boot-test-support-2.1.0.RELEASE.jar:2.1.0.RELEASE]
+	at org.springframework.boot.testsupport.runner.classpath.ModifiedClassPathRunner$ModifiedClassPathTestClass$ModifiedClassPathFrameworkMethod.lambda$invokeExplosively$0(ModifiedClassPathRunner.java:351) [spring-boot-test-support-2.1.0.RELEASE.jar:2.1.0.RELEASE]
+	at org.springframework.boot.testsupport.runner.classpath.ModifiedClassPathRunner$ModifiedClassPathTestClass.doWithModifiedClassPathThreadContextClassLoader(ModifiedClassPathRunner.java:320) ~[spring-boot-test-support-2.1.0.RELEASE.jar:2.1.0.RELEASE]
+	at org.springframework.boot.testsupport.runner.classpath.ModifiedClassPathRunner$ModifiedClassPathTestClass.access$000(ModifiedClassPathRunner.java:274) ~[spring-boot-test-support-2.1.0.RELEASE.jar:2.1.0.RELEASE]
+	at org.springframework.boot.testsupport.runner.classpath.ModifiedClassPathRunner$ModifiedClassPathTestClass$ModifiedClassPathFrameworkMethod.invokeExplosively(ModifiedClassPathRunner.java:350) [spring-boot-test-support-2.1.0.RELEASE.jar:2.1.0.RELEASE]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) ~[junit-4.12.jar:4.12]
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26) ~[junit-4.12.jar:4.12]
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27) ~[junit-4.12.jar:4.12]
+	at org.springframework.boot.testsupport.rule.OutputCapture$1.evaluate(OutputCapture.java:57) ~[spring-boot-test-support-2.1.0.RELEASE.jar:2.1.0.RELEASE]
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) ~[junit-4.12.jar:4.12]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.1.jar:2.22.1]
+2022-03-04 21:09:46.713 DEBUG 22994 --- [           main] .s.b.c.l.LoggingApplicationListenerTests : testatdebug
+2022-03-04 21:09:46.713 TRACE 22994 --- [           main] .s.b.c.l.LoggingApplicationListenerTests : testattrace
+2022-03-04 21:09:46.721 DEBUG 22994 --- [           main] .s.b.c.l.LoggingApplicationListenerTests : testatdebug
+target/foo.log [main] 22994 o.s.b.c.l.LoggingApplicationListenerTests: Hello world
+ BOOTBOOTtarget/foo/spring.log [main] 22994 o.s.b.c.l.LoggingApplicationListenerTests: Hello world
+ BOOTBOOT2022-03-04 21:09:46.757 DEBUG 22994 --- [           main] .s.b.c.l.LoggingApplicationListenerTests : testatdebug
+2022-03-04 21:09:46.757 TRACE 22994 --- [           main] .s.b.c.l.LoggingApplicationListenerTests : testattrace
+Logging system failed to initialize using configuration from 'classpath:logback-broken.xml'
+java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderAction - Could not create an Appender of type [ch.qos.logback.core.ConsolAppender]. ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type ch.qos.logback.core.ConsolAppender
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@3:70 - ActionException in Action for tag [appender] ch.qos.logback.core.joran.spi.ActionException: ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type ch.qos.logback.core.ConsolAppender
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [CONSOLE]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:169)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithSpecificConfig(AbstractLoggingSystem.java:67)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:57)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:117)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:295)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:263)
+	at org.springframework.boot.context.logging.LoggingApplicationListenerTests.lambda$overrideConfigBroken$1(LoggingApplicationListenerTests.java:207)
+	at org.assertj.core.api.ThrowableAssert.catchThrowable(ThrowableAssert.java:62)
+	at org.assertj.core.api.ThrowableTypeAssert.isThrownBy(ThrowableTypeAssert.java:59)
+	at org.springframework.boot.context.logging.LoggingApplicationListenerTests.overrideConfigBroken(LoggingApplicationListenerTests.java:203)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.springframework.boot.testsupport.runner.classpath.ModifiedClassPathRunner$ModifiedClassPathTestClass$ModifiedClassPathFrameworkMethod.access$401(ModifiedClassPathRunner.java:341)
+	at org.springframework.boot.testsupport.runner.classpath.ModifiedClassPathRunner$ModifiedClassPathTestClass$ModifiedClassPathFrameworkMethod.lambda$invokeExplosively$0(ModifiedClassPathRunner.java:351)
+	at org.springframework.boot.testsupport.runner.classpath.ModifiedClassPathRunner$ModifiedClassPathTestClass.doWithModifiedClassPathThreadContextClassLoader(ModifiedClassPathRunner.java:320)
+	at org.springframework.boot.testsupport.runner.classpath.ModifiedClassPathRunner$ModifiedClassPathTestClass.access$000(ModifiedClassPathRunner.java:274)
+	at org.springframework.boot.testsupport.runner.classpath.ModifiedClassPathRunner$ModifiedClassPathTestClass$ModifiedClassPathFrameworkMethod.invokeExplosively(ModifiedClassPathRunner.java:350)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.springframework.boot.testsupport.rule.OutputCapture$1.evaluate(OutputCapture.java:57)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)

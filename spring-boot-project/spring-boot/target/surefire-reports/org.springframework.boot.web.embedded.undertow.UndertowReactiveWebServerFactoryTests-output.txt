@@ -1,0 +1,1325 @@
+2022-03-04 21:10:40.572  INFO ???? --- [           main] o.xnio                                   : XNIO version 3.3.8.Final
+2022-03-04 21:10:40.619  INFO ???? --- [           main] o.x.nio                                  : XNIO NIO Implementation Version 3.3.8.Final
+2022-03-04 21:10:40.785  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 63983 (http)
+21:10:40.787 [main] DEBUG reactor.netty.resources.PooledConnectionProvider - Creating new client pool [http] for /0.0.0.0:63983
+21:10:40.787 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x4ae522d4] Created new pooled channel, now 0 active connections and 1 inactive connections
+21:10:40.788 [reactor-http-nio-4] DEBUG reactor.netty.channel.BootstrapHandlers - [id: 0x4ae522d4] Initialized pipeline DefaultChannelPipeline{(reactor.left.loggingHandler = io.netty.handler.logging.LoggingHandler), (BootstrapHandlers$BootstrapInitializerHandler#0 = reactor.netty.channel.BootstrapHandlers$BootstrapInitializerHandler), (SimpleChannelPool$1#0 = io.netty.channel.pool.SimpleChannelPool$1), (reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+21:10:40.788 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x4ae522d4] REGISTERED
+21:10:40.788 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x4ae522d4] CONNECT: /0.0.0.0:63983
+21:10:40.788 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x4ae522d4, L:/192.168.28.46:63984 - R:/0.0.0.0:63983] ACTIVE
+21:10:40.788 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x4ae522d4, L:/192.168.28.46:63984 - R:/0.0.0.0:63983] onStateChange(PooledConnection{channel=[id: 0x4ae522d4, L:/192.168.28.46:63984 - R:/0.0.0.0:63983]}, [connected])
+21:10:40.788 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x4ae522d4, L:/192.168.28.46:63984 - R:/0.0.0.0:63983] onStateChange(GET{uri=/, connection=PooledConnection{channel=[id: 0x4ae522d4, L:/192.168.28.46:63984 - R:/0.0.0.0:63983]}}, [configured])
+21:10:40.788 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x4ae522d4, L:/192.168.28.46:63984 - R:/0.0.0.0:63983] Registering pool release on close event for channel
+21:10:40.788 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClientConnect - [id: 0x4ae522d4, L:/192.168.28.46:63984 - R:/0.0.0.0:63983] Handler is being applied: {uri=http://0.0.0.0:63983/, method=GET}
+21:10:40.789 [reactor-http-nio-4] DEBUG reactor.netty.channel.ChannelOperationsHandler - [id: 0x4ae522d4, L:/192.168.28.46:63984 - R:/0.0.0.0:63983] Writing object DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+GET / HTTP/1.1
+user-agent: ReactorNetty/0.8.2.RELEASE
+host: 0.0.0.0:63983
+accept: */*
+X-Forwarded-Proto: https
+21:10:40.789 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x4ae522d4, L:/192.168.28.46:63984 - R:/0.0.0.0:63983] WRITE: 118B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 47 45 54 20 2f 20 48 54 54 50 2f 31 2e 31 0d 0a |GET / HTTP/1.1..|
+|00000010| 75 73 65 72 2d 61 67 65 6e 74 3a 20 52 65 61 63 |user-agent: Reac|
+|00000020| 74 6f 72 4e 65 74 74 79 2f 30 2e 38 2e 32 2e 52 |torNetty/0.8.2.R|
+|00000030| 45 4c 45 41 53 45 0d 0a 68 6f 73 74 3a 20 30 2e |ELEASE..host: 0.|
+|00000040| 30 2e 30 2e 30 3a 36 33 39 38 33 0d 0a 61 63 63 |0.0.0:63983..acc|
+|00000050| 65 70 74 3a 20 2a 2f 2a 0d 0a 58 2d 46 6f 72 77 |ept: */*..X-Forw|
+|00000060| 61 72 64 65 64 2d 50 72 6f 74 6f 3a 20 68 74 74 |arded-Proto: htt|
+|00000070| 70 73 0d 0a 0d 0a                               |ps....          |
++--------+-------------------------------------------------+----------------+
+21:10:40.789 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x4ae522d4, L:/192.168.28.46:63984 - R:/0.0.0.0:63983] FLUSH
+21:10:40.789 [reactor-http-nio-4] DEBUG reactor.netty.channel.ChannelOperationsHandler - [id: 0x4ae522d4, L:/192.168.28.46:63984 - R:/0.0.0.0:63983] Writing object EmptyLastHttpContent
+21:10:40.789 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x4ae522d4, L:/192.168.28.46:63984 - R:/0.0.0.0:63983] WRITE: 0B
+21:10:40.789 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x4ae522d4, L:/192.168.28.46:63984 - R:/0.0.0.0:63983] FLUSH
+21:10:40.789 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x4ae522d4, L:/192.168.28.46:63984 - R:/0.0.0.0:63983] onStateChange(GET{uri=/, connection=PooledConnection{channel=[id: 0x4ae522d4, L:/192.168.28.46:63984 - R:/0.0.0.0:63983]}}, [request_sent])
+21:10:40.789 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x4ae522d4, L:/192.168.28.46:63984 - R:/0.0.0.0:63983] Channel connected, now 1 active connections and 0 inactive connections
+21:10:40.908 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x4ae522d4, L:/192.168.28.46:63984 - R:/0.0.0.0:63983] READ: 119B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 48 54 54 50 2f 31 2e 31 20 32 30 30 20 4f 4b 0d |HTTP/1.1 200 OK.|
+|00000010| 0a 43 6f 6e 6e 65 63 74 69 6f 6e 3a 20 6b 65 65 |.Connection: kee|
+|00000020| 70 2d 61 6c 69 76 65 0d 0a 54 72 61 6e 73 66 65 |p-alive..Transfe|
+|00000030| 72 2d 45 6e 63 6f 64 69 6e 67 3a 20 63 68 75 6e |r-Encoding: chun|
+|00000040| 6b 65 64 0d 0a 44 61 74 65 3a 20 46 72 69 2c 20 |ked..Date: Fri, |
+|00000050| 30 34 20 4d 61 72 20 32 30 32 32 20 31 33 3a 31 |04 Mar 2022 13:1|
+|00000060| 30 3a 34 30 20 47 4d 54 0d 0a 0d 0a 30 35 0d 0a |0:40 GMT....05..|
+|00000070| 68 74 74 70 73 0d 0a                            |https..         |
++--------+-------------------------------------------------+----------------+
+21:10:40.908 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClientOperations - [id: 0x4ae522d4, L:/192.168.28.46:63984 - R:/0.0.0.0:63983] Received response (auto-read:false) : [Connection=keep-alive, Transfer-Encoding=chunked, Date=Fri, 04 Mar 2022 13:10:40 GMT]
+21:10:40.908 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x4ae522d4, L:/192.168.28.46:63984 - R:/0.0.0.0:63983] onStateChange(GET{uri=/, connection=PooledConnection{channel=[id: 0x4ae522d4, L:/192.168.28.46:63984 - R:/0.0.0.0:63983]}}, [response_received])
+21:10:40.909 [reactor-http-nio-4] DEBUG reactor.netty.channel.FluxReceive - [id: 0x4ae522d4, L:/192.168.28.46:63984 - R:/0.0.0.0:63983] Subscribing inbound receiver [pending: 0, cancelled:false, inboundDone: false]
+21:10:40.909 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x4ae522d4, L:/192.168.28.46:63984 - R:/0.0.0.0:63983] READ COMPLETE
+21:10:40.909 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x4ae522d4, L:/192.168.28.46:63984 - R:/0.0.0.0:63983] READ: 5B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 30 0d 0a 0d 0a                                  |0....           |
++--------+-------------------------------------------------+----------------+
+21:10:40.909 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClientOperations - [id: 0x4ae522d4, L:/192.168.28.46:63984 - R:/0.0.0.0:63983] Received last HTTP packet
+21:10:40.909 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x4ae522d4, L:/192.168.28.46:63984 - R:/0.0.0.0:63983] onStateChange(GET{uri=/, connection=PooledConnection{channel=[id: 0x4ae522d4, L:/192.168.28.46:63984 - R:/0.0.0.0:63983]}}, [disconnecting])
+21:10:40.909 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x4ae522d4, L:/192.168.28.46:63984 - R:/0.0.0.0:63983] Releasing channel
+21:10:40.909 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x4ae522d4, L:/192.168.28.46:63984 - R:/0.0.0.0:63983] Channel cleaned, now 0 active connections and 1 inactive connections
+21:10:40.910 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x4ae522d4, L:/192.168.28.46:63984 - R:/0.0.0.0:63983] READ COMPLETE
+21:10:40.915 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x4ae522d4, L:/192.168.28.46:63984 - R:/0.0.0.0:63983] READ COMPLETE
+21:10:40.916 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x4ae522d4, L:/192.168.28.46:63984 ! R:/0.0.0.0:63983] CLOSE
+21:10:40.916 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x4ae522d4, L:/192.168.28.46:63984 ! R:/0.0.0.0:63983] INACTIVE
+21:10:40.916 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x4ae522d4, L:/192.168.28.46:63984 ! R:/0.0.0.0:63983] onStateChange(PooledConnection{channel=[id: 0x4ae522d4, L:/192.168.28.46:63984 ! R:/0.0.0.0:63983]}, [disconnecting])
+21:10:40.916 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x4ae522d4, L:/192.168.28.46:63984 ! R:/0.0.0.0:63983] UNREGISTERED
+2022-03-04 21:10:41.056  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 63985 (http)
+21:10:41.060 [main] DEBUG reactor.netty.resources.PooledConnectionProvider - Creating new client pool [http] for /0.0.0.0:63985
+21:10:41.061 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x19adfbaf] Created new pooled channel, now 0 active connections and 1 inactive connections
+21:10:41.061 [reactor-http-nio-4] DEBUG reactor.netty.channel.BootstrapHandlers - [id: 0x19adfbaf] Initialized pipeline DefaultChannelPipeline{(reactor.left.loggingHandler = io.netty.handler.logging.LoggingHandler), (BootstrapHandlers$BootstrapInitializerHandler#0 = reactor.netty.channel.BootstrapHandlers$BootstrapInitializerHandler), (SimpleChannelPool$1#0 = io.netty.channel.pool.SimpleChannelPool$1), (reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+21:10:41.061 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x19adfbaf] REGISTERED
+21:10:41.061 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x19adfbaf] CONNECT: /0.0.0.0:63985
+21:10:41.062 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x19adfbaf, L:/192.168.28.46:63986 - R:/0.0.0.0:63985] ACTIVE
+21:10:41.062 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x19adfbaf, L:/192.168.28.46:63986 - R:/0.0.0.0:63985] onStateChange(PooledConnection{channel=[id: 0x19adfbaf, L:/192.168.28.46:63986 - R:/0.0.0.0:63985]}, [connected])
+21:10:41.062 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x19adfbaf, L:/192.168.28.46:63986 - R:/0.0.0.0:63985] onStateChange(GET{uri=/, connection=PooledConnection{channel=[id: 0x19adfbaf, L:/192.168.28.46:63986 - R:/0.0.0.0:63985]}}, [configured])
+21:10:41.062 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x19adfbaf, L:/192.168.28.46:63986 - R:/0.0.0.0:63985] Registering pool release on close event for channel
+21:10:41.062 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClientConnect - [id: 0x19adfbaf, L:/192.168.28.46:63986 - R:/0.0.0.0:63985] Handler is being applied: {uri=http://0.0.0.0:63985/test, method=POST}
+21:10:41.063 [reactor-http-nio-4] DEBUG reactor.netty.channel.ChannelOperationsHandler - [id: 0x19adfbaf, L:/192.168.28.46:63986 - R:/0.0.0.0:63985] Writing object DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /test HTTP/1.1
+user-agent: ReactorNetty/0.8.2.RELEASE
+host: 0.0.0.0:63985
+accept: */*
+Content-Type: text/plain
+Content-Length: 11
+21:10:41.064 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x19adfbaf, L:/192.168.28.46:63986 - R:/0.0.0.0:63985] WRITE: 143B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 50 4f 53 54 20 2f 74 65 73 74 20 48 54 54 50 2f |POST /test HTTP/|
+|00000010| 31 2e 31 0d 0a 75 73 65 72 2d 61 67 65 6e 74 3a |1.1..user-agent:|
+|00000020| 20 52 65 61 63 74 6f 72 4e 65 74 74 79 2f 30 2e | ReactorNetty/0.|
+|00000030| 38 2e 32 2e 52 45 4c 45 41 53 45 0d 0a 68 6f 73 |8.2.RELEASE..hos|
+|00000040| 74 3a 20 30 2e 30 2e 30 2e 30 3a 36 33 39 38 35 |t: 0.0.0.0:63985|
+|00000050| 0d 0a 61 63 63 65 70 74 3a 20 2a 2f 2a 0d 0a 43 |..accept: */*..C|
+|00000060| 6f 6e 74 65 6e 74 2d 54 79 70 65 3a 20 74 65 78 |ontent-Type: tex|
+|00000070| 74 2f 70 6c 61 69 6e 0d 0a 43 6f 6e 74 65 6e 74 |t/plain..Content|
+|00000080| 2d 4c 65 6e 67 74 68 3a 20 31 31 0d 0a 0d 0a    |-Length: 11.... |
++--------+-------------------------------------------------+----------------+
+21:10:41.064 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x19adfbaf, L:/192.168.28.46:63986 - R:/0.0.0.0:63985] FLUSH
+21:10:41.064 [reactor-http-nio-4] DEBUG reactor.netty.channel.ChannelOperationsHandler - [id: 0x19adfbaf, L:/192.168.28.46:63986 - R:/0.0.0.0:63985] Writing object 
+21:10:41.064 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x19adfbaf, L:/192.168.28.46:63986 - R:/0.0.0.0:63985] WRITE: 11B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 48 65 6c 6c 6f 20 57 6f 72 6c 64                |Hello World     |
++--------+-------------------------------------------------+----------------+
+21:10:41.064 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x19adfbaf, L:/192.168.28.46:63986 - R:/0.0.0.0:63985] FLUSH
+21:10:41.064 [reactor-http-nio-4] DEBUG reactor.netty.channel.ChannelOperationsHandler - [id: 0x19adfbaf, L:/192.168.28.46:63986 - R:/0.0.0.0:63985] Writing object EmptyLastHttpContent
+21:10:41.064 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x19adfbaf, L:/192.168.28.46:63986 - R:/0.0.0.0:63985] WRITE: 0B
+21:10:41.064 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x19adfbaf, L:/192.168.28.46:63986 - R:/0.0.0.0:63985] FLUSH
+21:10:41.064 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x19adfbaf, L:/192.168.28.46:63986 - R:/0.0.0.0:63985] onStateChange(POST{uri=/test, connection=PooledConnection{channel=[id: 0x19adfbaf, L:/192.168.28.46:63986 - R:/0.0.0.0:63985]}}, [request_sent])
+21:10:41.064 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x19adfbaf, L:/192.168.28.46:63986 - R:/0.0.0.0:63985] Channel connected, now 1 active connections and 0 inactive connections
+21:10:41.069 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x19adfbaf, L:/192.168.28.46:63986 - R:/0.0.0.0:63985] READ: 125B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 48 54 54 50 2f 31 2e 31 20 32 30 30 20 4f 4b 0d |HTTP/1.1 200 OK.|
+|00000010| 0a 43 6f 6e 6e 65 63 74 69 6f 6e 3a 20 6b 65 65 |.Connection: kee|
+|00000020| 70 2d 61 6c 69 76 65 0d 0a 54 72 61 6e 73 66 65 |p-alive..Transfe|
+|00000030| 72 2d 45 6e 63 6f 64 69 6e 67 3a 20 63 68 75 6e |r-Encoding: chun|
+|00000040| 6b 65 64 0d 0a 44 61 74 65 3a 20 46 72 69 2c 20 |ked..Date: Fri, |
+|00000050| 30 34 20 4d 61 72 20 32 30 32 32 20 31 33 3a 31 |04 Mar 2022 13:1|
+|00000060| 30 3a 34 30 20 47 4d 54 0d 0a 0d 0a 30 62 0d 0a |0:40 GMT....0b..|
+|00000070| 48 65 6c 6c 6f 20 57 6f 72 6c 64 0d 0a          |Hello World..   |
++--------+-------------------------------------------------+----------------+
+21:10:41.069 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClientOperations - [id: 0x19adfbaf, L:/192.168.28.46:63986 - R:/0.0.0.0:63985] Received response (auto-read:false) : [Connection=keep-alive, Transfer-Encoding=chunked, Date=Fri, 04 Mar 2022 13:10:40 GMT]
+21:10:41.069 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x19adfbaf, L:/192.168.28.46:63986 - R:/0.0.0.0:63985] onStateChange(POST{uri=/test, connection=PooledConnection{channel=[id: 0x19adfbaf, L:/192.168.28.46:63986 - R:/0.0.0.0:63985]}}, [response_received])
+21:10:41.070 [reactor-http-nio-4] DEBUG reactor.netty.channel.FluxReceive - [id: 0x19adfbaf, L:/192.168.28.46:63986 - R:/0.0.0.0:63985] Subscribing inbound receiver [pending: 0, cancelled:false, inboundDone: false]
+21:10:41.071 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x19adfbaf, L:/192.168.28.46:63986 - R:/0.0.0.0:63985] READ COMPLETE
+21:10:41.071 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x19adfbaf, L:/192.168.28.46:63986 - R:/0.0.0.0:63985] READ: 5B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 30 0d 0a 0d 0a                                  |0....           |
++--------+-------------------------------------------------+----------------+
+21:10:41.071 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClientOperations - [id: 0x19adfbaf, L:/192.168.28.46:63986 - R:/0.0.0.0:63985] Received last HTTP packet
+21:10:41.071 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x19adfbaf, L:/192.168.28.46:63986 - R:/0.0.0.0:63985] onStateChange(POST{uri=/test, connection=PooledConnection{channel=[id: 0x19adfbaf, L:/192.168.28.46:63986 - R:/0.0.0.0:63985]}}, [disconnecting])
+21:10:41.071 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x19adfbaf, L:/192.168.28.46:63986 - R:/0.0.0.0:63985] Releasing channel
+21:10:41.071 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x19adfbaf, L:/192.168.28.46:63986 - R:/0.0.0.0:63985] Channel cleaned, now 0 active connections and 1 inactive connections
+21:10:41.071 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x19adfbaf, L:/192.168.28.46:63986 - R:/0.0.0.0:63985] READ COMPLETE
+21:10:41.177 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x19adfbaf, L:/192.168.28.46:63986 - R:/0.0.0.0:63985] READ COMPLETE
+21:10:41.178 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x19adfbaf, L:/192.168.28.46:63986 ! R:/0.0.0.0:63985] CLOSE
+21:10:41.178 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x19adfbaf, L:/192.168.28.46:63986 ! R:/0.0.0.0:63985] INACTIVE
+21:10:41.178 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x19adfbaf, L:/192.168.28.46:63986 ! R:/0.0.0.0:63985] onStateChange(PooledConnection{channel=[id: 0x19adfbaf, L:/192.168.28.46:63986 ! R:/0.0.0.0:63985]}, [disconnecting])
+21:10:41.178 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x19adfbaf, L:/192.168.28.46:63986 ! R:/0.0.0.0:63985] UNREGISTERED
+2022-03-04 21:10:41.190  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 63988 (http)
+21:10:41.190 [main] DEBUG reactor.netty.resources.PooledConnectionProvider - Creating new client pool [http] for /0.0.0.0:63988
+21:10:41.191 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x547ad61f] Created new pooled channel, now 0 active connections and 1 inactive connections
+21:10:41.191 [reactor-http-nio-4] DEBUG reactor.netty.channel.BootstrapHandlers - [id: 0x547ad61f] Initialized pipeline DefaultChannelPipeline{(reactor.left.loggingHandler = io.netty.handler.logging.LoggingHandler), (BootstrapHandlers$BootstrapInitializerHandler#0 = reactor.netty.channel.BootstrapHandlers$BootstrapInitializerHandler), (SimpleChannelPool$1#0 = io.netty.channel.pool.SimpleChannelPool$1), (reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+21:10:41.191 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x547ad61f] REGISTERED
+21:10:41.191 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x547ad61f] CONNECT: /0.0.0.0:63988
+21:10:41.191 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x547ad61f, L:/192.168.28.46:63989 - R:/0.0.0.0:63988] ACTIVE
+21:10:41.192 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x547ad61f, L:/192.168.28.46:63989 - R:/0.0.0.0:63988] onStateChange(PooledConnection{channel=[id: 0x547ad61f, L:/192.168.28.46:63989 - R:/0.0.0.0:63988]}, [connected])
+21:10:41.192 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x547ad61f, L:/192.168.28.46:63989 - R:/0.0.0.0:63988] onStateChange(GET{uri=/, connection=PooledConnection{channel=[id: 0x547ad61f, L:/192.168.28.46:63989 - R:/0.0.0.0:63988]}}, [configured])
+21:10:41.192 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x547ad61f, L:/192.168.28.46:63989 - R:/0.0.0.0:63988] Registering pool release on close event for channel
+21:10:41.192 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClientConnect - [id: 0x547ad61f, L:/192.168.28.46:63989 - R:/0.0.0.0:63988] Handler is being applied: {uri=http://0.0.0.0:63988/test, method=POST}
+21:10:41.192 [reactor-http-nio-4] DEBUG reactor.netty.channel.ChannelOperationsHandler - [id: 0x547ad61f, L:/192.168.28.46:63989 - R:/0.0.0.0:63988] Writing object DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /test HTTP/1.1
+user-agent: ReactorNetty/0.8.2.RELEASE
+host: 0.0.0.0:63988
+accept: */*
+Content-Type: text/plain
+Content-Length: 11
+21:10:41.193 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x547ad61f, L:/192.168.28.46:63989 - R:/0.0.0.0:63988] WRITE: 143B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 50 4f 53 54 20 2f 74 65 73 74 20 48 54 54 50 2f |POST /test HTTP/|
+|00000010| 31 2e 31 0d 0a 75 73 65 72 2d 61 67 65 6e 74 3a |1.1..user-agent:|
+|00000020| 20 52 65 61 63 74 6f 72 4e 65 74 74 79 2f 30 2e | ReactorNetty/0.|
+|00000030| 38 2e 32 2e 52 45 4c 45 41 53 45 0d 0a 68 6f 73 |8.2.RELEASE..hos|
+|00000040| 74 3a 20 30 2e 30 2e 30 2e 30 3a 36 33 39 38 38 |t: 0.0.0.0:63988|
+|00000050| 0d 0a 61 63 63 65 70 74 3a 20 2a 2f 2a 0d 0a 43 |..accept: */*..C|
+|00000060| 6f 6e 74 65 6e 74 2d 54 79 70 65 3a 20 74 65 78 |ontent-Type: tex|
+|00000070| 74 2f 70 6c 61 69 6e 0d 0a 43 6f 6e 74 65 6e 74 |t/plain..Content|
+|00000080| 2d 4c 65 6e 67 74 68 3a 20 31 31 0d 0a 0d 0a    |-Length: 11.... |
++--------+-------------------------------------------------+----------------+
+21:10:41.193 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x547ad61f, L:/192.168.28.46:63989 - R:/0.0.0.0:63988] FLUSH
+21:10:41.193 [reactor-http-nio-4] DEBUG reactor.netty.channel.ChannelOperationsHandler - [id: 0x547ad61f, L:/192.168.28.46:63989 - R:/0.0.0.0:63988] Writing object 
+21:10:41.193 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x547ad61f, L:/192.168.28.46:63989 - R:/0.0.0.0:63988] WRITE: 11B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 48 65 6c 6c 6f 20 57 6f 72 6c 64                |Hello World     |
++--------+-------------------------------------------------+----------------+
+21:10:41.193 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x547ad61f, L:/192.168.28.46:63989 - R:/0.0.0.0:63988] FLUSH
+21:10:41.193 [reactor-http-nio-4] DEBUG reactor.netty.channel.ChannelOperationsHandler - [id: 0x547ad61f, L:/192.168.28.46:63989 - R:/0.0.0.0:63988] Writing object EmptyLastHttpContent
+21:10:41.193 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x547ad61f, L:/192.168.28.46:63989 - R:/0.0.0.0:63988] WRITE: 0B
+21:10:41.193 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x547ad61f, L:/192.168.28.46:63989 - R:/0.0.0.0:63988] FLUSH
+21:10:41.193 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x547ad61f, L:/192.168.28.46:63989 - R:/0.0.0.0:63988] onStateChange(POST{uri=/test, connection=PooledConnection{channel=[id: 0x547ad61f, L:/192.168.28.46:63989 - R:/0.0.0.0:63988]}}, [request_sent])
+21:10:41.194 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x547ad61f, L:/192.168.28.46:63989 - R:/0.0.0.0:63988] Channel connected, now 1 active connections and 0 inactive connections
+21:10:41.194 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x547ad61f, L:/192.168.28.46:63989 - R:/0.0.0.0:63988] READ: 125B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 48 54 54 50 2f 31 2e 31 20 32 30 30 20 4f 4b 0d |HTTP/1.1 200 OK.|
+|00000010| 0a 43 6f 6e 6e 65 63 74 69 6f 6e 3a 20 6b 65 65 |.Connection: kee|
+|00000020| 70 2d 61 6c 69 76 65 0d 0a 54 72 61 6e 73 66 65 |p-alive..Transfe|
+|00000030| 72 2d 45 6e 63 6f 64 69 6e 67 3a 20 63 68 75 6e |r-Encoding: chun|
+|00000040| 6b 65 64 0d 0a 44 61 74 65 3a 20 46 72 69 2c 20 |ked..Date: Fri, |
+|00000050| 30 34 20 4d 61 72 20 32 30 32 32 20 31 33 3a 31 |04 Mar 2022 13:1|
+|00000060| 30 3a 34 30 20 47 4d 54 0d 0a 0d 0a 30 62 0d 0a |0:40 GMT....0b..|
+|00000070| 48 65 6c 6c 6f 20 57 6f 72 6c 64 0d 0a          |Hello World..   |
++--------+-------------------------------------------------+----------------+
+21:10:41.194 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClientOperations - [id: 0x547ad61f, L:/192.168.28.46:63989 - R:/0.0.0.0:63988] Received response (auto-read:false) : [Connection=keep-alive, Transfer-Encoding=chunked, Date=Fri, 04 Mar 2022 13:10:40 GMT]
+21:10:41.194 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x547ad61f, L:/192.168.28.46:63989 - R:/0.0.0.0:63988] onStateChange(POST{uri=/test, connection=PooledConnection{channel=[id: 0x547ad61f, L:/192.168.28.46:63989 - R:/0.0.0.0:63988]}}, [response_received])
+21:10:41.195 [reactor-http-nio-4] DEBUG reactor.netty.channel.FluxReceive - [id: 0x547ad61f, L:/192.168.28.46:63989 - R:/0.0.0.0:63988] Subscribing inbound receiver [pending: 0, cancelled:false, inboundDone: false]
+21:10:41.195 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x547ad61f, L:/192.168.28.46:63989 - R:/0.0.0.0:63988] READ COMPLETE
+21:10:41.195 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x547ad61f, L:/192.168.28.46:63989 - R:/0.0.0.0:63988] READ: 5B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 30 0d 0a 0d 0a                                  |0....           |
++--------+-------------------------------------------------+----------------+
+21:10:41.195 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClientOperations - [id: 0x547ad61f, L:/192.168.28.46:63989 - R:/0.0.0.0:63988] Received last HTTP packet
+21:10:41.195 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x547ad61f, L:/192.168.28.46:63989 - R:/0.0.0.0:63988] onStateChange(POST{uri=/test, connection=PooledConnection{channel=[id: 0x547ad61f, L:/192.168.28.46:63989 - R:/0.0.0.0:63988]}}, [disconnecting])
+21:10:41.195 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x547ad61f, L:/192.168.28.46:63989 - R:/0.0.0.0:63988] Releasing channel
+21:10:41.196 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x547ad61f, L:/192.168.28.46:63989 - R:/0.0.0.0:63988] Channel cleaned, now 0 active connections and 1 inactive connections
+21:10:41.196 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x547ad61f, L:/192.168.28.46:63989 - R:/0.0.0.0:63988] READ COMPLETE
+21:10:41.200 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x547ad61f, L:/192.168.28.46:63989 - R:/0.0.0.0:63988] READ COMPLETE
+21:10:41.201 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x547ad61f, L:/192.168.28.46:63989 ! R:/0.0.0.0:63988] CLOSE
+21:10:41.201 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x547ad61f, L:/192.168.28.46:63989 ! R:/0.0.0.0:63988] INACTIVE
+21:10:41.201 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x547ad61f, L:/192.168.28.46:63989 ! R:/0.0.0.0:63988] onStateChange(PooledConnection{channel=[id: 0x547ad61f, L:/192.168.28.46:63989 ! R:/0.0.0.0:63988]}, [disconnecting])
+21:10:41.201 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x547ad61f, L:/192.168.28.46:63989 ! R:/0.0.0.0:63988] UNREGISTERED
+2022-03-04 21:10:41.225  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 63990 (https)
+21:10:41.226 [main] DEBUG reactor.netty.resources.PooledConnectionProvider - Creating new client pool [http] for localhost:63990
+21:10:41.226 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x9c19b6e9] Created new pooled channel, now 0 active connections and 1 inactive connections
+21:10:41.226 [reactor-http-nio-4] DEBUG reactor.netty.tcp.SslProvider - [id: 0x9c19b6e9] SSL enabled using engine OpenSslEngine and SNI localhost:63990
+21:10:41.226 [reactor-http-nio-4] DEBUG reactor.netty.channel.BootstrapHandlers - [id: 0x9c19b6e9] Initialized pipeline DefaultChannelPipeline{(reactor.left.sslHandler = io.netty.handler.ssl.SslHandler), (reactor.left.loggingHandler = io.netty.handler.logging.LoggingHandler), (reactor.left.sslReader = reactor.netty.tcp.SslProvider$SslReadHandler), (BootstrapHandlers$BootstrapInitializerHandler#0 = reactor.netty.channel.BootstrapHandlers$BootstrapInitializerHandler), (SimpleChannelPool$1#0 = io.netty.channel.pool.SimpleChannelPool$1), (reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+21:10:41.227 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x9c19b6e9] REGISTERED
+21:10:41.227 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x9c19b6e9] CONNECT: localhost/127.0.0.1:63990
+21:10:41.227 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x9c19b6e9, L:/127.0.0.1:63991 - R:localhost/127.0.0.1:63990] ACTIVE
+21:10:41.227 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x9c19b6e9, L:/127.0.0.1:63991 - R:localhost/127.0.0.1:63990] Registering pool release on close event for channel
+21:10:41.227 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x9c19b6e9, L:/127.0.0.1:63991 - R:localhost/127.0.0.1:63990] Channel connected, now 1 active connections and 0 inactive connections
+21:10:41.252 [reactor-http-nio-4] DEBUG io.netty.handler.ssl.util.InsecureTrustManagerFactory - Accepting a server certificate: CN=localhost, OU=localhost, O=localhost, L=localhost, ST=localhost, C=localhost
+21:10:41.252 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x9c19b6e9, L:/127.0.0.1:63991 - R:localhost/127.0.0.1:63990] READ COMPLETE
+21:10:41.257 [reactor-http-nio-4] DEBUG io.netty.handler.ssl.SslHandler - [id: 0x9c19b6e9, L:/127.0.0.1:63991 - R:localhost/127.0.0.1:63990] HANDSHAKEN: TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+21:10:41.257 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x9c19b6e9, L:/127.0.0.1:63991 - R:localhost/127.0.0.1:63990] USER_EVENT: SslHandshakeCompletionEvent(SUCCESS)
+21:10:41.257 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x9c19b6e9, L:/127.0.0.1:63991 - R:localhost/127.0.0.1:63990] onStateChange(PooledConnection{channel=[id: 0x9c19b6e9, L:/127.0.0.1:63991 - R:localhost/127.0.0.1:63990]}, [connected])
+21:10:41.258 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x9c19b6e9, L:/127.0.0.1:63991 - R:localhost/127.0.0.1:63990] onStateChange(GET{uri=/, connection=PooledConnection{channel=[id: 0x9c19b6e9, L:/127.0.0.1:63991 - R:localhost/127.0.0.1:63990]}}, [configured])
+21:10:41.258 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClientConnect - [id: 0x9c19b6e9, L:/127.0.0.1:63991 - R:localhost/127.0.0.1:63990] Handler is being applied: {uri=https://localhost:63990/test, method=POST}
+21:10:41.258 [reactor-http-nio-4] DEBUG reactor.netty.channel.ChannelOperationsHandler - [id: 0x9c19b6e9, L:/127.0.0.1:63991 - R:localhost/127.0.0.1:63990] Writing object DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /test HTTP/1.1
+user-agent: ReactorNetty/0.8.2.RELEASE
+host: localhost:63990
+accept: */*
+Content-Type: text/plain
+Content-Length: 11
+21:10:41.258 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x9c19b6e9, L:/127.0.0.1:63991 - R:localhost/127.0.0.1:63990] WRITE: 145B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 50 4f 53 54 20 2f 74 65 73 74 20 48 54 54 50 2f |POST /test HTTP/|
+|00000010| 31 2e 31 0d 0a 75 73 65 72 2d 61 67 65 6e 74 3a |1.1..user-agent:|
+|00000020| 20 52 65 61 63 74 6f 72 4e 65 74 74 79 2f 30 2e | ReactorNetty/0.|
+|00000030| 38 2e 32 2e 52 45 4c 45 41 53 45 0d 0a 68 6f 73 |8.2.RELEASE..hos|
+|00000040| 74 3a 20 6c 6f 63 61 6c 68 6f 73 74 3a 36 33 39 |t: localhost:639|
+|00000050| 39 30 0d 0a 61 63 63 65 70 74 3a 20 2a 2f 2a 0d |90..accept: */*.|
+|00000060| 0a 43 6f 6e 74 65 6e 74 2d 54 79 70 65 3a 20 74 |.Content-Type: t|
+|00000070| 65 78 74 2f 70 6c 61 69 6e 0d 0a 43 6f 6e 74 65 |ext/plain..Conte|
+|00000080| 6e 74 2d 4c 65 6e 67 74 68 3a 20 31 31 0d 0a 0d |nt-Length: 11...|
+|00000090| 0a                                              |.               |
++--------+-------------------------------------------------+----------------+
+21:10:41.258 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x9c19b6e9, L:/127.0.0.1:63991 - R:localhost/127.0.0.1:63990] FLUSH
+21:10:41.259 [reactor-http-nio-4] DEBUG reactor.netty.channel.ChannelOperationsHandler - [id: 0x9c19b6e9, L:/127.0.0.1:63991 - R:localhost/127.0.0.1:63990] Writing object 
+21:10:41.259 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x9c19b6e9, L:/127.0.0.1:63991 - R:localhost/127.0.0.1:63990] WRITE: 11B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 48 65 6c 6c 6f 20 57 6f 72 6c 64                |Hello World     |
++--------+-------------------------------------------------+----------------+
+21:10:41.259 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x9c19b6e9, L:/127.0.0.1:63991 - R:localhost/127.0.0.1:63990] FLUSH
+21:10:41.259 [reactor-http-nio-4] DEBUG reactor.netty.channel.ChannelOperationsHandler - [id: 0x9c19b6e9, L:/127.0.0.1:63991 - R:localhost/127.0.0.1:63990] Writing object EmptyLastHttpContent
+21:10:41.259 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x9c19b6e9, L:/127.0.0.1:63991 - R:localhost/127.0.0.1:63990] WRITE: 0B
+21:10:41.259 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x9c19b6e9, L:/127.0.0.1:63991 - R:localhost/127.0.0.1:63990] FLUSH
+21:10:41.259 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x9c19b6e9, L:/127.0.0.1:63991 - R:localhost/127.0.0.1:63990] onStateChange(POST{uri=/test, connection=PooledConnection{channel=[id: 0x9c19b6e9, L:/127.0.0.1:63991 - R:localhost/127.0.0.1:63990]}}, [request_sent])
+21:10:41.259 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x9c19b6e9, L:/127.0.0.1:63991 - R:localhost/127.0.0.1:63990] READ COMPLETE
+21:10:41.260 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x9c19b6e9, L:/127.0.0.1:63991 - R:localhost/127.0.0.1:63990] READ: 125B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 48 54 54 50 2f 31 2e 31 20 32 30 30 20 4f 4b 0d |HTTP/1.1 200 OK.|
+|00000010| 0a 43 6f 6e 6e 65 63 74 69 6f 6e 3a 20 6b 65 65 |.Connection: kee|
+|00000020| 70 2d 61 6c 69 76 65 0d 0a 54 72 61 6e 73 66 65 |p-alive..Transfe|
+|00000030| 72 2d 45 6e 63 6f 64 69 6e 67 3a 20 63 68 75 6e |r-Encoding: chun|
+|00000040| 6b 65 64 0d 0a 44 61 74 65 3a 20 46 72 69 2c 20 |ked..Date: Fri, |
+|00000050| 30 34 20 4d 61 72 20 32 30 32 32 20 31 33 3a 31 |04 Mar 2022 13:1|
+|00000060| 30 3a 34 30 20 47 4d 54 0d 0a 0d 0a 30 62 0d 0a |0:40 GMT....0b..|
+|00000070| 48 65 6c 6c 6f 20 57 6f 72 6c 64 0d 0a          |Hello World..   |
++--------+-------------------------------------------------+----------------+
+21:10:41.260 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClientOperations - [id: 0x9c19b6e9, L:/127.0.0.1:63991 - R:localhost/127.0.0.1:63990] Received response (auto-read:false) : [Connection=keep-alive, Transfer-Encoding=chunked, Date=Fri, 04 Mar 2022 13:10:40 GMT]
+21:10:41.260 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x9c19b6e9, L:/127.0.0.1:63991 - R:localhost/127.0.0.1:63990] onStateChange(POST{uri=/test, connection=PooledConnection{channel=[id: 0x9c19b6e9, L:/127.0.0.1:63991 - R:localhost/127.0.0.1:63990]}}, [response_received])
+21:10:41.261 [reactor-http-nio-4] DEBUG reactor.netty.channel.FluxReceive - [id: 0x9c19b6e9, L:/127.0.0.1:63991 - R:localhost/127.0.0.1:63990] Subscribing inbound receiver [pending: 0, cancelled:false, inboundDone: false]
+21:10:41.261 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x9c19b6e9, L:/127.0.0.1:63991 - R:localhost/127.0.0.1:63990] READ COMPLETE
+21:10:41.261 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x9c19b6e9, L:/127.0.0.1:63991 - R:localhost/127.0.0.1:63990] READ: 5B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 30 0d 0a 0d 0a                                  |0....           |
++--------+-------------------------------------------------+----------------+
+21:10:41.261 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClientOperations - [id: 0x9c19b6e9, L:/127.0.0.1:63991 - R:localhost/127.0.0.1:63990] Received last HTTP packet
+21:10:41.261 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x9c19b6e9, L:/127.0.0.1:63991 - R:localhost/127.0.0.1:63990] onStateChange(POST{uri=/test, connection=PooledConnection{channel=[id: 0x9c19b6e9, L:/127.0.0.1:63991 - R:localhost/127.0.0.1:63990]}}, [disconnecting])
+21:10:41.261 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x9c19b6e9, L:/127.0.0.1:63991 - R:localhost/127.0.0.1:63990] Releasing channel
+21:10:41.262 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x9c19b6e9, L:/127.0.0.1:63991 - R:localhost/127.0.0.1:63990] Channel cleaned, now 0 active connections and 1 inactive connections
+21:10:41.262 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x9c19b6e9, L:/127.0.0.1:63991 - R:localhost/127.0.0.1:63990] READ COMPLETE
+21:10:41.263 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x9c19b6e9, L:/127.0.0.1:63991 - R:localhost/127.0.0.1:63990] READ COMPLETE
+21:10:41.263 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x9c19b6e9, L:/127.0.0.1:63991 ! R:localhost/127.0.0.1:63990] CLOSE
+21:10:41.264 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x9c19b6e9, L:/127.0.0.1:63991 ! R:localhost/127.0.0.1:63990] USER_EVENT: SslCloseCompletionEvent(java.nio.channels.ClosedChannelException)
+21:10:41.264 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x9c19b6e9, L:/127.0.0.1:63991 ! R:localhost/127.0.0.1:63990] INACTIVE
+21:10:41.264 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x9c19b6e9, L:/127.0.0.1:63991 ! R:localhost/127.0.0.1:63990] onStateChange(PooledConnection{channel=[id: 0x9c19b6e9, L:/127.0.0.1:63991 ! R:localhost/127.0.0.1:63990]}, [disconnecting])
+21:10:41.264 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x9c19b6e9, L:/127.0.0.1:63991 ! R:localhost/127.0.0.1:63990] UNREGISTERED
+2022-03-04 21:10:41.267  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 58541 (http)
+21:10:41.267 [main] DEBUG reactor.netty.resources.PooledConnectionProvider - Creating new client pool [http] for /0.0.0.0:58541
+21:10:41.268 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xa2336a47] Created new pooled channel, now 0 active connections and 1 inactive connections
+21:10:41.268 [reactor-http-nio-4] DEBUG reactor.netty.channel.BootstrapHandlers - [id: 0xa2336a47] Initialized pipeline DefaultChannelPipeline{(reactor.left.loggingHandler = io.netty.handler.logging.LoggingHandler), (BootstrapHandlers$BootstrapInitializerHandler#0 = reactor.netty.channel.BootstrapHandlers$BootstrapInitializerHandler), (SimpleChannelPool$1#0 = io.netty.channel.pool.SimpleChannelPool$1), (reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+21:10:41.268 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xa2336a47] REGISTERED
+21:10:41.268 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xa2336a47] CONNECT: /0.0.0.0:58541
+21:10:41.268 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xa2336a47, L:/192.168.28.46:63992 - R:/0.0.0.0:58541] ACTIVE
+21:10:41.268 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xa2336a47, L:/192.168.28.46:63992 - R:/0.0.0.0:58541] onStateChange(PooledConnection{channel=[id: 0xa2336a47, L:/192.168.28.46:63992 - R:/0.0.0.0:58541]}, [connected])
+21:10:41.268 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xa2336a47, L:/192.168.28.46:63992 - R:/0.0.0.0:58541] onStateChange(GET{uri=/, connection=PooledConnection{channel=[id: 0xa2336a47, L:/192.168.28.46:63992 - R:/0.0.0.0:58541]}}, [configured])
+21:10:41.268 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xa2336a47, L:/192.168.28.46:63992 - R:/0.0.0.0:58541] Registering pool release on close event for channel
+21:10:41.268 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClientConnect - [id: 0xa2336a47, L:/192.168.28.46:63992 - R:/0.0.0.0:58541] Handler is being applied: {uri=http://0.0.0.0:58541/test, method=POST}
+21:10:41.269 [reactor-http-nio-4] DEBUG reactor.netty.channel.ChannelOperationsHandler - [id: 0xa2336a47, L:/192.168.28.46:63992 - R:/0.0.0.0:58541] Writing object DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /test HTTP/1.1
+user-agent: ReactorNetty/0.8.2.RELEASE
+host: 0.0.0.0:58541
+accept: */*
+Content-Type: text/plain
+Content-Length: 11
+21:10:41.269 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xa2336a47, L:/192.168.28.46:63992 - R:/0.0.0.0:58541] WRITE: 143B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 50 4f 53 54 20 2f 74 65 73 74 20 48 54 54 50 2f |POST /test HTTP/|
+|00000010| 31 2e 31 0d 0a 75 73 65 72 2d 61 67 65 6e 74 3a |1.1..user-agent:|
+|00000020| 20 52 65 61 63 74 6f 72 4e 65 74 74 79 2f 30 2e | ReactorNetty/0.|
+|00000030| 38 2e 32 2e 52 45 4c 45 41 53 45 0d 0a 68 6f 73 |8.2.RELEASE..hos|
+|00000040| 74 3a 20 30 2e 30 2e 30 2e 30 3a 35 38 35 34 31 |t: 0.0.0.0:58541|
+|00000050| 0d 0a 61 63 63 65 70 74 3a 20 2a 2f 2a 0d 0a 43 |..accept: */*..C|
+|00000060| 6f 6e 74 65 6e 74 2d 54 79 70 65 3a 20 74 65 78 |ontent-Type: tex|
+|00000070| 74 2f 70 6c 61 69 6e 0d 0a 43 6f 6e 74 65 6e 74 |t/plain..Content|
+|00000080| 2d 4c 65 6e 67 74 68 3a 20 31 31 0d 0a 0d 0a    |-Length: 11.... |
++--------+-------------------------------------------------+----------------+
+21:10:41.269 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xa2336a47, L:/192.168.28.46:63992 - R:/0.0.0.0:58541] FLUSH
+21:10:41.269 [reactor-http-nio-4] DEBUG reactor.netty.channel.ChannelOperationsHandler - [id: 0xa2336a47, L:/192.168.28.46:63992 - R:/0.0.0.0:58541] Writing object 
+21:10:41.270 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xa2336a47, L:/192.168.28.46:63992 - R:/0.0.0.0:58541] WRITE: 11B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 48 65 6c 6c 6f 20 57 6f 72 6c 64                |Hello World     |
++--------+-------------------------------------------------+----------------+
+21:10:41.270 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xa2336a47, L:/192.168.28.46:63992 - R:/0.0.0.0:58541] FLUSH
+21:10:41.270 [reactor-http-nio-4] DEBUG reactor.netty.channel.ChannelOperationsHandler - [id: 0xa2336a47, L:/192.168.28.46:63992 - R:/0.0.0.0:58541] Writing object EmptyLastHttpContent
+21:10:41.270 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xa2336a47, L:/192.168.28.46:63992 - R:/0.0.0.0:58541] WRITE: 0B
+21:10:41.270 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xa2336a47, L:/192.168.28.46:63992 - R:/0.0.0.0:58541] FLUSH
+21:10:41.270 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xa2336a47, L:/192.168.28.46:63992 - R:/0.0.0.0:58541] onStateChange(POST{uri=/test, connection=PooledConnection{channel=[id: 0xa2336a47, L:/192.168.28.46:63992 - R:/0.0.0.0:58541]}}, [request_sent])
+21:10:41.270 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xa2336a47, L:/192.168.28.46:63992 - R:/0.0.0.0:58541] Channel connected, now 1 active connections and 0 inactive connections
+21:10:41.270 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xa2336a47, L:/192.168.28.46:63992 - R:/0.0.0.0:58541] READ: 125B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 48 54 54 50 2f 31 2e 31 20 32 30 30 20 4f 4b 0d |HTTP/1.1 200 OK.|
+|00000010| 0a 43 6f 6e 6e 65 63 74 69 6f 6e 3a 20 6b 65 65 |.Connection: kee|
+|00000020| 70 2d 61 6c 69 76 65 0d 0a 54 72 61 6e 73 66 65 |p-alive..Transfe|
+|00000030| 72 2d 45 6e 63 6f 64 69 6e 67 3a 20 63 68 75 6e |r-Encoding: chun|
+|00000040| 6b 65 64 0d 0a 44 61 74 65 3a 20 46 72 69 2c 20 |ked..Date: Fri, |
+|00000050| 30 34 20 4d 61 72 20 32 30 32 32 20 31 33 3a 31 |04 Mar 2022 13:1|
+|00000060| 30 3a 34 30 20 47 4d 54 0d 0a 0d 0a 30 62 0d 0a |0:40 GMT....0b..|
+|00000070| 48 65 6c 6c 6f 20 57 6f 72 6c 64 0d 0a          |Hello World..   |
++--------+-------------------------------------------------+----------------+
+21:10:41.270 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClientOperations - [id: 0xa2336a47, L:/192.168.28.46:63992 - R:/0.0.0.0:58541] Received response (auto-read:false) : [Connection=keep-alive, Transfer-Encoding=chunked, Date=Fri, 04 Mar 2022 13:10:40 GMT]
+21:10:41.271 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xa2336a47, L:/192.168.28.46:63992 - R:/0.0.0.0:58541] onStateChange(POST{uri=/test, connection=PooledConnection{channel=[id: 0xa2336a47, L:/192.168.28.46:63992 - R:/0.0.0.0:58541]}}, [response_received])
+21:10:41.271 [reactor-http-nio-4] DEBUG reactor.netty.channel.FluxReceive - [id: 0xa2336a47, L:/192.168.28.46:63992 - R:/0.0.0.0:58541] Subscribing inbound receiver [pending: 0, cancelled:false, inboundDone: false]
+21:10:41.271 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xa2336a47, L:/192.168.28.46:63992 - R:/0.0.0.0:58541] READ COMPLETE
+21:10:41.271 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xa2336a47, L:/192.168.28.46:63992 - R:/0.0.0.0:58541] READ: 5B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 30 0d 0a 0d 0a                                  |0....           |
++--------+-------------------------------------------------+----------------+
+21:10:41.271 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClientOperations - [id: 0xa2336a47, L:/192.168.28.46:63992 - R:/0.0.0.0:58541] Received last HTTP packet
+21:10:41.271 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xa2336a47, L:/192.168.28.46:63992 - R:/0.0.0.0:58541] onStateChange(POST{uri=/test, connection=PooledConnection{channel=[id: 0xa2336a47, L:/192.168.28.46:63992 - R:/0.0.0.0:58541]}}, [disconnecting])
+21:10:41.271 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xa2336a47, L:/192.168.28.46:63992 - R:/0.0.0.0:58541] Releasing channel
+21:10:41.271 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xa2336a47, L:/192.168.28.46:63992 - R:/0.0.0.0:58541] Channel cleaned, now 0 active connections and 1 inactive connections
+21:10:41.272 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xa2336a47, L:/192.168.28.46:63992 - R:/0.0.0.0:58541] READ COMPLETE
+21:10:41.273 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xa2336a47, L:/192.168.28.46:63992 - R:/0.0.0.0:58541] READ COMPLETE
+21:10:41.273 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xa2336a47, L:/192.168.28.46:63992 ! R:/0.0.0.0:58541] CLOSE
+21:10:41.273 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xa2336a47, L:/192.168.28.46:63992 ! R:/0.0.0.0:58541] INACTIVE
+21:10:41.273 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xa2336a47, L:/192.168.28.46:63992 ! R:/0.0.0.0:58541] onStateChange(PooledConnection{channel=[id: 0xa2336a47, L:/192.168.28.46:63992 ! R:/0.0.0.0:58541]}, [disconnecting])
+21:10:41.274 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xa2336a47, L:/192.168.28.46:63992 ! R:/0.0.0.0:58541] UNREGISTERED
+2022-03-04 21:10:41.291  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 63993 (http)
+21:10:41.292 [main] DEBUG reactor.netty.resources.PooledConnectionProvider - Creating new client pool [http] for /0.0.0.0:63993
+21:10:41.292 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x61f9087c] Created new pooled channel, now 0 active connections and 1 inactive connections
+21:10:41.292 [reactor-http-nio-4] DEBUG reactor.netty.channel.BootstrapHandlers - [id: 0x61f9087c] Initialized pipeline DefaultChannelPipeline{(reactor.left.loggingHandler = io.netty.handler.logging.LoggingHandler), (BootstrapHandlers$BootstrapInitializerHandler#0 = reactor.netty.channel.BootstrapHandlers$BootstrapInitializerHandler), (SimpleChannelPool$1#0 = io.netty.channel.pool.SimpleChannelPool$1), (reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.decompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+21:10:41.292 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x61f9087c] REGISTERED
+21:10:41.292 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x61f9087c] CONNECT: /0.0.0.0:63993
+21:10:41.293 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x61f9087c, L:/192.168.28.46:63994 - R:/0.0.0.0:63993] ACTIVE
+21:10:41.293 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x61f9087c, L:/192.168.28.46:63994 - R:/0.0.0.0:63993] onStateChange(PooledConnection{channel=[id: 0x61f9087c, L:/192.168.28.46:63994 - R:/0.0.0.0:63993]}, [connected])
+21:10:41.293 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x61f9087c, L:/192.168.28.46:63994 - R:/0.0.0.0:63993] onStateChange(GET{uri=/, connection=PooledConnection{channel=[id: 0x61f9087c, L:/192.168.28.46:63994 - R:/0.0.0.0:63993]}}, [configured])
+21:10:41.293 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x61f9087c, L:/192.168.28.46:63994 - R:/0.0.0.0:63993] Registering pool release on close event for channel
+21:10:41.293 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClientConnect - [id: 0x61f9087c, L:/192.168.28.46:63994 - R:/0.0.0.0:63993] Handler is being applied: {uri=http://0.0.0.0:63993/, method=GET}
+21:10:41.294 [reactor-http-nio-4] DEBUG reactor.netty.channel.ChannelOperationsHandler - [id: 0x61f9087c, L:/192.168.28.46:63994 - R:/0.0.0.0:63993] Writing object DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+GET / HTTP/1.1
+accept-encoding: gzip
+user-agent: ReactorNetty/0.8.2.RELEASE
+host: 0.0.0.0:63993
+accept: */*
+21:10:41.294 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x61f9087c, L:/192.168.28.46:63994 - R:/0.0.0.0:63993] WRITE: 115B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 47 45 54 20 2f 20 48 54 54 50 2f 31 2e 31 0d 0a |GET / HTTP/1.1..|
+|00000010| 61 63 63 65 70 74 2d 65 6e 63 6f 64 69 6e 67 3a |accept-encoding:|
+|00000020| 20 67 7a 69 70 0d 0a 75 73 65 72 2d 61 67 65 6e | gzip..user-agen|
+|00000030| 74 3a 20 52 65 61 63 74 6f 72 4e 65 74 74 79 2f |t: ReactorNetty/|
+|00000040| 30 2e 38 2e 32 2e 52 45 4c 45 41 53 45 0d 0a 68 |0.8.2.RELEASE..h|
+|00000050| 6f 73 74 3a 20 30 2e 30 2e 30 2e 30 3a 36 33 39 |ost: 0.0.0.0:639|
+|00000060| 39 33 0d 0a 61 63 63 65 70 74 3a 20 2a 2f 2a 0d |93..accept: */*.|
+|00000070| 0a 0d 0a                                        |...             |
++--------+-------------------------------------------------+----------------+
+21:10:41.294 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x61f9087c, L:/192.168.28.46:63994 - R:/0.0.0.0:63993] FLUSH
+21:10:41.294 [reactor-http-nio-4] DEBUG reactor.netty.channel.ChannelOperationsHandler - [id: 0x61f9087c, L:/192.168.28.46:63994 - R:/0.0.0.0:63993] Writing object EmptyLastHttpContent
+21:10:41.294 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x61f9087c, L:/192.168.28.46:63994 - R:/0.0.0.0:63993] WRITE: 0B
+21:10:41.294 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x61f9087c, L:/192.168.28.46:63994 - R:/0.0.0.0:63993] FLUSH
+21:10:41.294 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x61f9087c, L:/192.168.28.46:63994 - R:/0.0.0.0:63993] onStateChange(GET{uri=/, connection=PooledConnection{channel=[id: 0x61f9087c, L:/192.168.28.46:63994 - R:/0.0.0.0:63993]}}, [request_sent])
+21:10:41.294 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x61f9087c, L:/192.168.28.46:63994 - R:/0.0.0.0:63993] Channel connected, now 1 active connections and 0 inactive connections
+21:10:41.306 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x61f9087c, L:/192.168.28.46:63994 - R:/0.0.0.0:63993] READ: 199B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 48 54 54 50 2f 31 2e 31 20 32 30 30 20 4f 4b 0d |HTTP/1.1 200 OK.|
+|00000010| 0a 43 6f 6e 74 65 6e 74 2d 45 6e 63 6f 64 69 6e |.Content-Encodin|
+|00000020| 67 3a 20 67 7a 69 70 0d 0a 43 6f 6e 6e 65 63 74 |g: gzip..Connect|
+|00000030| 69 6f 6e 3a 20 6b 65 65 70 2d 61 6c 69 76 65 0d |ion: keep-alive.|
+|00000040| 0a 54 72 61 6e 73 66 65 72 2d 45 6e 63 6f 64 69 |.Transfer-Encodi|
+|00000050| 6e 67 3a 20 63 68 75 6e 6b 65 64 0d 0a 43 6f 6e |ng: chunked..Con|
+|00000060| 74 65 6e 74 2d 54 79 70 65 3a 20 74 65 78 74 2f |tent-Type: text/|
+|00000070| 70 6c 61 69 6e 0d 0a 44 61 74 65 3a 20 46 72 69 |plain..Date: Fri|
+|00000080| 2c 20 30 34 20 4d 61 72 20 32 30 32 32 20 31 33 |, 04 Mar 2022 13|
+|00000090| 3a 31 30 3a 34 30 20 47 4d 54 0d 0a 0d 0a 32 33 |:10:40 GMT....23|
+|000000a0| 0d 0a 1f 8b 08 00 00 00 00 00 00 00 ec c1 31 01 |..............1.|
+|000000b0| 00 00 00 c2 a0 76 eb 1f c9 1a 1e 40 01 00 00 ef |.....v.....@....|
+|000000c0| 06 00 00 ff ff 0d 0a                            |.......         |
++--------+-------------------------------------------------+----------------+
+21:10:41.306 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClientOperations - [id: 0x61f9087c, L:/192.168.28.46:63994 - R:/0.0.0.0:63993] Received response (auto-read:false) : [Connection=keep-alive, Transfer-Encoding=chunked, Content-Type=text/plain, Date=Fri, 04 Mar 2022 13:10:40 GMT, X-Test-Compressed=true]
+21:10:41.306 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x61f9087c, L:/192.168.28.46:63994 - R:/0.0.0.0:63993] onStateChange(GET{uri=/, connection=PooledConnection{channel=[id: 0x61f9087c, L:/192.168.28.46:63994 - R:/0.0.0.0:63993]}}, [response_received])
+21:10:41.306 [reactor-http-nio-4] DEBUG reactor.netty.channel.FluxReceive - [id: 0x61f9087c, L:/192.168.28.46:63994 - R:/0.0.0.0:63993] Subscribing inbound receiver [pending: 0, cancelled:false, inboundDone: false]
+21:10:41.307 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x61f9087c, L:/192.168.28.46:63994 - R:/0.0.0.0:63993] CLOSE
+21:10:41.307 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x61f9087c, L:/192.168.28.46:63994 ! R:/0.0.0.0:63993] Channel cleaned, now 0 active connections and 1 inactive connections
+21:10:41.307 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x61f9087c, L:/192.168.28.46:63994 ! R:/0.0.0.0:63993] READ COMPLETE
+21:10:41.307 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x61f9087c, L:/192.168.28.46:63994 ! R:/0.0.0.0:63993] INACTIVE
+21:10:41.307 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x61f9087c, L:/192.168.28.46:63994 ! R:/0.0.0.0:63993] UNREGISTERED
+2022-03-04 21:10:41.312  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 63995 (https)
+21:10:41.315 [main] DEBUG reactor.netty.resources.PooledConnectionProvider - Creating new client pool [http] for localhost:63995
+21:10:41.315 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xa20b01a4] Created new pooled channel, now 0 active connections and 1 inactive connections
+21:10:41.316 [reactor-http-nio-4] DEBUG reactor.netty.tcp.SslProvider - [id: 0xa20b01a4] SSL enabled using engine OpenSslEngine and SNI localhost:63995
+21:10:41.316 [reactor-http-nio-4] DEBUG reactor.netty.channel.BootstrapHandlers - [id: 0xa20b01a4] Initialized pipeline DefaultChannelPipeline{(reactor.left.sslHandler = io.netty.handler.ssl.SslHandler), (reactor.left.loggingHandler = io.netty.handler.logging.LoggingHandler), (reactor.left.sslReader = reactor.netty.tcp.SslProvider$SslReadHandler), (BootstrapHandlers$BootstrapInitializerHandler#0 = reactor.netty.channel.BootstrapHandlers$BootstrapInitializerHandler), (SimpleChannelPool$1#0 = io.netty.channel.pool.SimpleChannelPool$1), (reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+21:10:41.316 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xa20b01a4] REGISTERED
+21:10:41.316 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xa20b01a4] CONNECT: localhost/127.0.0.1:63995
+21:10:41.316 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xa20b01a4, L:/127.0.0.1:63996 - R:localhost/127.0.0.1:63995] ACTIVE
+21:10:41.316 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xa20b01a4, L:/127.0.0.1:63996 - R:localhost/127.0.0.1:63995] Registering pool release on close event for channel
+21:10:41.317 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xa20b01a4, L:/127.0.0.1:63996 - R:localhost/127.0.0.1:63995] Channel connected, now 1 active connections and 0 inactive connections
+21:10:41.326 [reactor-http-nio-4] DEBUG io.netty.handler.ssl.util.InsecureTrustManagerFactory - Accepting a server certificate: CN=localhost, OU=localhost, O=localhost, L=localhost, ST=localhost, C=localhost
+21:10:41.327 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xa20b01a4, L:/127.0.0.1:63996 - R:localhost/127.0.0.1:63995] READ COMPLETE
+21:10:41.334 [reactor-http-nio-4] DEBUG io.netty.handler.ssl.SslHandler - [id: 0xa20b01a4, L:/127.0.0.1:63996 - R:localhost/127.0.0.1:63995] HANDSHAKEN: TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+21:10:41.334 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xa20b01a4, L:/127.0.0.1:63996 - R:localhost/127.0.0.1:63995] USER_EVENT: SslHandshakeCompletionEvent(SUCCESS)
+21:10:41.334 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xa20b01a4, L:/127.0.0.1:63996 - R:localhost/127.0.0.1:63995] onStateChange(PooledConnection{channel=[id: 0xa20b01a4, L:/127.0.0.1:63996 - R:localhost/127.0.0.1:63995]}, [connected])
+21:10:41.334 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xa20b01a4, L:/127.0.0.1:63996 - R:localhost/127.0.0.1:63995] onStateChange(GET{uri=/, connection=PooledConnection{channel=[id: 0xa20b01a4, L:/127.0.0.1:63996 - R:localhost/127.0.0.1:63995]}}, [configured])
+21:10:41.334 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClientConnect - [id: 0xa20b01a4, L:/127.0.0.1:63996 - R:localhost/127.0.0.1:63995] Handler is being applied: {uri=https://localhost:63995/test, method=POST}
+21:10:41.335 [reactor-http-nio-4] DEBUG reactor.netty.channel.ChannelOperationsHandler - [id: 0xa20b01a4, L:/127.0.0.1:63996 - R:localhost/127.0.0.1:63995] Writing object DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /test HTTP/1.1
+user-agent: ReactorNetty/0.8.2.RELEASE
+host: localhost:63995
+accept: */*
+Content-Type: text/plain
+Content-Length: 11
+21:10:41.336 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xa20b01a4, L:/127.0.0.1:63996 - R:localhost/127.0.0.1:63995] WRITE: 145B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 50 4f 53 54 20 2f 74 65 73 74 20 48 54 54 50 2f |POST /test HTTP/|
+|00000010| 31 2e 31 0d 0a 75 73 65 72 2d 61 67 65 6e 74 3a |1.1..user-agent:|
+|00000020| 20 52 65 61 63 74 6f 72 4e 65 74 74 79 2f 30 2e | ReactorNetty/0.|
+|00000030| 38 2e 32 2e 52 45 4c 45 41 53 45 0d 0a 68 6f 73 |8.2.RELEASE..hos|
+|00000040| 74 3a 20 6c 6f 63 61 6c 68 6f 73 74 3a 36 33 39 |t: localhost:639|
+|00000050| 39 35 0d 0a 61 63 63 65 70 74 3a 20 2a 2f 2a 0d |95..accept: */*.|
+|00000060| 0a 43 6f 6e 74 65 6e 74 2d 54 79 70 65 3a 20 74 |.Content-Type: t|
+|00000070| 65 78 74 2f 70 6c 61 69 6e 0d 0a 43 6f 6e 74 65 |ext/plain..Conte|
+|00000080| 6e 74 2d 4c 65 6e 67 74 68 3a 20 31 31 0d 0a 0d |nt-Length: 11...|
+|00000090| 0a                                              |.               |
++--------+-------------------------------------------------+----------------+
+21:10:41.336 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xa20b01a4, L:/127.0.0.1:63996 - R:localhost/127.0.0.1:63995] FLUSH
+21:10:41.337 [reactor-http-nio-4] DEBUG reactor.netty.channel.ChannelOperationsHandler - [id: 0xa20b01a4, L:/127.0.0.1:63996 - R:localhost/127.0.0.1:63995] Writing object 
+21:10:41.338 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xa20b01a4, L:/127.0.0.1:63996 - R:localhost/127.0.0.1:63995] WRITE: 11B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 48 65 6c 6c 6f 20 57 6f 72 6c 64                |Hello World     |
++--------+-------------------------------------------------+----------------+
+21:10:41.338 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xa20b01a4, L:/127.0.0.1:63996 - R:localhost/127.0.0.1:63995] FLUSH
+21:10:41.339 [reactor-http-nio-4] DEBUG reactor.netty.channel.ChannelOperationsHandler - [id: 0xa20b01a4, L:/127.0.0.1:63996 - R:localhost/127.0.0.1:63995] Writing object EmptyLastHttpContent
+21:10:41.339 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xa20b01a4, L:/127.0.0.1:63996 - R:localhost/127.0.0.1:63995] WRITE: 0B
+21:10:41.339 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xa20b01a4, L:/127.0.0.1:63996 - R:localhost/127.0.0.1:63995] FLUSH
+21:10:41.339 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xa20b01a4, L:/127.0.0.1:63996 - R:localhost/127.0.0.1:63995] onStateChange(POST{uri=/test, connection=PooledConnection{channel=[id: 0xa20b01a4, L:/127.0.0.1:63996 - R:localhost/127.0.0.1:63995]}}, [request_sent])
+21:10:41.339 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xa20b01a4, L:/127.0.0.1:63996 - R:localhost/127.0.0.1:63995] READ COMPLETE
+21:10:41.341 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xa20b01a4, L:/127.0.0.1:63996 - R:localhost/127.0.0.1:63995] READ: 125B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 48 54 54 50 2f 31 2e 31 20 32 30 30 20 4f 4b 0d |HTTP/1.1 200 OK.|
+|00000010| 0a 43 6f 6e 6e 65 63 74 69 6f 6e 3a 20 6b 65 65 |.Connection: kee|
+|00000020| 70 2d 61 6c 69 76 65 0d 0a 54 72 61 6e 73 66 65 |p-alive..Transfe|
+|00000030| 72 2d 45 6e 63 6f 64 69 6e 67 3a 20 63 68 75 6e |r-Encoding: chun|
+|00000040| 6b 65 64 0d 0a 44 61 74 65 3a 20 46 72 69 2c 20 |ked..Date: Fri, |
+|00000050| 30 34 20 4d 61 72 20 32 30 32 32 20 31 33 3a 31 |04 Mar 2022 13:1|
+|00000060| 30 3a 34 30 20 47 4d 54 0d 0a 0d 0a 30 62 0d 0a |0:40 GMT....0b..|
+|00000070| 48 65 6c 6c 6f 20 57 6f 72 6c 64 0d 0a          |Hello World..   |
++--------+-------------------------------------------------+----------------+
+21:10:41.341 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClientOperations - [id: 0xa20b01a4, L:/127.0.0.1:63996 - R:localhost/127.0.0.1:63995] Received response (auto-read:false) : [Connection=keep-alive, Transfer-Encoding=chunked, Date=Fri, 04 Mar 2022 13:10:40 GMT]
+21:10:41.341 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xa20b01a4, L:/127.0.0.1:63996 - R:localhost/127.0.0.1:63995] onStateChange(POST{uri=/test, connection=PooledConnection{channel=[id: 0xa20b01a4, L:/127.0.0.1:63996 - R:localhost/127.0.0.1:63995]}}, [response_received])
+21:10:41.342 [reactor-http-nio-4] DEBUG reactor.netty.channel.FluxReceive - [id: 0xa20b01a4, L:/127.0.0.1:63996 - R:localhost/127.0.0.1:63995] Subscribing inbound receiver [pending: 0, cancelled:false, inboundDone: false]
+21:10:41.342 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xa20b01a4, L:/127.0.0.1:63996 - R:localhost/127.0.0.1:63995] READ COMPLETE
+21:10:41.342 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xa20b01a4, L:/127.0.0.1:63996 - R:localhost/127.0.0.1:63995] READ: 5B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 30 0d 0a 0d 0a                                  |0....           |
++--------+-------------------------------------------------+----------------+
+21:10:41.342 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClientOperations - [id: 0xa20b01a4, L:/127.0.0.1:63996 - R:localhost/127.0.0.1:63995] Received last HTTP packet
+21:10:41.342 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xa20b01a4, L:/127.0.0.1:63996 - R:localhost/127.0.0.1:63995] onStateChange(POST{uri=/test, connection=PooledConnection{channel=[id: 0xa20b01a4, L:/127.0.0.1:63996 - R:localhost/127.0.0.1:63995]}}, [disconnecting])
+21:10:41.342 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xa20b01a4, L:/127.0.0.1:63996 - R:localhost/127.0.0.1:63995] Releasing channel
+21:10:41.342 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xa20b01a4, L:/127.0.0.1:63996 - R:localhost/127.0.0.1:63995] Channel cleaned, now 0 active connections and 1 inactive connections
+21:10:41.342 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xa20b01a4, L:/127.0.0.1:63996 - R:localhost/127.0.0.1:63995] READ COMPLETE
+21:10:41.343 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xa20b01a4, L:/127.0.0.1:63996 - R:localhost/127.0.0.1:63995] READ COMPLETE
+21:10:41.343 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xa20b01a4, L:/127.0.0.1:63996 ! R:localhost/127.0.0.1:63995] CLOSE
+21:10:41.343 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xa20b01a4, L:/127.0.0.1:63996 ! R:localhost/127.0.0.1:63995] USER_EVENT: SslCloseCompletionEvent(java.nio.channels.ClosedChannelException)
+21:10:41.344 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xa20b01a4, L:/127.0.0.1:63996 ! R:localhost/127.0.0.1:63995] INACTIVE
+21:10:41.344 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xa20b01a4, L:/127.0.0.1:63996 ! R:localhost/127.0.0.1:63995] onStateChange(PooledConnection{channel=[id: 0xa20b01a4, L:/127.0.0.1:63996 ! R:localhost/127.0.0.1:63995]}, [disconnecting])
+21:10:41.344 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xa20b01a4, L:/127.0.0.1:63996 ! R:localhost/127.0.0.1:63995] UNREGISTERED
+2022-03-04 21:10:41.351  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 63997 (https)
+21:10:41.351 [main] DEBUG reactor.netty.resources.PooledConnectionProvider - Creating new client pool [http] for localhost:63997
+21:10:41.352 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xc1e96f6b] Created new pooled channel, now 0 active connections and 1 inactive connections
+21:10:41.352 [reactor-http-nio-4] DEBUG reactor.netty.tcp.SslProvider - [id: 0xc1e96f6b] SSL enabled using engine OpenSslEngine and SNI localhost:63997
+21:10:41.352 [reactor-http-nio-4] DEBUG reactor.netty.channel.BootstrapHandlers - [id: 0xc1e96f6b] Initialized pipeline DefaultChannelPipeline{(reactor.left.sslHandler = io.netty.handler.ssl.SslHandler), (reactor.left.loggingHandler = io.netty.handler.logging.LoggingHandler), (reactor.left.sslReader = reactor.netty.tcp.SslProvider$SslReadHandler), (BootstrapHandlers$BootstrapInitializerHandler#0 = reactor.netty.channel.BootstrapHandlers$BootstrapInitializerHandler), (SimpleChannelPool$1#0 = io.netty.channel.pool.SimpleChannelPool$1), (reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+21:10:41.352 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xc1e96f6b] REGISTERED
+21:10:41.352 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xc1e96f6b] CONNECT: localhost/127.0.0.1:63997
+21:10:41.353 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xc1e96f6b, L:/127.0.0.1:63998 - R:localhost/127.0.0.1:63997] ACTIVE
+21:10:41.353 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xc1e96f6b, L:/127.0.0.1:63998 - R:localhost/127.0.0.1:63997] Registering pool release on close event for channel
+21:10:41.353 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xc1e96f6b, L:/127.0.0.1:63998 - R:localhost/127.0.0.1:63997] Channel connected, now 1 active connections and 0 inactive connections
+21:10:41.359 [reactor-http-nio-4] DEBUG io.netty.handler.ssl.util.InsecureTrustManagerFactory - Accepting a server certificate: CN=localhost, OU=localhost, O=localhost, L=localhost, ST=localhost, C=localhost
+21:10:41.359 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xc1e96f6b, L:/127.0.0.1:63998 - R:localhost/127.0.0.1:63997] READ COMPLETE
+21:10:41.366 [reactor-http-nio-4] DEBUG io.netty.handler.ssl.SslHandler - [id: 0xc1e96f6b, L:/127.0.0.1:63998 - R:localhost/127.0.0.1:63997] HANDSHAKEN: TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+21:10:41.366 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xc1e96f6b, L:/127.0.0.1:63998 - R:localhost/127.0.0.1:63997] USER_EVENT: SslHandshakeCompletionEvent(SUCCESS)
+21:10:41.366 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xc1e96f6b, L:/127.0.0.1:63998 - R:localhost/127.0.0.1:63997] onStateChange(PooledConnection{channel=[id: 0xc1e96f6b, L:/127.0.0.1:63998 - R:localhost/127.0.0.1:63997]}, [connected])
+21:10:41.367 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xc1e96f6b, L:/127.0.0.1:63998 - R:localhost/127.0.0.1:63997] onStateChange(GET{uri=/, connection=PooledConnection{channel=[id: 0xc1e96f6b, L:/127.0.0.1:63998 - R:localhost/127.0.0.1:63997]}}, [configured])
+21:10:41.367 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClientConnect - [id: 0xc1e96f6b, L:/127.0.0.1:63998 - R:localhost/127.0.0.1:63997] Handler is being applied: {uri=https://localhost:63997/test, method=POST}
+21:10:41.367 [reactor-http-nio-4] DEBUG reactor.netty.channel.ChannelOperationsHandler - [id: 0xc1e96f6b, L:/127.0.0.1:63998 - R:localhost/127.0.0.1:63997] Writing object DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /test HTTP/1.1
+user-agent: ReactorNetty/0.8.2.RELEASE
+host: localhost:63997
+accept: */*
+Content-Type: text/plain
+Content-Length: 11
+21:10:41.368 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xc1e96f6b, L:/127.0.0.1:63998 - R:localhost/127.0.0.1:63997] WRITE: 145B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 50 4f 53 54 20 2f 74 65 73 74 20 48 54 54 50 2f |POST /test HTTP/|
+|00000010| 31 2e 31 0d 0a 75 73 65 72 2d 61 67 65 6e 74 3a |1.1..user-agent:|
+|00000020| 20 52 65 61 63 74 6f 72 4e 65 74 74 79 2f 30 2e | ReactorNetty/0.|
+|00000030| 38 2e 32 2e 52 45 4c 45 41 53 45 0d 0a 68 6f 73 |8.2.RELEASE..hos|
+|00000040| 74 3a 20 6c 6f 63 61 6c 68 6f 73 74 3a 36 33 39 |t: localhost:639|
+|00000050| 39 37 0d 0a 61 63 63 65 70 74 3a 20 2a 2f 2a 0d |97..accept: */*.|
+|00000060| 0a 43 6f 6e 74 65 6e 74 2d 54 79 70 65 3a 20 74 |.Content-Type: t|
+|00000070| 65 78 74 2f 70 6c 61 69 6e 0d 0a 43 6f 6e 74 65 |ext/plain..Conte|
+|00000080| 6e 74 2d 4c 65 6e 67 74 68 3a 20 31 31 0d 0a 0d |nt-Length: 11...|
+|00000090| 0a                                              |.               |
++--------+-------------------------------------------------+----------------+
+21:10:41.368 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xc1e96f6b, L:/127.0.0.1:63998 - R:localhost/127.0.0.1:63997] FLUSH
+21:10:41.368 [reactor-http-nio-4] DEBUG reactor.netty.channel.ChannelOperationsHandler - [id: 0xc1e96f6b, L:/127.0.0.1:63998 - R:localhost/127.0.0.1:63997] Writing object 
+21:10:41.368 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xc1e96f6b, L:/127.0.0.1:63998 - R:localhost/127.0.0.1:63997] WRITE: 11B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 48 65 6c 6c 6f 20 57 6f 72 6c 64                |Hello World     |
++--------+-------------------------------------------------+----------------+
+21:10:41.368 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xc1e96f6b, L:/127.0.0.1:63998 - R:localhost/127.0.0.1:63997] FLUSH
+21:10:41.368 [reactor-http-nio-4] DEBUG reactor.netty.channel.ChannelOperationsHandler - [id: 0xc1e96f6b, L:/127.0.0.1:63998 - R:localhost/127.0.0.1:63997] Writing object EmptyLastHttpContent
+21:10:41.368 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xc1e96f6b, L:/127.0.0.1:63998 - R:localhost/127.0.0.1:63997] WRITE: 0B
+21:10:41.368 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xc1e96f6b, L:/127.0.0.1:63998 - R:localhost/127.0.0.1:63997] FLUSH
+21:10:41.369 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xc1e96f6b, L:/127.0.0.1:63998 - R:localhost/127.0.0.1:63997] onStateChange(POST{uri=/test, connection=PooledConnection{channel=[id: 0xc1e96f6b, L:/127.0.0.1:63998 - R:localhost/127.0.0.1:63997]}}, [request_sent])
+21:10:41.369 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xc1e96f6b, L:/127.0.0.1:63998 - R:localhost/127.0.0.1:63997] READ COMPLETE
+21:10:41.369 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xc1e96f6b, L:/127.0.0.1:63998 - R:localhost/127.0.0.1:63997] READ: 125B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 48 54 54 50 2f 31 2e 31 20 32 30 30 20 4f 4b 0d |HTTP/1.1 200 OK.|
+|00000010| 0a 43 6f 6e 6e 65 63 74 69 6f 6e 3a 20 6b 65 65 |.Connection: kee|
+|00000020| 70 2d 61 6c 69 76 65 0d 0a 54 72 61 6e 73 66 65 |p-alive..Transfe|
+|00000030| 72 2d 45 6e 63 6f 64 69 6e 67 3a 20 63 68 75 6e |r-Encoding: chun|
+|00000040| 6b 65 64 0d 0a 44 61 74 65 3a 20 46 72 69 2c 20 |ked..Date: Fri, |
+|00000050| 30 34 20 4d 61 72 20 32 30 32 32 20 31 33 3a 31 |04 Mar 2022 13:1|
+|00000060| 30 3a 34 30 20 47 4d 54 0d 0a 0d 0a 30 62 0d 0a |0:40 GMT....0b..|
+|00000070| 48 65 6c 6c 6f 20 57 6f 72 6c 64 0d 0a          |Hello World..   |
++--------+-------------------------------------------------+----------------+
+21:10:41.370 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClientOperations - [id: 0xc1e96f6b, L:/127.0.0.1:63998 - R:localhost/127.0.0.1:63997] Received response (auto-read:false) : [Connection=keep-alive, Transfer-Encoding=chunked, Date=Fri, 04 Mar 2022 13:10:40 GMT]
+21:10:41.370 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xc1e96f6b, L:/127.0.0.1:63998 - R:localhost/127.0.0.1:63997] onStateChange(POST{uri=/test, connection=PooledConnection{channel=[id: 0xc1e96f6b, L:/127.0.0.1:63998 - R:localhost/127.0.0.1:63997]}}, [response_received])
+21:10:41.370 [reactor-http-nio-4] DEBUG reactor.netty.channel.FluxReceive - [id: 0xc1e96f6b, L:/127.0.0.1:63998 - R:localhost/127.0.0.1:63997] Subscribing inbound receiver [pending: 0, cancelled:false, inboundDone: false]
+21:10:41.370 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xc1e96f6b, L:/127.0.0.1:63998 - R:localhost/127.0.0.1:63997] READ COMPLETE
+21:10:41.370 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xc1e96f6b, L:/127.0.0.1:63998 - R:localhost/127.0.0.1:63997] READ: 5B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 30 0d 0a 0d 0a                                  |0....           |
++--------+-------------------------------------------------+----------------+
+21:10:41.371 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClientOperations - [id: 0xc1e96f6b, L:/127.0.0.1:63998 - R:localhost/127.0.0.1:63997] Received last HTTP packet
+21:10:41.371 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xc1e96f6b, L:/127.0.0.1:63998 - R:localhost/127.0.0.1:63997] onStateChange(POST{uri=/test, connection=PooledConnection{channel=[id: 0xc1e96f6b, L:/127.0.0.1:63998 - R:localhost/127.0.0.1:63997]}}, [disconnecting])
+21:10:41.371 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xc1e96f6b, L:/127.0.0.1:63998 - R:localhost/127.0.0.1:63997] Releasing channel
+21:10:41.371 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xc1e96f6b, L:/127.0.0.1:63998 - R:localhost/127.0.0.1:63997] Channel cleaned, now 0 active connections and 1 inactive connections
+21:10:41.371 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xc1e96f6b, L:/127.0.0.1:63998 - R:localhost/127.0.0.1:63997] READ COMPLETE
+21:10:41.372 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xc1e96f6b, L:/127.0.0.1:63998 - R:localhost/127.0.0.1:63997] READ COMPLETE
+21:10:41.372 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xc1e96f6b, L:/127.0.0.1:63998 ! R:localhost/127.0.0.1:63997] CLOSE
+21:10:41.373 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xc1e96f6b, L:/127.0.0.1:63998 ! R:localhost/127.0.0.1:63997] USER_EVENT: SslCloseCompletionEvent(java.nio.channels.ClosedChannelException)
+21:10:41.373 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xc1e96f6b, L:/127.0.0.1:63998 ! R:localhost/127.0.0.1:63997] INACTIVE
+21:10:41.373 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xc1e96f6b, L:/127.0.0.1:63998 ! R:localhost/127.0.0.1:63997] onStateChange(PooledConnection{channel=[id: 0xc1e96f6b, L:/127.0.0.1:63998 ! R:localhost/127.0.0.1:63997]}, [disconnecting])
+21:10:41.373 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xc1e96f6b, L:/127.0.0.1:63998 ! R:localhost/127.0.0.1:63997] UNREGISTERED
+2022-03-04 21:10:41.377  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 63999 (https)
+21:10:41.378 [main] DEBUG reactor.netty.resources.PooledConnectionProvider - Creating new client pool [http] for localhost:63999
+21:10:41.379 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x091f0db8] Created new pooled channel, now 0 active connections and 1 inactive connections
+21:10:41.379 [reactor-http-nio-4] DEBUG reactor.netty.tcp.SslProvider - [id: 0x091f0db8] SSL enabled using engine OpenSslEngine and SNI localhost:63999
+21:10:41.379 [reactor-http-nio-4] DEBUG reactor.netty.channel.BootstrapHandlers - [id: 0x091f0db8] Initialized pipeline DefaultChannelPipeline{(reactor.left.sslHandler = io.netty.handler.ssl.SslHandler), (reactor.left.loggingHandler = io.netty.handler.logging.LoggingHandler), (reactor.left.sslReader = reactor.netty.tcp.SslProvider$SslReadHandler), (BootstrapHandlers$BootstrapInitializerHandler#0 = reactor.netty.channel.BootstrapHandlers$BootstrapInitializerHandler), (SimpleChannelPool$1#0 = io.netty.channel.pool.SimpleChannelPool$1), (reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+21:10:41.379 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x091f0db8] REGISTERED
+21:10:41.379 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x091f0db8] CONNECT: localhost/127.0.0.1:63999
+21:10:41.380 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x091f0db8, L:/127.0.0.1:64000 - R:localhost/127.0.0.1:63999] ACTIVE
+21:10:41.381 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x091f0db8, L:/127.0.0.1:64000 - R:localhost/127.0.0.1:63999] Registering pool release on close event for channel
+21:10:41.385 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x091f0db8, L:/127.0.0.1:64000 - R:localhost/127.0.0.1:63999] Channel connected, now 1 active connections and 0 inactive connections
+21:10:41.387 [reactor-http-nio-4] DEBUG io.netty.handler.ssl.util.InsecureTrustManagerFactory - Accepting a server certificate: CN=localhost, OU=localhost, O=localhost, L=localhost, ST=localhost, C=localhost
+21:10:41.391 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x091f0db8, L:/127.0.0.1:64000 - R:localhost/127.0.0.1:63999] READ COMPLETE
+21:10:41.402 [reactor-http-nio-4] DEBUG io.netty.handler.ssl.SslHandler - [id: 0x091f0db8, L:/127.0.0.1:64000 - R:localhost/127.0.0.1:63999] HANDSHAKEN: TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+21:10:41.402 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x091f0db8, L:/127.0.0.1:64000 - R:localhost/127.0.0.1:63999] USER_EVENT: SslHandshakeCompletionEvent(SUCCESS)
+21:10:41.402 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x091f0db8, L:/127.0.0.1:64000 - R:localhost/127.0.0.1:63999] onStateChange(PooledConnection{channel=[id: 0x091f0db8, L:/127.0.0.1:64000 - R:localhost/127.0.0.1:63999]}, [connected])
+21:10:41.402 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x091f0db8, L:/127.0.0.1:64000 - R:localhost/127.0.0.1:63999] onStateChange(GET{uri=/, connection=PooledConnection{channel=[id: 0x091f0db8, L:/127.0.0.1:64000 - R:localhost/127.0.0.1:63999]}}, [configured])
+21:10:41.403 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClientConnect - [id: 0x091f0db8, L:/127.0.0.1:64000 - R:localhost/127.0.0.1:63999] Handler is being applied: {uri=https://localhost:63999/test, method=POST}
+21:10:41.403 [reactor-http-nio-4] DEBUG reactor.netty.channel.ChannelOperationsHandler - [id: 0x091f0db8, L:/127.0.0.1:64000 - R:localhost/127.0.0.1:63999] Writing object DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /test HTTP/1.1
+user-agent: ReactorNetty/0.8.2.RELEASE
+host: localhost:63999
+accept: */*
+Content-Type: text/plain
+Content-Length: 11
+21:10:41.404 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x091f0db8, L:/127.0.0.1:64000 - R:localhost/127.0.0.1:63999] WRITE: 145B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 50 4f 53 54 20 2f 74 65 73 74 20 48 54 54 50 2f |POST /test HTTP/|
+|00000010| 31 2e 31 0d 0a 75 73 65 72 2d 61 67 65 6e 74 3a |1.1..user-agent:|
+|00000020| 20 52 65 61 63 74 6f 72 4e 65 74 74 79 2f 30 2e | ReactorNetty/0.|
+|00000030| 38 2e 32 2e 52 45 4c 45 41 53 45 0d 0a 68 6f 73 |8.2.RELEASE..hos|
+|00000040| 74 3a 20 6c 6f 63 61 6c 68 6f 73 74 3a 36 33 39 |t: localhost:639|
+|00000050| 39 39 0d 0a 61 63 63 65 70 74 3a 20 2a 2f 2a 0d |99..accept: */*.|
+|00000060| 0a 43 6f 6e 74 65 6e 74 2d 54 79 70 65 3a 20 74 |.Content-Type: t|
+|00000070| 65 78 74 2f 70 6c 61 69 6e 0d 0a 43 6f 6e 74 65 |ext/plain..Conte|
+|00000080| 6e 74 2d 4c 65 6e 67 74 68 3a 20 31 31 0d 0a 0d |nt-Length: 11...|
+|00000090| 0a                                              |.               |
++--------+-------------------------------------------------+----------------+
+21:10:41.404 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x091f0db8, L:/127.0.0.1:64000 - R:localhost/127.0.0.1:63999] FLUSH
+21:10:41.404 [reactor-http-nio-4] DEBUG reactor.netty.channel.ChannelOperationsHandler - [id: 0x091f0db8, L:/127.0.0.1:64000 - R:localhost/127.0.0.1:63999] Writing object 
+21:10:41.404 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x091f0db8, L:/127.0.0.1:64000 - R:localhost/127.0.0.1:63999] WRITE: 11B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 48 65 6c 6c 6f 20 57 6f 72 6c 64                |Hello World     |
++--------+-------------------------------------------------+----------------+
+21:10:41.404 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x091f0db8, L:/127.0.0.1:64000 - R:localhost/127.0.0.1:63999] FLUSH
+21:10:41.404 [reactor-http-nio-4] DEBUG reactor.netty.channel.ChannelOperationsHandler - [id: 0x091f0db8, L:/127.0.0.1:64000 - R:localhost/127.0.0.1:63999] Writing object EmptyLastHttpContent
+21:10:41.404 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x091f0db8, L:/127.0.0.1:64000 - R:localhost/127.0.0.1:63999] WRITE: 0B
+21:10:41.405 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x091f0db8, L:/127.0.0.1:64000 - R:localhost/127.0.0.1:63999] FLUSH
+21:10:41.405 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x091f0db8, L:/127.0.0.1:64000 - R:localhost/127.0.0.1:63999] onStateChange(POST{uri=/test, connection=PooledConnection{channel=[id: 0x091f0db8, L:/127.0.0.1:64000 - R:localhost/127.0.0.1:63999]}}, [request_sent])
+21:10:41.405 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x091f0db8, L:/127.0.0.1:64000 - R:localhost/127.0.0.1:63999] READ COMPLETE
+21:10:41.406 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x091f0db8, L:/127.0.0.1:64000 - R:localhost/127.0.0.1:63999] READ: 125B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 48 54 54 50 2f 31 2e 31 20 32 30 30 20 4f 4b 0d |HTTP/1.1 200 OK.|
+|00000010| 0a 43 6f 6e 6e 65 63 74 69 6f 6e 3a 20 6b 65 65 |.Connection: kee|
+|00000020| 70 2d 61 6c 69 76 65 0d 0a 54 72 61 6e 73 66 65 |p-alive..Transfe|
+|00000030| 72 2d 45 6e 63 6f 64 69 6e 67 3a 20 63 68 75 6e |r-Encoding: chun|
+|00000040| 6b 65 64 0d 0a 44 61 74 65 3a 20 46 72 69 2c 20 |ked..Date: Fri, |
+|00000050| 30 34 20 4d 61 72 20 32 30 32 32 20 31 33 3a 31 |04 Mar 2022 13:1|
+|00000060| 30 3a 34 30 20 47 4d 54 0d 0a 0d 0a 30 62 0d 0a |0:40 GMT....0b..|
+|00000070| 48 65 6c 6c 6f 20 57 6f 72 6c 64 0d 0a          |Hello World..   |
++--------+-------------------------------------------------+----------------+
+21:10:41.406 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClientOperations - [id: 0x091f0db8, L:/127.0.0.1:64000 - R:localhost/127.0.0.1:63999] Received response (auto-read:false) : [Connection=keep-alive, Transfer-Encoding=chunked, Date=Fri, 04 Mar 2022 13:10:40 GMT]
+21:10:41.406 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x091f0db8, L:/127.0.0.1:64000 - R:localhost/127.0.0.1:63999] onStateChange(POST{uri=/test, connection=PooledConnection{channel=[id: 0x091f0db8, L:/127.0.0.1:64000 - R:localhost/127.0.0.1:63999]}}, [response_received])
+21:10:41.406 [reactor-http-nio-4] DEBUG reactor.netty.channel.FluxReceive - [id: 0x091f0db8, L:/127.0.0.1:64000 - R:localhost/127.0.0.1:63999] Subscribing inbound receiver [pending: 0, cancelled:false, inboundDone: false]
+21:10:41.407 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x091f0db8, L:/127.0.0.1:64000 - R:localhost/127.0.0.1:63999] READ COMPLETE
+21:10:41.407 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x091f0db8, L:/127.0.0.1:64000 - R:localhost/127.0.0.1:63999] READ: 5B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 30 0d 0a 0d 0a                                  |0....           |
++--------+-------------------------------------------------+----------------+
+21:10:41.407 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClientOperations - [id: 0x091f0db8, L:/127.0.0.1:64000 - R:localhost/127.0.0.1:63999] Received last HTTP packet
+21:10:41.407 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x091f0db8, L:/127.0.0.1:64000 - R:localhost/127.0.0.1:63999] onStateChange(POST{uri=/test, connection=PooledConnection{channel=[id: 0x091f0db8, L:/127.0.0.1:64000 - R:localhost/127.0.0.1:63999]}}, [disconnecting])
+21:10:41.407 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x091f0db8, L:/127.0.0.1:64000 - R:localhost/127.0.0.1:63999] Releasing channel
+21:10:41.407 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x091f0db8, L:/127.0.0.1:64000 - R:localhost/127.0.0.1:63999] Channel cleaned, now 0 active connections and 1 inactive connections
+21:10:41.407 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x091f0db8, L:/127.0.0.1:64000 - R:localhost/127.0.0.1:63999] READ COMPLETE
+21:10:41.408 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x091f0db8, L:/127.0.0.1:64000 - R:localhost/127.0.0.1:63999] READ COMPLETE
+21:10:41.408 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x091f0db8, L:/127.0.0.1:64000 ! R:localhost/127.0.0.1:63999] CLOSE
+21:10:41.408 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x091f0db8, L:/127.0.0.1:64000 ! R:localhost/127.0.0.1:63999] USER_EVENT: SslCloseCompletionEvent(java.nio.channels.ClosedChannelException)
+21:10:41.408 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x091f0db8, L:/127.0.0.1:64000 ! R:localhost/127.0.0.1:63999] INACTIVE
+21:10:41.408 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x091f0db8, L:/127.0.0.1:64000 ! R:localhost/127.0.0.1:63999] onStateChange(PooledConnection{channel=[id: 0x091f0db8, L:/127.0.0.1:64000 ! R:localhost/127.0.0.1:63999]}, [disconnecting])
+21:10:41.408 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x091f0db8, L:/127.0.0.1:64000 ! R:localhost/127.0.0.1:63999] UNREGISTERED
+2022-03-04 21:10:41.415  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 64001 (https)
+21:10:41.416 [main] DEBUG reactor.netty.resources.PooledConnectionProvider - Creating new client pool [http] for localhost:64001
+21:10:41.416 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x9bae76a6] Created new pooled channel, now 0 active connections and 1 inactive connections
+21:10:41.417 [reactor-http-nio-4] DEBUG reactor.netty.tcp.SslProvider - [id: 0x9bae76a6] SSL enabled using engine OpenSslEngine and SNI localhost:64001
+21:10:41.417 [reactor-http-nio-4] DEBUG reactor.netty.channel.BootstrapHandlers - [id: 0x9bae76a6] Initialized pipeline DefaultChannelPipeline{(reactor.left.sslHandler = io.netty.handler.ssl.SslHandler), (reactor.left.loggingHandler = io.netty.handler.logging.LoggingHandler), (reactor.left.sslReader = reactor.netty.tcp.SslProvider$SslReadHandler), (BootstrapHandlers$BootstrapInitializerHandler#0 = reactor.netty.channel.BootstrapHandlers$BootstrapInitializerHandler), (SimpleChannelPool$1#0 = io.netty.channel.pool.SimpleChannelPool$1), (reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+21:10:41.417 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x9bae76a6] REGISTERED
+21:10:41.417 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x9bae76a6] CONNECT: localhost/127.0.0.1:64001
+21:10:41.419 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x9bae76a6, L:/127.0.0.1:64002 - R:localhost/127.0.0.1:64001] ACTIVE
+21:10:41.419 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x9bae76a6, L:/127.0.0.1:64002 - R:localhost/127.0.0.1:64001] Registering pool release on close event for channel
+21:10:41.419 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x9bae76a6, L:/127.0.0.1:64002 - R:localhost/127.0.0.1:64001] Channel connected, now 1 active connections and 0 inactive connections
+21:10:41.424 [reactor-http-nio-4] DEBUG io.netty.handler.ssl.util.InsecureTrustManagerFactory - Accepting a server certificate: CN=localhost, OU=localhost, O=localhost, L=localhost, ST=localhost, C=localhost
+21:10:41.425 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x9bae76a6, L:/127.0.0.1:64002 - R:localhost/127.0.0.1:64001] READ COMPLETE
+21:10:41.429 [reactor-http-nio-4] DEBUG io.netty.handler.ssl.SslHandler - [id: 0x9bae76a6, L:/127.0.0.1:64002 - R:localhost/127.0.0.1:64001] HANDSHAKEN: TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+21:10:41.429 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x9bae76a6, L:/127.0.0.1:64002 - R:localhost/127.0.0.1:64001] USER_EVENT: SslHandshakeCompletionEvent(SUCCESS)
+21:10:41.429 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x9bae76a6, L:/127.0.0.1:64002 - R:localhost/127.0.0.1:64001] onStateChange(PooledConnection{channel=[id: 0x9bae76a6, L:/127.0.0.1:64002 - R:localhost/127.0.0.1:64001]}, [connected])
+21:10:41.429 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x9bae76a6, L:/127.0.0.1:64002 - R:localhost/127.0.0.1:64001] onStateChange(GET{uri=/, connection=PooledConnection{channel=[id: 0x9bae76a6, L:/127.0.0.1:64002 - R:localhost/127.0.0.1:64001]}}, [configured])
+21:10:41.429 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClientConnect - [id: 0x9bae76a6, L:/127.0.0.1:64002 - R:localhost/127.0.0.1:64001] Handler is being applied: {uri=https://localhost:64001/test, method=POST}
+21:10:41.430 [reactor-http-nio-4] DEBUG reactor.netty.channel.ChannelOperationsHandler - [id: 0x9bae76a6, L:/127.0.0.1:64002 - R:localhost/127.0.0.1:64001] Writing object DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /test HTTP/1.1
+user-agent: ReactorNetty/0.8.2.RELEASE
+host: localhost:64001
+accept: */*
+Content-Type: text/plain
+Content-Length: 11
+21:10:41.430 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x9bae76a6, L:/127.0.0.1:64002 - R:localhost/127.0.0.1:64001] WRITE: 145B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 50 4f 53 54 20 2f 74 65 73 74 20 48 54 54 50 2f |POST /test HTTP/|
+|00000010| 31 2e 31 0d 0a 75 73 65 72 2d 61 67 65 6e 74 3a |1.1..user-agent:|
+|00000020| 20 52 65 61 63 74 6f 72 4e 65 74 74 79 2f 30 2e | ReactorNetty/0.|
+|00000030| 38 2e 32 2e 52 45 4c 45 41 53 45 0d 0a 68 6f 73 |8.2.RELEASE..hos|
+|00000040| 74 3a 20 6c 6f 63 61 6c 68 6f 73 74 3a 36 34 30 |t: localhost:640|
+|00000050| 30 31 0d 0a 61 63 63 65 70 74 3a 20 2a 2f 2a 0d |01..accept: */*.|
+|00000060| 0a 43 6f 6e 74 65 6e 74 2d 54 79 70 65 3a 20 74 |.Content-Type: t|
+|00000070| 65 78 74 2f 70 6c 61 69 6e 0d 0a 43 6f 6e 74 65 |ext/plain..Conte|
+|00000080| 6e 74 2d 4c 65 6e 67 74 68 3a 20 31 31 0d 0a 0d |nt-Length: 11...|
+|00000090| 0a                                              |.               |
++--------+-------------------------------------------------+----------------+
+21:10:41.430 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x9bae76a6, L:/127.0.0.1:64002 - R:localhost/127.0.0.1:64001] FLUSH
+21:10:41.430 [reactor-http-nio-4] DEBUG reactor.netty.channel.ChannelOperationsHandler - [id: 0x9bae76a6, L:/127.0.0.1:64002 - R:localhost/127.0.0.1:64001] Writing object 
+21:10:41.431 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x9bae76a6, L:/127.0.0.1:64002 - R:localhost/127.0.0.1:64001] WRITE: 11B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 48 65 6c 6c 6f 20 57 6f 72 6c 64                |Hello World     |
++--------+-------------------------------------------------+----------------+
+21:10:41.431 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x9bae76a6, L:/127.0.0.1:64002 - R:localhost/127.0.0.1:64001] FLUSH
+21:10:41.431 [reactor-http-nio-4] DEBUG reactor.netty.channel.ChannelOperationsHandler - [id: 0x9bae76a6, L:/127.0.0.1:64002 - R:localhost/127.0.0.1:64001] Writing object EmptyLastHttpContent
+21:10:41.431 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x9bae76a6, L:/127.0.0.1:64002 - R:localhost/127.0.0.1:64001] WRITE: 0B
+21:10:41.431 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x9bae76a6, L:/127.0.0.1:64002 - R:localhost/127.0.0.1:64001] FLUSH
+21:10:41.431 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x9bae76a6, L:/127.0.0.1:64002 - R:localhost/127.0.0.1:64001] onStateChange(POST{uri=/test, connection=PooledConnection{channel=[id: 0x9bae76a6, L:/127.0.0.1:64002 - R:localhost/127.0.0.1:64001]}}, [request_sent])
+21:10:41.431 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x9bae76a6, L:/127.0.0.1:64002 - R:localhost/127.0.0.1:64001] READ COMPLETE
+21:10:41.432 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x9bae76a6, L:/127.0.0.1:64002 - R:localhost/127.0.0.1:64001] READ: 125B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 48 54 54 50 2f 31 2e 31 20 32 30 30 20 4f 4b 0d |HTTP/1.1 200 OK.|
+|00000010| 0a 43 6f 6e 6e 65 63 74 69 6f 6e 3a 20 6b 65 65 |.Connection: kee|
+|00000020| 70 2d 61 6c 69 76 65 0d 0a 54 72 61 6e 73 66 65 |p-alive..Transfe|
+|00000030| 72 2d 45 6e 63 6f 64 69 6e 67 3a 20 63 68 75 6e |r-Encoding: chun|
+|00000040| 6b 65 64 0d 0a 44 61 74 65 3a 20 46 72 69 2c 20 |ked..Date: Fri, |
+|00000050| 30 34 20 4d 61 72 20 32 30 32 32 20 31 33 3a 31 |04 Mar 2022 13:1|
+|00000060| 30 3a 34 30 20 47 4d 54 0d 0a 0d 0a 30 62 0d 0a |0:40 GMT....0b..|
+|00000070| 48 65 6c 6c 6f 20 57 6f 72 6c 64 0d 0a          |Hello World..   |
++--------+-------------------------------------------------+----------------+
+21:10:41.432 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClientOperations - [id: 0x9bae76a6, L:/127.0.0.1:64002 - R:localhost/127.0.0.1:64001] Received response (auto-read:false) : [Connection=keep-alive, Transfer-Encoding=chunked, Date=Fri, 04 Mar 2022 13:10:40 GMT]
+21:10:41.432 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x9bae76a6, L:/127.0.0.1:64002 - R:localhost/127.0.0.1:64001] onStateChange(POST{uri=/test, connection=PooledConnection{channel=[id: 0x9bae76a6, L:/127.0.0.1:64002 - R:localhost/127.0.0.1:64001]}}, [response_received])
+21:10:41.433 [reactor-http-nio-4] DEBUG reactor.netty.channel.FluxReceive - [id: 0x9bae76a6, L:/127.0.0.1:64002 - R:localhost/127.0.0.1:64001] Subscribing inbound receiver [pending: 0, cancelled:false, inboundDone: false]
+21:10:41.433 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x9bae76a6, L:/127.0.0.1:64002 - R:localhost/127.0.0.1:64001] READ COMPLETE
+21:10:41.433 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x9bae76a6, L:/127.0.0.1:64002 - R:localhost/127.0.0.1:64001] READ: 5B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 30 0d 0a 0d 0a                                  |0....           |
++--------+-------------------------------------------------+----------------+
+21:10:41.433 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClientOperations - [id: 0x9bae76a6, L:/127.0.0.1:64002 - R:localhost/127.0.0.1:64001] Received last HTTP packet
+21:10:41.433 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x9bae76a6, L:/127.0.0.1:64002 - R:localhost/127.0.0.1:64001] onStateChange(POST{uri=/test, connection=PooledConnection{channel=[id: 0x9bae76a6, L:/127.0.0.1:64002 - R:localhost/127.0.0.1:64001]}}, [disconnecting])
+21:10:41.434 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x9bae76a6, L:/127.0.0.1:64002 - R:localhost/127.0.0.1:64001] Releasing channel
+21:10:41.434 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x9bae76a6, L:/127.0.0.1:64002 - R:localhost/127.0.0.1:64001] Channel cleaned, now 0 active connections and 1 inactive connections
+21:10:41.434 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x9bae76a6, L:/127.0.0.1:64002 - R:localhost/127.0.0.1:64001] READ COMPLETE
+21:10:41.434 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x9bae76a6, L:/127.0.0.1:64002 - R:localhost/127.0.0.1:64001] READ COMPLETE
+21:10:41.434 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x9bae76a6, L:/127.0.0.1:64002 ! R:localhost/127.0.0.1:64001] CLOSE
+21:10:41.435 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x9bae76a6, L:/127.0.0.1:64002 ! R:localhost/127.0.0.1:64001] USER_EVENT: SslCloseCompletionEvent(java.nio.channels.ClosedChannelException)
+21:10:41.435 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x9bae76a6, L:/127.0.0.1:64002 ! R:localhost/127.0.0.1:64001] INACTIVE
+21:10:41.435 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x9bae76a6, L:/127.0.0.1:64002 ! R:localhost/127.0.0.1:64001] onStateChange(PooledConnection{channel=[id: 0x9bae76a6, L:/127.0.0.1:64002 ! R:localhost/127.0.0.1:64001]}, [disconnecting])
+21:10:41.435 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x9bae76a6, L:/127.0.0.1:64002 ! R:localhost/127.0.0.1:64001] UNREGISTERED
+2022-03-04 21:10:41.458  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 64003 (http)
+21:10:41.459 [main] DEBUG reactor.netty.resources.PooledConnectionProvider - Creating new client pool [http] for /0.0.0.0:64003
+21:10:41.459 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xb2a1de33] Created new pooled channel, now 0 active connections and 1 inactive connections
+21:10:41.459 [reactor-http-nio-4] DEBUG reactor.netty.channel.BootstrapHandlers - [id: 0xb2a1de33] Initialized pipeline DefaultChannelPipeline{(reactor.left.loggingHandler = io.netty.handler.logging.LoggingHandler), (BootstrapHandlers$BootstrapInitializerHandler#0 = reactor.netty.channel.BootstrapHandlers$BootstrapInitializerHandler), (SimpleChannelPool$1#0 = io.netty.channel.pool.SimpleChannelPool$1), (reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.decompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+21:10:41.459 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xb2a1de33] REGISTERED
+21:10:41.459 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xb2a1de33] CONNECT: /0.0.0.0:64003
+21:10:41.460 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xb2a1de33, L:/192.168.28.46:64004 - R:/0.0.0.0:64003] ACTIVE
+21:10:41.460 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xb2a1de33, L:/192.168.28.46:64004 - R:/0.0.0.0:64003] onStateChange(PooledConnection{channel=[id: 0xb2a1de33, L:/192.168.28.46:64004 - R:/0.0.0.0:64003]}, [connected])
+21:10:41.460 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xb2a1de33, L:/192.168.28.46:64004 - R:/0.0.0.0:64003] onStateChange(GET{uri=/, connection=PooledConnection{channel=[id: 0xb2a1de33, L:/192.168.28.46:64004 - R:/0.0.0.0:64003]}}, [configured])
+21:10:41.460 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xb2a1de33, L:/192.168.28.46:64004 - R:/0.0.0.0:64003] Registering pool release on close event for channel
+21:10:41.460 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClientConnect - [id: 0xb2a1de33, L:/192.168.28.46:64004 - R:/0.0.0.0:64003] Handler is being applied: {uri=http://0.0.0.0:64003/, method=POST}
+21:10:41.461 [reactor-http-nio-4] DEBUG reactor.netty.channel.ChannelOperationsHandler - [id: 0xb2a1de33, L:/192.168.28.46:64004 - R:/0.0.0.0:64003] Writing object DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST / HTTP/1.1
+accept-encoding: gzip
+user-agent: ReactorNetty/0.8.2.RELEASE
+host: 0.0.0.0:64003
+accept: */*
+transfer-encoding: chunked
+21:10:41.461 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xb2a1de33, L:/192.168.28.46:64004 - R:/0.0.0.0:64003] WRITE: 144B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 50 4f 53 54 20 2f 20 48 54 54 50 2f 31 2e 31 0d |POST / HTTP/1.1.|
+|00000010| 0a 61 63 63 65 70 74 2d 65 6e 63 6f 64 69 6e 67 |.accept-encoding|
+|00000020| 3a 20 67 7a 69 70 0d 0a 75 73 65 72 2d 61 67 65 |: gzip..user-age|
+|00000030| 6e 74 3a 20 52 65 61 63 74 6f 72 4e 65 74 74 79 |nt: ReactorNetty|
+|00000040| 2f 30 2e 38 2e 32 2e 52 45 4c 45 41 53 45 0d 0a |/0.8.2.RELEASE..|
+|00000050| 68 6f 73 74 3a 20 30 2e 30 2e 30 2e 30 3a 36 34 |host: 0.0.0.0:64|
+|00000060| 30 30 33 0d 0a 61 63 63 65 70 74 3a 20 2a 2f 2a |003..accept: */*|
+|00000070| 0d 0a 74 72 61 6e 73 66 65 72 2d 65 6e 63 6f 64 |..transfer-encod|
+|00000080| 69 6e 67 3a 20 63 68 75 6e 6b 65 64 0d 0a 0d 0a |ing: chunked....|
++--------+-------------------------------------------------+----------------+
+21:10:41.461 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xb2a1de33, L:/192.168.28.46:64004 - R:/0.0.0.0:64003] FLUSH
+21:10:41.461 [reactor-http-nio-4] DEBUG reactor.netty.channel.ChannelOperationsHandler - [id: 0xb2a1de33, L:/192.168.28.46:64004 - R:/0.0.0.0:64003] Writing object EmptyLastHttpContent
+21:10:41.461 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xb2a1de33, L:/192.168.28.46:64004 - R:/0.0.0.0:64003] WRITE: 5B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 30 0d 0a 0d 0a                                  |0....           |
++--------+-------------------------------------------------+----------------+
+21:10:41.461 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xb2a1de33, L:/192.168.28.46:64004 - R:/0.0.0.0:64003] FLUSH
+21:10:41.461 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xb2a1de33, L:/192.168.28.46:64004 - R:/0.0.0.0:64003] onStateChange(POST{uri=/, connection=PooledConnection{channel=[id: 0xb2a1de33, L:/192.168.28.46:64004 - R:/0.0.0.0:64003]}}, [request_sent])
+21:10:41.461 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xb2a1de33, L:/192.168.28.46:64004 - R:/0.0.0.0:64003] Channel connected, now 1 active connections and 0 inactive connections
+21:10:41.470 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xb2a1de33, L:/192.168.28.46:64004 - R:/0.0.0.0:64003] READ: 199B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 48 54 54 50 2f 31 2e 31 20 32 30 30 20 4f 4b 0d |HTTP/1.1 200 OK.|
+|00000010| 0a 43 6f 6e 74 65 6e 74 2d 45 6e 63 6f 64 69 6e |.Content-Encodin|
+|00000020| 67 3a 20 67 7a 69 70 0d 0a 43 6f 6e 6e 65 63 74 |g: gzip..Connect|
+|00000030| 69 6f 6e 3a 20 6b 65 65 70 2d 61 6c 69 76 65 0d |ion: keep-alive.|
+|00000040| 0a 54 72 61 6e 73 66 65 72 2d 45 6e 63 6f 64 69 |.Transfer-Encodi|
+|00000050| 6e 67 3a 20 63 68 75 6e 6b 65 64 0d 0a 43 6f 6e |ng: chunked..Con|
+|00000060| 74 65 6e 74 2d 54 79 70 65 3a 20 74 65 78 74 2f |tent-Type: text/|
+|00000070| 70 6c 61 69 6e 0d 0a 44 61 74 65 3a 20 46 72 69 |plain..Date: Fri|
+|00000080| 2c 20 30 34 20 4d 61 72 20 32 30 32 32 20 31 33 |, 04 Mar 2022 13|
+|00000090| 3a 31 30 3a 34 30 20 47 4d 54 0d 0a 0d 0a 32 33 |:10:40 GMT....23|
+|000000a0| 0d 0a 1f 8b 08 00 00 00 00 00 00 00 ec c1 31 01 |..............1.|
+|000000b0| 00 00 00 c2 a0 76 eb 1f c9 1a 1e 40 01 00 00 ef |.....v.....@....|
+|000000c0| 06 00 00 ff ff 0d 0a                            |.......         |
++--------+-------------------------------------------------+----------------+
+21:10:41.471 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClientOperations - [id: 0xb2a1de33, L:/192.168.28.46:64004 - R:/0.0.0.0:64003] Received response (auto-read:false) : [Connection=keep-alive, Transfer-Encoding=chunked, Content-Type=text/plain, Date=Fri, 04 Mar 2022 13:10:40 GMT, X-Test-Compressed=true]
+21:10:41.471 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xb2a1de33, L:/192.168.28.46:64004 - R:/0.0.0.0:64003] onStateChange(POST{uri=/, connection=PooledConnection{channel=[id: 0xb2a1de33, L:/192.168.28.46:64004 - R:/0.0.0.0:64003]}}, [response_received])
+21:10:41.471 [reactor-http-nio-4] DEBUG reactor.netty.channel.FluxReceive - [id: 0xb2a1de33, L:/192.168.28.46:64004 - R:/0.0.0.0:64003] Subscribing inbound receiver [pending: 0, cancelled:false, inboundDone: false]
+21:10:41.472 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xb2a1de33, L:/192.168.28.46:64004 - R:/0.0.0.0:64003] CLOSE
+21:10:41.472 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xb2a1de33, L:/192.168.28.46:64004 ! R:/0.0.0.0:64003] Channel cleaned, now 0 active connections and 1 inactive connections
+21:10:41.472 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xb2a1de33, L:/192.168.28.46:64004 ! R:/0.0.0.0:64003] READ COMPLETE
+21:10:41.472 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xb2a1de33, L:/192.168.28.46:64004 ! R:/0.0.0.0:64003] INACTIVE
+21:10:41.472 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xb2a1de33, L:/192.168.28.46:64004 ! R:/0.0.0.0:64003] UNREGISTERED
+2022-03-04 21:10:41.481  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 64005 (http)
+21:10:41.482 [main] DEBUG reactor.netty.resources.PooledConnectionProvider - Creating new client pool [http] for /0.0.0.0:64005
+21:10:41.482 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xa3fb3d6f] Created new pooled channel, now 0 active connections and 1 inactive connections
+21:10:41.482 [reactor-http-nio-4] DEBUG reactor.netty.channel.BootstrapHandlers - [id: 0xa3fb3d6f] Initialized pipeline DefaultChannelPipeline{(reactor.left.loggingHandler = io.netty.handler.logging.LoggingHandler), (BootstrapHandlers$BootstrapInitializerHandler#0 = reactor.netty.channel.BootstrapHandlers$BootstrapInitializerHandler), (SimpleChannelPool$1#0 = io.netty.channel.pool.SimpleChannelPool$1), (reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.decompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+21:10:41.483 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xa3fb3d6f] REGISTERED
+21:10:41.483 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xa3fb3d6f] CONNECT: /0.0.0.0:64005
+21:10:41.483 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xa3fb3d6f, L:/192.168.28.46:64006 - R:/0.0.0.0:64005] ACTIVE
+21:10:41.483 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xa3fb3d6f, L:/192.168.28.46:64006 - R:/0.0.0.0:64005] onStateChange(PooledConnection{channel=[id: 0xa3fb3d6f, L:/192.168.28.46:64006 - R:/0.0.0.0:64005]}, [connected])
+21:10:41.483 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xa3fb3d6f, L:/192.168.28.46:64006 - R:/0.0.0.0:64005] onStateChange(GET{uri=/, connection=PooledConnection{channel=[id: 0xa3fb3d6f, L:/192.168.28.46:64006 - R:/0.0.0.0:64005]}}, [configured])
+21:10:41.483 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xa3fb3d6f, L:/192.168.28.46:64006 - R:/0.0.0.0:64005] Registering pool release on close event for channel
+21:10:41.483 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClientConnect - [id: 0xa3fb3d6f, L:/192.168.28.46:64006 - R:/0.0.0.0:64005] Handler is being applied: {uri=http://0.0.0.0:64005/, method=GET}
+21:10:41.484 [reactor-http-nio-4] DEBUG reactor.netty.channel.ChannelOperationsHandler - [id: 0xa3fb3d6f, L:/192.168.28.46:64006 - R:/0.0.0.0:64005] Writing object DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+GET / HTTP/1.1
+accept-encoding: gzip
+user-agent: ReactorNetty/0.8.2.RELEASE
+host: 0.0.0.0:64005
+accept: */*
+21:10:41.484 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xa3fb3d6f, L:/192.168.28.46:64006 - R:/0.0.0.0:64005] WRITE: 115B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 47 45 54 20 2f 20 48 54 54 50 2f 31 2e 31 0d 0a |GET / HTTP/1.1..|
+|00000010| 61 63 63 65 70 74 2d 65 6e 63 6f 64 69 6e 67 3a |accept-encoding:|
+|00000020| 20 67 7a 69 70 0d 0a 75 73 65 72 2d 61 67 65 6e | gzip..user-agen|
+|00000030| 74 3a 20 52 65 61 63 74 6f 72 4e 65 74 74 79 2f |t: ReactorNetty/|
+|00000040| 30 2e 38 2e 32 2e 52 45 4c 45 41 53 45 0d 0a 68 |0.8.2.RELEASE..h|
+|00000050| 6f 73 74 3a 20 30 2e 30 2e 30 2e 30 3a 36 34 30 |ost: 0.0.0.0:640|
+|00000060| 30 35 0d 0a 61 63 63 65 70 74 3a 20 2a 2f 2a 0d |05..accept: */*.|
+|00000070| 0a 0d 0a                                        |...             |
++--------+-------------------------------------------------+----------------+
+21:10:41.484 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xa3fb3d6f, L:/192.168.28.46:64006 - R:/0.0.0.0:64005] FLUSH
+21:10:41.484 [reactor-http-nio-4] DEBUG reactor.netty.channel.ChannelOperationsHandler - [id: 0xa3fb3d6f, L:/192.168.28.46:64006 - R:/0.0.0.0:64005] Writing object EmptyLastHttpContent
+21:10:41.484 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xa3fb3d6f, L:/192.168.28.46:64006 - R:/0.0.0.0:64005] WRITE: 0B
+21:10:41.484 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xa3fb3d6f, L:/192.168.28.46:64006 - R:/0.0.0.0:64005] FLUSH
+21:10:41.484 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xa3fb3d6f, L:/192.168.28.46:64006 - R:/0.0.0.0:64005] onStateChange(GET{uri=/, connection=PooledConnection{channel=[id: 0xa3fb3d6f, L:/192.168.28.46:64006 - R:/0.0.0.0:64005]}}, [request_sent])
+21:10:41.485 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xa3fb3d6f, L:/192.168.28.46:64006 - R:/0.0.0.0:64005] Channel connected, now 1 active connections and 0 inactive connections
+21:10:41.486 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xa3fb3d6f, L:/192.168.28.46:64006 - R:/0.0.0.0:64005] READ: 1024B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 48 54 54 50 2f 31 2e 31 20 32 30 30 20 4f 4b 0d |HTTP/1.1 200 OK.|
+|00000010| 0a 43 6f 6e 6e 65 63 74 69 6f 6e 3a 20 6b 65 65 |.Connection: kee|
+|00000020| 70 2d 61 6c 69 76 65 0d 0a 43 6f 6e 74 65 6e 74 |p-alive..Content|
+|00000030| 2d 54 79 70 65 3a 20 74 65 78 74 2f 70 6c 61 69 |-Type: text/plai|
+|00000040| 6e 0d 0a 43 6f 6e 74 65 6e 74 2d 4c 65 6e 67 74 |n..Content-Lengt|
+|00000050| 68 3a 20 33 30 30 30 0d 0a 44 61 74 65 3a 20 46 |h: 3000..Date: F|
+|00000060| 72 69 2c 20 30 34 20 4d 61 72 20 32 30 32 32 20 |ri, 04 Mar 2022 |
+|00000070| 31 33 3a 31 30 3a 34 30 20 47 4d 54 0d 0a 0d 0a |13:10:40 GMT....|
+|00000080| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000090| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000000a0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000000b0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000000c0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000000d0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000000e0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000000f0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000100| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000110| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000120| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000130| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000140| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000150| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000160| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000170| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000180| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000190| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000001a0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000001b0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000001c0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000001d0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000001e0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000001f0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000200| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000210| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000220| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000230| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000240| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000250| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000260| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000270| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000280| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000290| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000002a0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000002b0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000002c0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000002d0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000002e0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000002f0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000300| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000310| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000320| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000330| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000340| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000350| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000360| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000370| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000380| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000390| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000003a0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000003b0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000003c0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000003d0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000003e0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000003f0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
++--------+-------------------------------------------------+----------------+
+21:10:41.486 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClientOperations - [id: 0xa3fb3d6f, L:/192.168.28.46:64006 - R:/0.0.0.0:64005] Received response (auto-read:false) : [Connection=keep-alive, Content-Type=text/plain, Content-Length=3000, Date=Fri, 04 Mar 2022 13:10:40 GMT]
+21:10:41.486 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xa3fb3d6f, L:/192.168.28.46:64006 - R:/0.0.0.0:64005] onStateChange(GET{uri=/, connection=PooledConnection{channel=[id: 0xa3fb3d6f, L:/192.168.28.46:64006 - R:/0.0.0.0:64005]}}, [response_received])
+21:10:41.486 [reactor-http-nio-4] DEBUG reactor.netty.channel.FluxReceive - [id: 0xa3fb3d6f, L:/192.168.28.46:64006 - R:/0.0.0.0:64005] Subscribing inbound receiver [pending: 0, cancelled:false, inboundDone: false]
+21:10:41.486 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xa3fb3d6f, L:/192.168.28.46:64006 - R:/0.0.0.0:64005] CLOSE
+21:10:41.487 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xa3fb3d6f, L:/192.168.28.46:64006 ! R:/0.0.0.0:64005] Channel cleaned, now 0 active connections and 1 inactive connections
+21:10:41.487 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xa3fb3d6f, L:/192.168.28.46:64006 ! R:/0.0.0.0:64005] READ COMPLETE
+21:10:41.487 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xa3fb3d6f, L:/192.168.28.46:64006 ! R:/0.0.0.0:64005] USER_EVENT: io.netty.channel.socket.ChannelInputShutdownReadComplete@1eff9f05
+21:10:41.487 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xa3fb3d6f, L:/192.168.28.46:64006 ! R:/0.0.0.0:64005] INACTIVE
+21:10:41.487 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xa3fb3d6f, L:/192.168.28.46:64006 ! R:/0.0.0.0:64005] UNREGISTERED
+2022-03-04 21:10:41.496  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 64007 (https)
+21:10:41.497 [main] DEBUG reactor.netty.resources.PooledConnectionProvider - Creating new client pool [http] for localhost:64007
+21:10:41.499 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xc0e160ab] Created new pooled channel, now 0 active connections and 1 inactive connections
+21:10:41.499 [reactor-http-nio-4] DEBUG reactor.netty.tcp.SslProvider - [id: 0xc0e160ab] SSL enabled using engine OpenSslEngine and SNI localhost:64007
+21:10:41.499 [reactor-http-nio-4] DEBUG reactor.netty.channel.BootstrapHandlers - [id: 0xc0e160ab] Initialized pipeline DefaultChannelPipeline{(reactor.left.sslHandler = io.netty.handler.ssl.SslHandler), (reactor.left.loggingHandler = io.netty.handler.logging.LoggingHandler), (reactor.left.sslReader = reactor.netty.tcp.SslProvider$SslReadHandler), (BootstrapHandlers$BootstrapInitializerHandler#0 = reactor.netty.channel.BootstrapHandlers$BootstrapInitializerHandler), (SimpleChannelPool$1#0 = io.netty.channel.pool.SimpleChannelPool$1), (reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+21:10:41.500 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xc0e160ab] REGISTERED
+21:10:41.500 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xc0e160ab] CONNECT: localhost/127.0.0.1:64007
+21:10:41.501 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xc0e160ab, L:/127.0.0.1:64008 - R:localhost/127.0.0.1:64007] ACTIVE
+21:10:41.502 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xc0e160ab, L:/127.0.0.1:64008 - R:localhost/127.0.0.1:64007] Registering pool release on close event for channel
+21:10:41.502 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xc0e160ab, L:/127.0.0.1:64008 - R:localhost/127.0.0.1:64007] Channel connected, now 1 active connections and 0 inactive connections
+21:10:41.508 [reactor-http-nio-4] DEBUG io.netty.handler.ssl.util.InsecureTrustManagerFactory - Accepting a server certificate: CN=localhost, OU=localhost, O=localhost, L=localhost, ST=localhost, C=localhost
+21:10:41.509 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xc0e160ab, L:/127.0.0.1:64008 - R:localhost/127.0.0.1:64007] READ COMPLETE
+21:10:41.510 [reactor-http-nio-4] DEBUG io.netty.handler.ssl.ReferenceCountedOpenSslEngine - SSL_read failed: OpenSSL error: error:10000412:SSL routines:OPENSSL_internal:SSLV3_ALERT_BAD_CERTIFICATE
+21:10:41.510 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xc0e160ab, L:/127.0.0.1:64008 - R:localhost/127.0.0.1:64007] USER_EVENT: SslHandshakeCompletionEvent(javax.net.ssl.SSLHandshakeException: error:10000412:SSL routines:OPENSSL_internal:SSLV3_ALERT_BAD_CERTIFICATE)
+21:10:41.510 [reactor-http-nio-4] ERROR reactor.netty.resources.PooledConnectionProvider - [id: 0xc0e160ab, L:/127.0.0.1:64008 - R:localhost/127.0.0.1:64007] Pooled connection observed an error
+javax.net.ssl.SSLHandshakeException: error:10000412:SSL routines:OPENSSL_internal:SSLV3_ALERT_BAD_CERTIFICATE
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.shutdownWithError(ReferenceCountedOpenSslEngine.java:873)
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.sslReadErrorResult(ReferenceCountedOpenSslEngine.java:1122)
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1077)
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1144)
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1187)
+	at io.netty.handler.ssl.SslHandler$SslEngineType$1.unwrap(SslHandler.java:216)
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1297)
+	at io.netty.handler.ssl.SslHandler.decodeNonJdkCompatible(SslHandler.java:1211)
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1245)
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:489)
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:428)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:265)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1434)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:965)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:628)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:563)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:480)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:442)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884)
+	at java.lang.Thread.run(Thread.java:748)
+21:10:41.511 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xc0e160ab, L:/127.0.0.1:64008 ! R:localhost/127.0.0.1:64007] Channel cleaned, now 0 active connections and 1 inactive connections
+21:10:41.511 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xc0e160ab, L:/127.0.0.1:64008 ! R:localhost/127.0.0.1:64007] EXCEPTION: io.netty.handler.codec.DecoderException: javax.net.ssl.SSLHandshakeException: error:10000412:SSL routines:OPENSSL_internal:SSLV3_ALERT_BAD_CERTIFICATE
+io.netty.handler.codec.DecoderException: javax.net.ssl.SSLHandshakeException: error:10000412:SSL routines:OPENSSL_internal:SSLV3_ALERT_BAD_CERTIFICATE
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:459)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:265)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1434)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:965)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:628)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:563)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:480)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:442)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.net.ssl.SSLHandshakeException: error:10000412:SSL routines:OPENSSL_internal:SSLV3_ALERT_BAD_CERTIFICATE
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.shutdownWithError(ReferenceCountedOpenSslEngine.java:873)
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.sslReadErrorResult(ReferenceCountedOpenSslEngine.java:1122)
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1077)
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1144)
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1187)
+	at io.netty.handler.ssl.SslHandler$SslEngineType$1.unwrap(SslHandler.java:216)
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1297)
+	at io.netty.handler.ssl.SslHandler.decodeNonJdkCompatible(SslHandler.java:1211)
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1245)
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:489)
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:428)
+	... 15 common frames omitted
+21:10:41.511 [reactor-http-nio-4] ERROR reactor.netty.resources.PooledConnectionProvider - [id: 0xc0e160ab, L:/127.0.0.1:64008 ! R:localhost/127.0.0.1:64007] Pooled connection observed an error
+io.netty.handler.codec.DecoderException: javax.net.ssl.SSLHandshakeException: error:10000412:SSL routines:OPENSSL_internal:SSLV3_ALERT_BAD_CERTIFICATE
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:459)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:265)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1434)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:965)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:628)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:563)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:480)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:442)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.net.ssl.SSLHandshakeException: error:10000412:SSL routines:OPENSSL_internal:SSLV3_ALERT_BAD_CERTIFICATE
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.shutdownWithError(ReferenceCountedOpenSslEngine.java:873)
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.sslReadErrorResult(ReferenceCountedOpenSslEngine.java:1122)
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1077)
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1144)
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1187)
+	at io.netty.handler.ssl.SslHandler$SslEngineType$1.unwrap(SslHandler.java:216)
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1297)
+	at io.netty.handler.ssl.SslHandler.decodeNonJdkCompatible(SslHandler.java:1211)
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1245)
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:489)
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:428)
+	... 15 common frames omitted
+21:10:41.511 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xc0e160ab, L:/127.0.0.1:64008 ! R:localhost/127.0.0.1:64007] READ COMPLETE
+21:10:41.511 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xc0e160ab, L:/127.0.0.1:64008 ! R:localhost/127.0.0.1:64007] USER_EVENT: SslCloseCompletionEvent(java.nio.channels.ClosedChannelException)
+21:10:41.511 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xc0e160ab, L:/127.0.0.1:64008 ! R:localhost/127.0.0.1:64007] INACTIVE
+21:10:41.511 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xc0e160ab, L:/127.0.0.1:64008 ! R:localhost/127.0.0.1:64007] onStateChange(PooledConnection{channel=[id: 0xc0e160ab, L:/127.0.0.1:64008 ! R:localhost/127.0.0.1:64007]}, [disconnecting])
+21:10:41.511 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xc0e160ab, L:/127.0.0.1:64008 ! R:localhost/127.0.0.1:64007] UNREGISTERED
+2022-03-04 21:10:41.518  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 64009 (http)
+21:10:41.519 [main] DEBUG reactor.netty.resources.PooledConnectionProvider - Creating new client pool [http] for /0.0.0.0:64009
+21:10:41.519 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x1c7b469f] Created new pooled channel, now 0 active connections and 1 inactive connections
+21:10:41.519 [reactor-http-nio-4] DEBUG reactor.netty.channel.BootstrapHandlers - [id: 0x1c7b469f] Initialized pipeline DefaultChannelPipeline{(reactor.left.loggingHandler = io.netty.handler.logging.LoggingHandler), (BootstrapHandlers$BootstrapInitializerHandler#0 = reactor.netty.channel.BootstrapHandlers$BootstrapInitializerHandler), (SimpleChannelPool$1#0 = io.netty.channel.pool.SimpleChannelPool$1), (reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.decompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+21:10:41.519 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x1c7b469f] REGISTERED
+21:10:41.519 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x1c7b469f] CONNECT: /0.0.0.0:64009
+21:10:41.520 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x1c7b469f, L:/192.168.28.46:64010 - R:/0.0.0.0:64009] ACTIVE
+21:10:41.521 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x1c7b469f, L:/192.168.28.46:64010 - R:/0.0.0.0:64009] onStateChange(PooledConnection{channel=[id: 0x1c7b469f, L:/192.168.28.46:64010 - R:/0.0.0.0:64009]}, [connected])
+21:10:41.521 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x1c7b469f, L:/192.168.28.46:64010 - R:/0.0.0.0:64009] onStateChange(GET{uri=/, connection=PooledConnection{channel=[id: 0x1c7b469f, L:/192.168.28.46:64010 - R:/0.0.0.0:64009]}}, [configured])
+21:10:41.521 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x1c7b469f, L:/192.168.28.46:64010 - R:/0.0.0.0:64009] Registering pool release on close event for channel
+21:10:41.521 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClientConnect - [id: 0x1c7b469f, L:/192.168.28.46:64010 - R:/0.0.0.0:64009] Handler is being applied: {uri=http://0.0.0.0:64009/, method=GET}
+21:10:41.521 [reactor-http-nio-4] DEBUG reactor.netty.channel.ChannelOperationsHandler - [id: 0x1c7b469f, L:/192.168.28.46:64010 - R:/0.0.0.0:64009] Writing object DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+GET / HTTP/1.1
+accept-encoding: gzip
+host: 0.0.0.0:64009
+accept: */*
+User-Agent: testUserAgent
+21:10:41.521 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x1c7b469f, L:/192.168.28.46:64010 - R:/0.0.0.0:64009] WRITE: 102B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 47 45 54 20 2f 20 48 54 54 50 2f 31 2e 31 0d 0a |GET / HTTP/1.1..|
+|00000010| 61 63 63 65 70 74 2d 65 6e 63 6f 64 69 6e 67 3a |accept-encoding:|
+|00000020| 20 67 7a 69 70 0d 0a 68 6f 73 74 3a 20 30 2e 30 | gzip..host: 0.0|
+|00000030| 2e 30 2e 30 3a 36 34 30 30 39 0d 0a 61 63 63 65 |.0.0:64009..acce|
+|00000040| 70 74 3a 20 2a 2f 2a 0d 0a 55 73 65 72 2d 41 67 |pt: */*..User-Ag|
+|00000050| 65 6e 74 3a 20 74 65 73 74 55 73 65 72 41 67 65 |ent: testUserAge|
+|00000060| 6e 74 0d 0a 0d 0a                               |nt....          |
++--------+-------------------------------------------------+----------------+
+21:10:41.521 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x1c7b469f, L:/192.168.28.46:64010 - R:/0.0.0.0:64009] FLUSH
+21:10:41.522 [reactor-http-nio-4] DEBUG reactor.netty.channel.ChannelOperationsHandler - [id: 0x1c7b469f, L:/192.168.28.46:64010 - R:/0.0.0.0:64009] Writing object EmptyLastHttpContent
+21:10:41.522 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x1c7b469f, L:/192.168.28.46:64010 - R:/0.0.0.0:64009] WRITE: 0B
+21:10:41.522 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x1c7b469f, L:/192.168.28.46:64010 - R:/0.0.0.0:64009] FLUSH
+21:10:41.522 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x1c7b469f, L:/192.168.28.46:64010 - R:/0.0.0.0:64009] onStateChange(GET{uri=/, connection=PooledConnection{channel=[id: 0x1c7b469f, L:/192.168.28.46:64010 - R:/0.0.0.0:64009]}}, [request_sent])
+21:10:41.522 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x1c7b469f, L:/192.168.28.46:64010 - R:/0.0.0.0:64009] Channel connected, now 1 active connections and 0 inactive connections
+21:10:41.523 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x1c7b469f, L:/192.168.28.46:64010 - R:/0.0.0.0:64009] READ: 1024B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 48 54 54 50 2f 31 2e 31 20 32 30 30 20 4f 4b 0d |HTTP/1.1 200 OK.|
+|00000010| 0a 43 6f 6e 6e 65 63 74 69 6f 6e 3a 20 6b 65 65 |.Connection: kee|
+|00000020| 70 2d 61 6c 69 76 65 0d 0a 43 6f 6e 74 65 6e 74 |p-alive..Content|
+|00000030| 2d 54 79 70 65 3a 20 74 65 78 74 2f 70 6c 61 69 |-Type: text/plai|
+|00000040| 6e 0d 0a 43 6f 6e 74 65 6e 74 2d 4c 65 6e 67 74 |n..Content-Lengt|
+|00000050| 68 3a 20 33 30 30 30 0d 0a 44 61 74 65 3a 20 46 |h: 3000..Date: F|
+|00000060| 72 69 2c 20 30 34 20 4d 61 72 20 32 30 32 32 20 |ri, 04 Mar 2022 |
+|00000070| 31 33 3a 31 30 3a 34 30 20 47 4d 54 0d 0a 0d 0a |13:10:40 GMT....|
+|00000080| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000090| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000000a0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000000b0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000000c0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000000d0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000000e0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000000f0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000100| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000110| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000120| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000130| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000140| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000150| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000160| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000170| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000180| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000190| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000001a0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000001b0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000001c0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000001d0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000001e0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000001f0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000200| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000210| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000220| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000230| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000240| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000250| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000260| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000270| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000280| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000290| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000002a0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000002b0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000002c0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000002d0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000002e0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000002f0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000300| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000310| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000320| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000330| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000340| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000350| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000360| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000370| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000380| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000390| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000003a0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000003b0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000003c0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000003d0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000003e0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000003f0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
++--------+-------------------------------------------------+----------------+
+21:10:41.524 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClientOperations - [id: 0x1c7b469f, L:/192.168.28.46:64010 - R:/0.0.0.0:64009] Received response (auto-read:false) : [Connection=keep-alive, Content-Type=text/plain, Content-Length=3000, Date=Fri, 04 Mar 2022 13:10:40 GMT]
+21:10:41.524 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x1c7b469f, L:/192.168.28.46:64010 - R:/0.0.0.0:64009] onStateChange(GET{uri=/, connection=PooledConnection{channel=[id: 0x1c7b469f, L:/192.168.28.46:64010 - R:/0.0.0.0:64009]}}, [response_received])
+21:10:41.524 [reactor-http-nio-4] DEBUG reactor.netty.channel.FluxReceive - [id: 0x1c7b469f, L:/192.168.28.46:64010 - R:/0.0.0.0:64009] Subscribing inbound receiver [pending: 0, cancelled:false, inboundDone: false]
+21:10:41.524 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x1c7b469f, L:/192.168.28.46:64010 - R:/0.0.0.0:64009] CLOSE
+21:10:41.524 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0x1c7b469f, L:/192.168.28.46:64010 ! R:/0.0.0.0:64009] Channel cleaned, now 0 active connections and 1 inactive connections
+21:10:41.524 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x1c7b469f, L:/192.168.28.46:64010 ! R:/0.0.0.0:64009] READ COMPLETE
+21:10:41.525 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x1c7b469f, L:/192.168.28.46:64010 ! R:/0.0.0.0:64009] USER_EVENT: io.netty.channel.socket.ChannelInputShutdownReadComplete@1eff9f05
+21:10:41.525 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x1c7b469f, L:/192.168.28.46:64010 ! R:/0.0.0.0:64009] INACTIVE
+21:10:41.525 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0x1c7b469f, L:/192.168.28.46:64010 ! R:/0.0.0.0:64009] UNREGISTERED
+2022-03-04 21:10:41.528  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 64011 (http)
+21:10:41.529 [main] DEBUG reactor.netty.resources.PooledConnectionProvider - Creating new client pool [http] for /0.0.0.0:64011
+21:10:41.529 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xfe7eb59f] Created new pooled channel, now 0 active connections and 1 inactive connections
+21:10:41.529 [reactor-http-nio-4] DEBUG reactor.netty.channel.BootstrapHandlers - [id: 0xfe7eb59f] Initialized pipeline DefaultChannelPipeline{(reactor.left.loggingHandler = io.netty.handler.logging.LoggingHandler), (BootstrapHandlers$BootstrapInitializerHandler#0 = reactor.netty.channel.BootstrapHandlers$BootstrapInitializerHandler), (SimpleChannelPool$1#0 = io.netty.channel.pool.SimpleChannelPool$1), (reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.decompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+21:10:41.529 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xfe7eb59f] REGISTERED
+21:10:41.529 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xfe7eb59f] CONNECT: /0.0.0.0:64011
+21:10:41.530 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xfe7eb59f, L:/192.168.28.46:64012 - R:/0.0.0.0:64011] ACTIVE
+21:10:41.530 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xfe7eb59f, L:/192.168.28.46:64012 - R:/0.0.0.0:64011] onStateChange(PooledConnection{channel=[id: 0xfe7eb59f, L:/192.168.28.46:64012 - R:/0.0.0.0:64011]}, [connected])
+21:10:41.530 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xfe7eb59f, L:/192.168.28.46:64012 - R:/0.0.0.0:64011] onStateChange(GET{uri=/, connection=PooledConnection{channel=[id: 0xfe7eb59f, L:/192.168.28.46:64012 - R:/0.0.0.0:64011]}}, [configured])
+21:10:41.531 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xfe7eb59f, L:/192.168.28.46:64012 - R:/0.0.0.0:64011] Registering pool release on close event for channel
+21:10:41.531 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClientConnect - [id: 0xfe7eb59f, L:/192.168.28.46:64012 - R:/0.0.0.0:64011] Handler is being applied: {uri=http://0.0.0.0:64011/, method=GET}
+21:10:41.531 [reactor-http-nio-4] DEBUG reactor.netty.channel.ChannelOperationsHandler - [id: 0xfe7eb59f, L:/192.168.28.46:64012 - R:/0.0.0.0:64011] Writing object DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+GET / HTTP/1.1
+accept-encoding: gzip
+user-agent: ReactorNetty/0.8.2.RELEASE
+host: 0.0.0.0:64011
+accept: */*
+21:10:41.531 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xfe7eb59f, L:/192.168.28.46:64012 - R:/0.0.0.0:64011] WRITE: 115B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 47 45 54 20 2f 20 48 54 54 50 2f 31 2e 31 0d 0a |GET / HTTP/1.1..|
+|00000010| 61 63 63 65 70 74 2d 65 6e 63 6f 64 69 6e 67 3a |accept-encoding:|
+|00000020| 20 67 7a 69 70 0d 0a 75 73 65 72 2d 61 67 65 6e | gzip..user-agen|
+|00000030| 74 3a 20 52 65 61 63 74 6f 72 4e 65 74 74 79 2f |t: ReactorNetty/|
+|00000040| 30 2e 38 2e 32 2e 52 45 4c 45 41 53 45 0d 0a 68 |0.8.2.RELEASE..h|
+|00000050| 6f 73 74 3a 20 30 2e 30 2e 30 2e 30 3a 36 34 30 |ost: 0.0.0.0:640|
+|00000060| 31 31 0d 0a 61 63 63 65 70 74 3a 20 2a 2f 2a 0d |11..accept: */*.|
+|00000070| 0a 0d 0a                                        |...             |
++--------+-------------------------------------------------+----------------+
+21:10:41.531 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xfe7eb59f, L:/192.168.28.46:64012 - R:/0.0.0.0:64011] FLUSH
+21:10:41.531 [reactor-http-nio-4] DEBUG reactor.netty.channel.ChannelOperationsHandler - [id: 0xfe7eb59f, L:/192.168.28.46:64012 - R:/0.0.0.0:64011] Writing object EmptyLastHttpContent
+21:10:41.532 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xfe7eb59f, L:/192.168.28.46:64012 - R:/0.0.0.0:64011] WRITE: 0B
+21:10:41.532 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xfe7eb59f, L:/192.168.28.46:64012 - R:/0.0.0.0:64011] FLUSH
+21:10:41.532 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xfe7eb59f, L:/192.168.28.46:64012 - R:/0.0.0.0:64011] onStateChange(GET{uri=/, connection=PooledConnection{channel=[id: 0xfe7eb59f, L:/192.168.28.46:64012 - R:/0.0.0.0:64011]}}, [request_sent])
+21:10:41.532 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xfe7eb59f, L:/192.168.28.46:64012 - R:/0.0.0.0:64011] Channel connected, now 1 active connections and 0 inactive connections
+21:10:41.532 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xfe7eb59f, L:/192.168.28.46:64012 - R:/0.0.0.0:64011] READ: 1024B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 48 54 54 50 2f 31 2e 31 20 32 30 30 20 4f 4b 0d |HTTP/1.1 200 OK.|
+|00000010| 0a 43 6f 6e 6e 65 63 74 69 6f 6e 3a 20 6b 65 65 |.Connection: kee|
+|00000020| 70 2d 61 6c 69 76 65 0d 0a 43 6f 6e 74 65 6e 74 |p-alive..Content|
+|00000030| 2d 54 79 70 65 3a 20 74 65 78 74 2f 70 6c 61 69 |-Type: text/plai|
+|00000040| 6e 0d 0a 43 6f 6e 74 65 6e 74 2d 4c 65 6e 67 74 |n..Content-Lengt|
+|00000050| 68 3a 20 33 30 30 30 0d 0a 44 61 74 65 3a 20 46 |h: 3000..Date: F|
+|00000060| 72 69 2c 20 30 34 20 4d 61 72 20 32 30 32 32 20 |ri, 04 Mar 2022 |
+|00000070| 31 33 3a 31 30 3a 34 30 20 47 4d 54 0d 0a 0d 0a |13:10:40 GMT....|
+|00000080| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000090| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000000a0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000000b0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000000c0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000000d0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000000e0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000000f0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000100| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000110| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000120| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000130| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000140| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000150| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000160| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000170| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000180| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000190| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000001a0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000001b0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000001c0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000001d0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000001e0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000001f0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000200| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000210| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000220| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000230| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000240| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000250| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000260| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000270| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000280| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000290| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000002a0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000002b0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000002c0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000002d0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000002e0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000002f0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000300| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000310| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000320| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000330| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000340| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000350| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000360| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000370| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000380| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|00000390| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000003a0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000003b0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000003c0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000003d0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000003e0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
+|000003f0| 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 |FFFFFFFFFFFFFFFF|
++--------+-------------------------------------------------+----------------+
+21:10:41.533 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClientOperations - [id: 0xfe7eb59f, L:/192.168.28.46:64012 - R:/0.0.0.0:64011] Received response (auto-read:false) : [Connection=keep-alive, Content-Type=text/plain, Content-Length=3000, Date=Fri, 04 Mar 2022 13:10:40 GMT]
+21:10:41.533 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xfe7eb59f, L:/192.168.28.46:64012 - R:/0.0.0.0:64011] onStateChange(GET{uri=/, connection=PooledConnection{channel=[id: 0xfe7eb59f, L:/192.168.28.46:64012 - R:/0.0.0.0:64011]}}, [response_received])
+21:10:41.533 [reactor-http-nio-4] DEBUG reactor.netty.channel.FluxReceive - [id: 0xfe7eb59f, L:/192.168.28.46:64012 - R:/0.0.0.0:64011] Subscribing inbound receiver [pending: 0, cancelled:false, inboundDone: false]
+21:10:41.533 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xfe7eb59f, L:/192.168.28.46:64012 - R:/0.0.0.0:64011] CLOSE
+21:10:41.533 [reactor-http-nio-4] DEBUG reactor.netty.resources.PooledConnectionProvider - [id: 0xfe7eb59f, L:/192.168.28.46:64012 ! R:/0.0.0.0:64011] Channel cleaned, now 0 active connections and 1 inactive connections
+21:10:41.534 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xfe7eb59f, L:/192.168.28.46:64012 ! R:/0.0.0.0:64011] READ COMPLETE
+21:10:41.534 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xfe7eb59f, L:/192.168.28.46:64012 ! R:/0.0.0.0:64011] USER_EVENT: io.netty.channel.socket.ChannelInputShutdownReadComplete@1eff9f05
+21:10:41.534 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xfe7eb59f, L:/192.168.28.46:64012 ! R:/0.0.0.0:64011] INACTIVE
+21:10:41.534 [reactor-http-nio-4] DEBUG reactor.netty.http.client.HttpClient - [id: 0xfe7eb59f, L:/192.168.28.46:64012 ! R:/0.0.0.0:64011] UNREGISTERED

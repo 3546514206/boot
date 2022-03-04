@@ -1,0 +1,10 @@
+2022-03-04 21:10:46.185  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet mockServlet mapped to []
+2022-03-04 21:10:46.187  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet mockServlet mapped to [/c, /d]
+2022-03-04 21:10:46.187  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet specificName mapped to []
+2022-03-04 21:10:46.190  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet mockServlet mapped to []
+2022-03-04 21:10:46.191  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet mockServlet mapped to []
+2022-03-04 21:10:46.192  INFO ???? --- [           main] o.s.b.w.s.RegistrationBean               : Servlet mockServlet was not registered (possibly already registered?)
+2022-03-04 21:10:46.194  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet mockServlet mapped to []
+2022-03-04 21:10:46.195  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet mockServlet mapped to [/a, /b]
+2022-03-04 21:10:46.196  INFO ???? --- [           main] o.s.b.w.s.RegistrationBean               : Servlet mockServlet was not registered (disabled)
+2022-03-04 21:10:46.203  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet test mapped to [/a, /b, /c]

@@ -1,0 +1,3 @@
+2022-03-04 21:09:41.038 ERROR 22994 --- [           main] o.s.b.c.FileEncodingApplicationListener  : System property 'file.encoding' is currently 'UTF-8'. It should be 'FOO' (as defined in 'spring.mandatoryFileEncoding').
+2022-03-04 21:09:41.038 ERROR 22994 --- [           main] o.s.b.c.FileEncodingApplicationListener  : Environment variable LANG is 'null'. You could use a locale setting that matches encoding='FOO'.
+2022-03-04 21:09:41.038 ERROR 22994 --- [           main] o.s.b.c.FileEncodingApplicationListener  : Environment variable LC_ALL is 'null'. You could use a locale setting that matches encoding='FOO'.

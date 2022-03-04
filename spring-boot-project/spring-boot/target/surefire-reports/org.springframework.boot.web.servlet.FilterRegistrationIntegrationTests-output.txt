@@ -1,0 +1,7 @@
+2022-03-04 21:10:45.124  INFO ???? --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 0 (http)
+2022-03-04 21:10:45.252  INFO ???? --- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 159 ms
+2022-03-04 21:10:45.278  INFO ???? --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'myFilter' to: [/*]
+2022-03-04 21:10:45.287  INFO ???? --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 64120 (http) with context path ''
+2022-03-04 21:10:45.351  INFO ???? --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 0 (http)
+2022-03-04 21:10:45.444  INFO ???? --- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 100 ms
+2022-03-04 21:10:45.451  INFO ???? --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 64122 (http) with context path ''

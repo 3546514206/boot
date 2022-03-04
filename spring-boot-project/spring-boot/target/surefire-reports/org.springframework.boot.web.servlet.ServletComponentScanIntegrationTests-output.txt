@@ -1,0 +1,12 @@
+2022-03-04 21:10:45.563  INFO ???? --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 0 (http)
+2022-03-04 21:10:45.647  INFO ???? --- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 133 ms
+2022-03-04 21:10:45.715  INFO ???? --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'org.springframework.boot.web.servlet.testcomponents.TestFilter' to urls: [/*]
+2022-03-04 21:10:45.715  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet org.springframework.boot.web.servlet.testcomponents.TestMultipartServlet mapped to [/test-multipart]
+2022-03-04 21:10:45.716  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet org.springframework.boot.web.servlet.testcomponents.TestServlet mapped to [/test]
+2022-03-04 21:10:45.723  INFO ???? --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 64124 (http) with context path ''
+2022-03-04 21:10:45.800  INFO ???? --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 0 (http)
+2022-03-04 21:10:45.923  INFO ???? --- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 144 ms
+2022-03-04 21:10:45.977  INFO ???? --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'org.springframework.boot.web.servlet.testcomponents.TestFilter' to urls: [/*]
+2022-03-04 21:10:45.978  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet org.springframework.boot.web.servlet.testcomponents.TestMultipartServlet mapped to [/test-multipart]
+2022-03-04 21:10:45.978  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet org.springframework.boot.web.servlet.testcomponents.TestServlet mapped to [/test]
+2022-03-04 21:10:45.987  INFO ???? --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 64126 (http) with context path ''

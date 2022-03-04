@@ -1,0 +1,3 @@
+org/springframework/boot/testsupport/runner/classpath/ModifiedClassPathRunnerExclusionsTests.class
+org/springframework/boot/testsupport/runner/classpath/ModifiedClassPathRunnerOverridesTests.class
+org/springframework/boot/testsupport/assertj/MatchedTests.class

@@ -1,0 +1,52 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                        
+
+2022-03-04 21:09:18.653  INFO 22994 --- [           main] o.a.m.s.b.ForkedBooter                   : Starting ForkedBooter v2.22.1 on SetsunaYangMacbookPro.local with PID 22994 (started by SetsunaYang in /Users/SetsunaYang/Documents/learning/boot/spring-boot-project/spring-boot)
+2022-03-04 21:09:18.656  INFO 22994 --- [           main] o.a.m.s.b.ForkedBooter                   : No active profile set, falling back to default profiles: default
+2022-03-04 21:09:18.941  INFO 22994 --- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 282 ms
+2022-03-04 21:09:19.105  INFO 22994 --- [           main] o.a.m.s.b.ForkedBooter                   : Started ForkedBooter in 0.598 seconds (JVM running for 19.913)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                        
+
+2022-03-04 21:09:19.219  INFO 22994 --- [           main] o.a.m.s.b.ForkedBooter                   : Starting ForkedBooter v2.22.1 on SetsunaYangMacbookPro.local with PID 22994 (started by SetsunaYang in /Users/SetsunaYang/Documents/learning/boot/spring-boot-project/spring-boot)
+2022-03-04 21:09:19.221  INFO 22994 --- [           main] o.a.m.s.b.ForkedBooter                   : No active profile set, falling back to default profiles: default
+2022-03-04 21:09:19.233  INFO 22994 --- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 8 ms
+2022-03-04 21:09:19.236  INFO 22994 --- [           main] o.a.m.s.b.ForkedBooter                   : Started ForkedBooter in 0.12 seconds (JVM running for 20.044)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                        
+
+2022-03-04 21:09:19.356  INFO 22994 --- [           main] o.a.m.s.b.ForkedBooter                   : Starting ForkedBooter v2.22.1 on SetsunaYangMacbookPro.local with PID 22994 (started by SetsunaYang in /Users/SetsunaYang/Documents/learning/boot/spring-boot-project/spring-boot)
+2022-03-04 21:09:19.357  INFO 22994 --- [           main] o.a.m.s.b.ForkedBooter                   : No active profile set, falling back to default profiles: default
+2022-03-04 21:09:19.374  INFO 22994 --- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 15 ms
+2022-03-04 21:09:19.379  INFO 22994 --- [           main] o.a.m.s.b.ForkedBooter                   : Started ForkedBooter in 0.14 seconds (JVM running for 20.187)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                        
+
+2022-03-04 21:09:19.543  INFO 22994 --- [           main] o.a.m.s.b.ForkedBooter                   : Starting ForkedBooter v2.22.1 on SetsunaYangMacbookPro.local with PID 22994 (started by SetsunaYang in /Users/SetsunaYang/Documents/learning/boot/spring-boot-project/spring-boot)
+2022-03-04 21:09:19.544  INFO 22994 --- [           main] o.a.m.s.b.ForkedBooter                   : No active profile set, falling back to default profiles: default
+2022-03-04 21:09:19.551  INFO 22994 --- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 5 ms
+2022-03-04 21:09:19.554  INFO 22994 --- [           main] o.a.m.s.b.ForkedBooter                   : Started ForkedBooter in 0.173 seconds (JVM running for 20.362)

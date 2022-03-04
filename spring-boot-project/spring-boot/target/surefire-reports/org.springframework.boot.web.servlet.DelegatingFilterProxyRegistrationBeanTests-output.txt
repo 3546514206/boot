@@ -1,0 +1,10 @@
+2022-03-04 21:10:45.036  INFO ???? --- [           main] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'null' to: [/*]
+2022-03-04 21:10:45.038  INFO ???? --- [           main] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'null' to servlets: [b]
+2022-03-04 21:10:45.040  INFO ???? --- [           main] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'null' to: [/*]
+2022-03-04 21:10:45.043  INFO ???? --- [           main] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'null' to: [/*]
+2022-03-04 21:10:45.044  INFO ???? --- [           main] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'null' to: [/*]
+2022-03-04 21:10:45.047  INFO ???? --- [           main] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'null' to: [/*]
+2022-03-04 21:10:45.048  INFO ???? --- [           main] o.s.b.w.s.RegistrationBean               : Filter mockFilter was not registered (disabled)
+2022-03-04 21:10:45.049  INFO ???? --- [           main] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'null' to: [/*]
+2022-03-04 21:10:45.056  INFO ???? --- [           main] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'null' to servlets: [s4, s5, s1, s2, s3]
+2022-03-04 21:10:45.056  INFO ???? --- [           main] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'null' to urls: [/a, /b, /c]

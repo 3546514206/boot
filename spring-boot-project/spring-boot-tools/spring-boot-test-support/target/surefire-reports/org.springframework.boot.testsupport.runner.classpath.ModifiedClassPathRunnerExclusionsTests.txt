@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.springframework.boot.testsupport.runner.classpath.ModifiedClassPathRunnerExclusionsTests
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.16 s - in org.springframework.boot.testsupport.runner.classpath.ModifiedClassPathRunnerExclusionsTests

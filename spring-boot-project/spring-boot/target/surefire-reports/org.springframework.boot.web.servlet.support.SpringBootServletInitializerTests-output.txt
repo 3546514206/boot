@@ -1,0 +1,44 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                        
+
+2022-03-04 21:10:49.383  INFO ???? --- [           main] erTests$WithErrorPageFilterNotRegistered : Starting SpringBootServletInitializerTests.WithErrorPageFilterNotRegistered on SetsunaYangMacbookPro.local with PID 22994 (started by SetsunaYang in /Users/SetsunaYang/Documents/learning/boot/spring-boot-project/spring-boot)
+2022-03-04 21:10:49.387  INFO ???? --- [           main] erTests$WithErrorPageFilterNotRegistered : No active profile set, falling back to default profiles: default
+2022-03-04 21:10:49.397  INFO ???? --- [           main] i.u.servlet                              : Initializing Spring embedded WebApplicationContext
+2022-03-04 21:10:49.397  INFO ???? --- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 8 ms
+2022-03-04 21:10:49.405  INFO ???? --- [           main] erTests$WithErrorPageFilterNotRegistered : Started SpringBootServletInitializerTests.WithErrorPageFilterNotRegistered in 0.185 seconds (JVM running for 110.208)
+2022-03-04 21:10:49.412  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 64141 (http) with context path ''
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                        
+
+2022-03-04 21:10:49.567  INFO ???? --- [           main] rceVerifyingSpringBootServletInitializer : Starting SpringBootServletInitializerTests.PropertySourceVerifyingSpringBootServletInitializer on SetsunaYangMacbookPro.local with PID 22994 (started by SetsunaYang in /Users/SetsunaYang/Documents/learning/boot/spring-boot-project/spring-boot)
+2022-03-04 21:10:49.567  INFO ???? --- [           main] rceVerifyingSpringBootServletInitializer : The following profiles are active: from-servlet-context
+2022-03-04 21:10:49.577  INFO ???? --- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 8 ms
+2022-03-04 21:10:49.585  INFO ???? --- [           main] o.s.b.w.s.RegistrationBean               : Filter errorPageFilter was not registered (possibly already registered?)
+2022-03-04 21:10:49.587  INFO ???? --- [           main] rceVerifyingSpringBootServletInitializer : Started SpringBootServletInitializerTests.PropertySourceVerifyingSpringBootServletInitializer in 0.158 seconds (JVM running for 110.39)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                        
+
+2022-03-04 21:10:49.696  INFO ???? --- [           main] o.a.m.s.b.ForkedBooter                   : Starting ForkedBooter v2.22.1 on SetsunaYangMacbookPro.local with PID 22994 (started by SetsunaYang in /Users/SetsunaYang/Documents/learning/boot/spring-boot-project/spring-boot)
+2022-03-04 21:10:49.697  INFO ???? --- [           main] o.a.m.s.b.ForkedBooter                   : No active profile set, falling back to default profiles: default
+2022-03-04 21:10:49.741  INFO ???? --- [           main] i.u.servlet                              : Initializing Spring embedded WebApplicationContext
+2022-03-04 21:10:49.741  INFO ???? --- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 43 ms
+2022-03-04 21:10:49.748  INFO ???? --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 64142 (http) with context path ''
+2022-03-04 21:10:49.748  INFO ???? --- [           main] o.a.m.s.b.ForkedBooter                   : Started ForkedBooter in 0.158 seconds (JVM running for 110.551)

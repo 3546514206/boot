@@ -1,0 +1,41 @@
+2022-03-04 21:10:47.025  INFO ???? --- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1 ms
+2022-03-04 21:10:47.034  INFO ???? --- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 2 ms
+2022-03-04 21:10:47.037  INFO ???? --- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 0 ms
+2022-03-04 21:10:47.041  INFO ???? --- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 2 ms
+2022-03-04 21:10:47.044  INFO ???? --- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1 ms
+2022-03-04 21:10:47.045  INFO ???? --- [           main] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'null' to: [/*]
+2022-03-04 21:10:47.056  INFO ???? --- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 2 ms
+2022-03-04 21:10:47.059  WARN ???? --- [           main] w.s.c.ServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.context.ApplicationContextException: Unable to start ServletWebServerApplicationContext due to multiple ServletWebServerFactory beans : webServerFactory,webServerFactory2
+2022-03-04 21:10:47.082  INFO ???? --- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 22 ms
+2022-03-04 21:10:47.096  INFO ???? --- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1 ms
+2022-03-04 21:10:47.098  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet servletBean mapped to [/]
+2022-03-04 21:10:47.098  INFO ???? --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'null' to: [/*]
+2022-03-04 21:10:47.099  INFO ???? --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'null' to: [/*]
+2022-03-04 21:10:47.120  INFO ???? --- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 2 ms
+2022-03-04 21:10:47.132  INFO ???? --- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 2 ms
+2022-03-04 21:10:47.150  INFO ???? --- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 2 ms
+2022-03-04 21:10:47.172  INFO ???? --- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 2 ms
+2022-03-04 21:10:47.174  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet servletBean1 mapped to [/servletBean1/]
+2022-03-04 21:10:47.175  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet servletBean2 mapped to [/servletBean2/]
+2022-03-04 21:10:47.178  INFO ???? --- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1 ms
+2022-03-04 21:10:47.182  WARN ???? --- [           main] w.s.c.ServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.context.ApplicationContextException: Unable to start ServletWebServerApplicationContext due to missing ServletWebServerFactory bean.
+2022-03-04 21:10:47.194  INFO ???? --- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1 ms
+2022-03-04 21:10:47.195  INFO ???? --- [           main] w.s.c.ServletWebServerApplicationContext : Restoring user defined scope request
+2022-03-04 21:10:47.196  INFO ???? --- [           main] w.s.c.ServletWebServerApplicationContext : Restoring user defined scope session
+2022-03-04 21:10:47.213  INFO ???? --- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1 ms
+2022-03-04 21:10:47.214  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet object mapped to [/foo]
+2022-03-04 21:10:47.215  INFO ???? --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'null' to: [/*]
+2022-03-04 21:10:47.220  INFO ???? --- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 3 ms
+2022-03-04 21:10:47.222  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2022-03-04 21:10:47.223  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet servletBean2 mapped to [/servletBean2/]
+2022-03-04 21:10:47.229  INFO ???? --- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 2 ms
+2022-03-04 21:10:47.233  INFO ???? --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'null' to: [/*]
+2022-03-04 21:10:47.234  INFO ???? --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'null' to: [/*]
+2022-03-04 21:10:47.241  INFO ???? --- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 3 ms
+2022-03-04 21:10:47.243  INFO ???? --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'null' to: [/*]
+2022-03-04 21:10:47.249  INFO ???? --- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 2 ms
+2022-03-04 21:10:47.251  INFO ???? --- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1 ms
+2022-03-04 21:10:47.253  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet servletBean mapped to [/]
+2022-03-04 21:10:47.253  INFO ???? --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'null' to: [/*]
+2022-03-04 21:10:47.258  INFO ???? --- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 2 ms
+2022-03-04 21:10:47.261  INFO ???? --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet servletBean mapped to [/]

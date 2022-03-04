@@ -1,0 +1,9 @@
+2022-03-04 21:09:55.602  INFO 22994 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-04 21:09:55.637  INFO 22994 --- [           main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2022-03-04 21:09:55.644  INFO 22994 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-03-04 21:09:55.664  INFO 22994 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2022-03-04 21:09:55.665  INFO 22994 --- [           main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-2 - Driver does not support get/set network timeout for connections. (feature not supported)
+2022-03-04 21:09:55.665  INFO 22994 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2022-03-04 21:09:55.693  INFO 22994 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2022-03-04 21:09:55.693  INFO 22994 --- [           main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-3 - Driver does not support get/set network timeout for connections. (feature not supported)
+2022-03-04 21:09:55.694  INFO 22994 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.

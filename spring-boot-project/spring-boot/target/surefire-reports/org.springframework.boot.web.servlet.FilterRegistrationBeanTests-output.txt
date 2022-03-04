@@ -1,0 +1,11 @@
+2022-03-04 21:10:45.065  INFO ???? --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'null' to: [/*]
+2022-03-04 21:10:45.071  INFO ???? --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'null' to: [/*]
+2022-03-04 21:10:45.074  INFO ???? --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'null' to servlets: [b]
+2022-03-04 21:10:45.075  INFO ???? --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'null' to: [/*]
+2022-03-04 21:10:45.080  INFO ???? --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'null' to: [/*]
+2022-03-04 21:10:45.081  INFO ???? --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'null' to: [/*]
+2022-03-04 21:10:45.084  INFO ???? --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'null' to: [/*]
+2022-03-04 21:10:45.085  INFO ???? --- [           main] o.s.b.w.s.RegistrationBean               : Filter mockFilter was not registered (disabled)
+2022-03-04 21:10:45.086  INFO ???? --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'null' to: [/*]
+2022-03-04 21:10:45.087  INFO ???? --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'null' to servlets: [s4, s5, s1, s2, s3]
+2022-03-04 21:10:45.088  INFO ???? --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'null' to urls: [/a, /b, /c]

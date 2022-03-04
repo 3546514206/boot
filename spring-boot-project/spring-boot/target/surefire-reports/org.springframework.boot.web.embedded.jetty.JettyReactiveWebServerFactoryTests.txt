@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.springframework.boot.web.embedded.jetty.JettyReactiveWebServerFactoryTests
+-------------------------------------------------------------------------------
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.356 s - in org.springframework.boot.web.embedded.jetty.JettyReactiveWebServerFactoryTests

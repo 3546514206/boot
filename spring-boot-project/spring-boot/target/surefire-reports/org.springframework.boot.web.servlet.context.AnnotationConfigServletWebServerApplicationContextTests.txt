@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContextTests
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.777 s - in org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContextTests
