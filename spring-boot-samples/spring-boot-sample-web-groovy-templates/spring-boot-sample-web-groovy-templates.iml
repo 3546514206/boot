@@ -49,6 +49,8 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-context:5.1.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-expression:5.1.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.groovy:groovy-templates:2.5.3" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.groovy:groovy:2.5.3" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.groovy:groovy-xml:2.5.3" level="project" />
     <orderEntry type="module" module-name="spring-boot-starter-test" scope="TEST" />
     <orderEntry type="module" module-name="spring-boot-starter" />
     <orderEntry type="module" module-name="spring-boot" />

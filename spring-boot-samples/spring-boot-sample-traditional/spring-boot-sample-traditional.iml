@@ -53,6 +53,7 @@
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.tomcat.embed:tomcat-embed-el:9.0.12" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.tomcat.embed:tomcat-embed-websocket:9.0.12" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.tomcat.embed:tomcat-embed-jasper:9.0.12" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.eclipse.jdt:ecj:3.13.102" level="project" />
     <orderEntry type="module" module-name="spring-boot-starter-test" scope="TEST" />
     <orderEntry type="module" module-name="spring-boot-test" scope="TEST" />
     <orderEntry type="module" module-name="spring-boot-test-autoconfigure" scope="TEST" />

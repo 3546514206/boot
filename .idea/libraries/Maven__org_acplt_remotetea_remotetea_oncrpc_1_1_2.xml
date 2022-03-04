@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.acplt.remotetea:remotetea-oncrpc:1.1.2">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/acplt/remotetea/remotetea-oncrpc/1.1.2/remotetea-oncrpc-1.1.2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/acplt/remotetea/remotetea-oncrpc/1.1.2/remotetea-oncrpc-1.1.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/acplt/remotetea/remotetea-oncrpc/1.1.2/remotetea-oncrpc-1.1.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

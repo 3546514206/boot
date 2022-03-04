@@ -64,6 +64,8 @@
     <orderEntry type="module" module-name="spring-boot-actuator-autoconfigure" />
     <orderEntry type="module" module-name="spring-boot-actuator" />
     <orderEntry type="library" name="Maven: io.micrometer:micrometer-core:1.1.0" level="project" />
+    <orderEntry type="library" name="Maven: org.hdrhistogram:HdrHistogram:2.1.9" level="project" />
+    <orderEntry type="library" name="Maven: org.latencyutils:LatencyUtils:2.0.3" level="project" />
     <orderEntry type="module" module-name="spring-boot-starter-test" scope="TEST" />
     <orderEntry type="module" module-name="spring-boot-test" scope="TEST" />
     <orderEntry type="module" module-name="spring-boot-test-autoconfigure" scope="TEST" />

@@ -48,8 +48,6 @@
           <element id="archive" name="spring-boot-starter-tomcat-2.1.0.RELEASE.jar">
             <element id="module-output" name="spring-boot-starter-tomcat" />
           </element>
-          <element id="library" level="project" name="Maven: org.apache.tomcat.embed:tomcat-embed-core:9.0.12" />
-          <element id="library" level="project" name="Maven: org.apache.tomcat.embed:tomcat-embed-el:9.0.12" />
           <element id="library" level="project" name="Maven: org.apache.tomcat.embed:tomcat-embed-websocket:9.0.12" />
           <element id="library" level="project" name="Maven: org.hibernate.validator:hibernate-validator:6.0.13.Final" />
           <element id="library" level="project" name="Maven: javax.validation:validation-api:2.0.1.Final" />
@@ -62,6 +60,9 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-context:5.1.2.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-expression:5.1.2.RELEASE" />
           <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat.embed:tomcat-embed-core:9.0.12" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-annotations-api:9.0.12" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat.embed:tomcat-embed-el:9.0.12" />
           <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.25" />
           <element id="library" level="project" name="Maven: org.springframework:spring-core:5.1.2.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-jcl:5.1.2.RELEASE" />
