@@ -56,6 +56,7 @@
         <module name="spring-boot-starter-data-cassandra" />
         <module name="spring-boot-starter-logging" />
         <module name="spring-boot-starter-log4j2" />
+        <module name="spring-boot-sample-parent-context" />
         <module name="spring-boot-starter-data-mongodb-reactive" />
         <module name="spring-boot-sample-servlet" />
         <module name="spring-boot-properties-migrator" />
@@ -71,6 +72,7 @@
         <module name="spring-boot-test" />
         <module name="spring-boot-sample-data-jpa" />
         <module name="spring-boot-starter-test" />
+        <module name="spring-boot-sample-h2" />
         <module name="spring-boot-starter-thymeleaf" />
         <module name="spring-boot-sample-jetty-jsp" />
         <module name="spring-boot-sample-traditional" />
@@ -216,6 +218,7 @@
       <module name="spring-boot-sample-data-solr" target="1.8" />
       <module name="spring-boot-sample-devtools" target="1.8" />
       <module name="spring-boot-sample-flyway" target="1.8" />
+      <module name="spring-boot-sample-h2" target="1.8" />
       <module name="spring-boot-sample-hateoas" target="1.8" />
       <module name="spring-boot-sample-integration" target="1.8" />
       <module name="spring-boot-sample-jersey" target="1.8" />
@@ -233,6 +236,7 @@
       <module name="spring-boot-sample-logback" target="1.8" />
       <module name="spring-boot-sample-oauth2-client" target="1.8" />
       <module name="spring-boot-sample-oauth2-resource-server" target="1.8" />
+      <module name="spring-boot-sample-parent-context" target="1.8" />
       <module name="spring-boot-sample-profile" target="1.8" />
       <module name="spring-boot-sample-property-validation" target="1.8" />
       <module name="spring-boot-sample-quartz" target="1.8" />
@@ -383,6 +387,7 @@
       <module name="spring-boot-sample-data-solr" options="-parameters" />
       <module name="spring-boot-sample-devtools" options="-parameters" />
       <module name="spring-boot-sample-flyway" options="-parameters" />
+      <module name="spring-boot-sample-h2" options="-parameters" />
       <module name="spring-boot-sample-hateoas" options="-parameters" />
       <module name="spring-boot-sample-integration" options="-parameters" />
       <module name="spring-boot-sample-jersey" options="-parameters" />
@@ -400,6 +405,7 @@
       <module name="spring-boot-sample-logback" options="-parameters" />
       <module name="spring-boot-sample-oauth2-client" options="-parameters" />
       <module name="spring-boot-sample-oauth2-resource-server" options="-parameters" />
+      <module name="spring-boot-sample-parent-context" options="-parameters" />
       <module name="spring-boot-sample-profile" options="-parameters" />
       <module name="spring-boot-sample-property-validation" options="-parameters" />
       <module name="spring-boot-sample-quartz" options="-parameters" />

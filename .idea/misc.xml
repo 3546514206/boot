@@ -18,6 +18,7 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-samples/spring-boot-sample-parent-context/pom.xml" />
       </list>
     </option>
   </component>

@@ -1,0 +1,15 @@
+
+Z
+java:S5853’">Join these multiple assertions subject to one assertion chain.( â«æüÿÿÿÿ
+1
+java:S5838Ã"Use isZero() instead.(ä…ûÏýÿÿÿÿ
+-
+java:S5838«"Use isEmpty() instead.(žšùŠ
+U
+java:S5853È">Join these multiple assertions subject to one assertion chain.(£­ÈÆ
+U
+java:S5853Õ">Join these multiple assertions subject to one assertion chain.(£­ÈÆ
+~
+java:S5778»	"bRefactor the code of the lambda to have only one invocation possibly throwing a runtime exception.(â¡ÈÜþÿÿÿÿ
+I
+java:S2699¨"-Add at least one assertion to this test case.(ÑËÜ·þÿÿÿÿ
