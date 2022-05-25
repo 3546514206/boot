@@ -9,7 +9,7 @@
 		<version>${revision}</version>
 	</parent>
 	<artifactId>spring-boot-sample-web-jsp</artifactId>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>Spring Boot Web JSP Sample</name>
 	<description>Spring Boot Web JSP Sample</description>
 	<properties>
