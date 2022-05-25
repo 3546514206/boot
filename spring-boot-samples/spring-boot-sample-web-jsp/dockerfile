@@ -1,11 +1,11 @@
-FROM centos:centos7.1.1503
+FROM java:8
+
 MAINTAINER yanghaibo <yhb@zjrcu.com>
 
 ENV TZ "Asia/Shanghai"
 
-RUN yum install -y java-1.8.0-openjdk
 RUN mkdir -p /home/eagleboot
-RUN chmod -R 664 /home/docker/service/
+RUN chmod -R 664 /home/eagleboot
 
 COPY . /home/eagleboot
 
