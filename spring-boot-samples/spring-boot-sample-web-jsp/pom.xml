@@ -8,7 +8,10 @@
 <!--		<artifactId>spring-boot-samples</artifactId>-->
 <!--		<version>${revision}</version>-->
 <!--	</parent>-->
+	<groupId>org.springframework.boot</groupId>
+	<version>1.0.0</version>
 	<artifactId>spring-boot-sample-web-jsp</artifactId>
+
 	<packaging>jar</packaging>
 	<name>Spring Boot Web JSP Sample</name>
 	<description>Spring Boot Web JSP Sample</description>
