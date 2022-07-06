@@ -9,6 +9,6 @@ RUN mvn clean package -f /home/eagleboot/pom.xml
 
 EXPOSE 8080
 
-# ENTRYPOINT ["java","-jar","/home/docker/service/libs/apbc-1.jar"]
+ENTRYPOINT ["java","-jar","/home/docker/service/libs/apbc-1.jar"]
 
 

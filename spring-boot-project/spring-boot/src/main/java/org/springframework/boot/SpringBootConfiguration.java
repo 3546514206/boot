@@ -37,6 +37,10 @@ import org.springframework.context.annotation.Configuration;
  * @author Phillip Webb
  * @since 1.4.0
  */
+
+/**
+ * SpringBootConfiguration 相当于 Configuration
+ */
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
