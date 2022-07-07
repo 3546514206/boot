@@ -18,12 +18,16 @@ package sample.freemarker;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
 
 @SpringBootApplication
 public class SampleWebFreeMarkerApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SampleWebFreeMarkerApplication.class, args);
+		ApplicationContext context =  SpringApplication.run(SampleWebFreeMarkerApplication.class, args);
+		// SpringBootApplication 也包含了 Component 注解的功能
+		SampleWebFreeMarkerApplication application = context.getBean(SampleWebFreeMarkerApplication.class);
+		System.out.println(application.hashCode());
 	}
 
 }
