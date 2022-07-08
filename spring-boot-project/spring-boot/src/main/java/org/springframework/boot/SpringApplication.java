@@ -16,23 +16,8 @@
 
 package org.springframework.boot;
 
-import java.lang.reflect.Constructor;
-import java.security.AccessControlException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Properties;
-import java.util.Set;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.CachedIntrospectionResults;
 import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
@@ -61,26 +46,16 @@ import org.springframework.core.GenericTypeResolver;
 import org.springframework.core.annotation.AnnotationAwareOrderComparator;
 import org.springframework.core.convert.ConversionService;
 import org.springframework.core.convert.support.ConfigurableConversionService;
-import org.springframework.core.env.CommandLinePropertySource;
-import org.springframework.core.env.CompositePropertySource;
-import org.springframework.core.env.ConfigurableEnvironment;
-import org.springframework.core.env.Environment;
-import org.springframework.core.env.MapPropertySource;
-import org.springframework.core.env.MutablePropertySources;
-import org.springframework.core.env.PropertySource;
-import org.springframework.core.env.SimpleCommandLinePropertySource;
-import org.springframework.core.env.StandardEnvironment;
+import org.springframework.core.env.*;
 import org.springframework.core.io.DefaultResourceLoader;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.core.io.support.SpringFactoriesLoader;
-import org.springframework.util.Assert;
-import org.springframework.util.ClassUtils;
-import org.springframework.util.CollectionUtils;
-import org.springframework.util.ObjectUtils;
-import org.springframework.util.ReflectionUtils;
-import org.springframework.util.StopWatch;
-import org.springframework.util.StringUtils;
+import org.springframework.util.*;
 import org.springframework.web.context.support.StandardServletEnvironment;
+
+import java.lang.reflect.Constructor;
+import java.security.AccessControlException;
+import java.util.*;
 
 /**
  * Class that can be used to bootstrap and launch a Spring application from a Java main
@@ -267,8 +242,7 @@ public class SpringApplication {
         Assert.notNull(primarySources, "PrimarySources must not be null");
         this.primarySources = new LinkedHashSet<>(Arrays.asList(primarySources));
         this.webApplicationType = WebApplicationType.deduceFromClasspath();
-        setInitializers((Collection) getSpringFactoriesInstances(
-                ApplicationContextInitializer.class));
+        setInitializers((Collection) getSpringFactoriesInstances(ApplicationContextInitializer.class));
         setListeners((Collection) getSpringFactoriesInstances(ApplicationListener.class));
         this.mainApplicationClass = deduceMainApplicationClass();
     }
@@ -303,24 +277,18 @@ public class SpringApplication {
         SpringApplicationRunListeners listeners = getRunListeners(args);
         listeners.starting();
         try {
-            ApplicationArguments applicationArguments = new DefaultApplicationArguments(
-                    args);
-            ConfigurableEnvironment environment = prepareEnvironment(listeners,
-                    applicationArguments);
+            ApplicationArguments applicationArguments = new DefaultApplicationArguments(args);
+            ConfigurableEnvironment environment = prepareEnvironment(listeners, applicationArguments);
             configureIgnoreBeanInfo(environment);
             Banner printedBanner = printBanner(environment);
             context = createApplicationContext();
-            exceptionReporters = getSpringFactoriesInstances(
-                    SpringBootExceptionReporter.class,
-                    new Class[]{ConfigurableApplicationContext.class}, context);
-            prepareContext(context, environment, listeners, applicationArguments,
-                    printedBanner);
+            exceptionReporters = getSpringFactoriesInstances(SpringBootExceptionReporter.class, new Class[]{ConfigurableApplicationContext.class}, context);
+            prepareContext(context, environment, listeners, applicationArguments, printedBanner);
             refreshContext(context);
             afterRefresh(context, applicationArguments);
             stopWatch.stop();
             if (this.logStartupInfo) {
-                new StartupInfoLogger(this.mainApplicationClass)
-                        .logStarted(getApplicationLog(), stopWatch);
+                new StartupInfoLogger(this.mainApplicationClass).logStarted(getApplicationLog(), stopWatch);
             }
             listeners.started(context);
             callRunners(context, applicationArguments);
@@ -347,8 +315,7 @@ public class SpringApplication {
         listeners.environmentPrepared(environment);
         bindToSpringApplication(environment);
         if (!this.isCustomEnvironment) {
-            environment = new EnvironmentConverter(getClassLoader())
-                    .convertEnvironmentIfNecessary(environment, deduceEnvironmentClass());
+            environment = new EnvironmentConverter(getClassLoader()).convertEnvironmentIfNecessary(environment, deduceEnvironmentClass());
         }
         ConfigurationPropertySources.attach(environment);
         return environment;
@@ -406,28 +373,33 @@ public class SpringApplication {
 
     private void configureHeadlessProperty() {
 //		这行代码，如果设置了系统属性"java.awt.headless"，则将值重设置一次；如果没有设置这个系统属性，则设置为true
-        System.setProperty(SYSTEM_PROPERTY_JAVA_AWT_HEADLESS, System.getProperty(
-                SYSTEM_PROPERTY_JAVA_AWT_HEADLESS, Boolean.toString(this.headless)));
+        System.setProperty(SYSTEM_PROPERTY_JAVA_AWT_HEADLESS, System.getProperty(SYSTEM_PROPERTY_JAVA_AWT_HEADLESS, Boolean.toString(this.headless)));
     }
 
     private SpringApplicationRunListeners getRunListeners(String[] args) {
         Class<?>[] types = new Class<?>[]{SpringApplication.class, String[].class};
-        return new SpringApplicationRunListeners(logger, getSpringFactoriesInstances(
-                SpringApplicationRunListener.class, types, this, args));
+        return new SpringApplicationRunListeners(logger, getSpringFactoriesInstances(SpringApplicationRunListener.class, types, this, args));
     }
 
     private <T> Collection<T> getSpringFactoriesInstances(Class<T> type) {
         return getSpringFactoriesInstances(type, new Class<?>[]{});
     }
 
+    /**
+     * 创建 Spring 工厂实例
+     *
+     * @param type
+     * @param parameterTypes
+     * @param args
+     * @param <T>
+     * @return
+     */
     private <T> Collection<T> getSpringFactoriesInstances(Class<T> type,
                                                           Class<?>[] parameterTypes, Object... args) {
         ClassLoader classLoader = getClassLoader();
         // Use names and ensure unique to protect against duplicates
-        Set<String> names = new LinkedHashSet<>(
-                SpringFactoriesLoader.loadFactoryNames(type, classLoader));
-        List<T> instances = createSpringFactoriesInstances(type, parameterTypes,
-                classLoader, args, names);
+        Set<String> names = new LinkedHashSet<>(SpringFactoriesLoader.loadFactoryNames(type, classLoader));
+        List<T> instances = createSpringFactoriesInstances(type, parameterTypes, classLoader, args, names);
         AnnotationAwareOrderComparator.sort(instances);
         return instances;
     }
@@ -482,10 +454,8 @@ public class SpringApplication {
     protected void configureEnvironment(ConfigurableEnvironment environment,
                                         String[] args) {
         if (this.addConversionService) {
-            ConversionService conversionService = ApplicationConversionService
-                    .getSharedInstance();
-            environment.setConversionService(
-                    (ConfigurableConversionService) conversionService);
+            ConversionService conversionService = ApplicationConversionService.getSharedInstance();
+            environment.setConversionService((ConfigurableConversionService) conversionService);
         }
         configurePropertySources(environment, args);
         configureProfiles(environment, args);
@@ -1216,8 +1186,7 @@ public class SpringApplication {
      *
      * @param initializers the initializers to set
      */
-    public void setInitializers(
-            Collection<? extends ApplicationContextInitializer<?>> initializers) {
+    public void setInitializers(Collection<? extends ApplicationContextInitializer<?>> initializers) {
         this.initializers = new ArrayList<>();
         this.initializers.addAll(initializers);
     }

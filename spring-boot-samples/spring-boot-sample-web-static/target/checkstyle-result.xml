@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.12">
+<file name="/Users/SetsunaYang/Documents/learning/boot/spring-boot-samples/spring-boot-sample-web-static/src/main/java/sample/web/staticcontent/SampleWebStaticApplication.java">
+</file>
+<file name="/Users/SetsunaYang/Documents/learning/boot/spring-boot-samples/spring-boot-sample-web-static/src/test/java/sample/web/staticcontent/SampleWebStaticApplicationTests.java">
+</file>
+</checkstyle>

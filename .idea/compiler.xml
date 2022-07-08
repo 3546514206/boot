@@ -261,7 +261,7 @@
       <module name="spring-boot-sample-war" target="1.8" />
       <module name="spring-boot-sample-web-freemarker" target="1.8" />
       <module name="spring-boot-sample-web-groovy-templates" target="1.8" />
-      <module name="spring-boot-sample-web-jsp" target="1.5" />
+      <module name="spring-boot-sample-web-jsp" target="7" />
       <module name="spring-boot-sample-web-method-security" target="1.8" />
       <module name="spring-boot-sample-web-mustache" target="1.8" />
       <module name="spring-boot-sample-web-secure" target="1.8" />
