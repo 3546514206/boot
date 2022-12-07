@@ -145,6 +145,8 @@ public class ServletWebServerApplicationContext extends GenericWebApplicationCon
 		}
 	}
 
+	// 重写父类的 AbstractApplicationContext#onRefresh 的方法
+	// 目的是创建 web 容器
 	@Override
 	protected void onRefresh() {
 		super.onRefresh();

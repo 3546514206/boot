@@ -803,6 +803,8 @@ public class SpringApplication {
      */
     protected void refresh(ApplicationContext applicationContext) {
         Assert.isInstanceOf(AbstractApplicationContext.class, applicationContext);
+        // 这里还是直接传递调用本类的 refresh(context)方法，最后是强转成父类 AbstractApplicationContext 调用其 refresh()方法,该代码如下：
+        // 但是！！！！！！！AbstractApplicationContext#refresh 方法中调用的 AbstractApplicationContext#onRefresh 调用的是其子类实现
         ((AbstractApplicationContext) applicationContext).refresh();
     }
 
