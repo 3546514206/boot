@@ -53,8 +53,7 @@ import org.springframework.web.context.support.AnnotationConfigWebApplicationCon
  * @see ServletWebServerApplicationContext
  * @see AnnotationConfigWebApplicationContext
  */
-public class AnnotationConfigServletWebServerApplicationContext
-		extends ServletWebServerApplicationContext implements AnnotationConfigRegistry {
+public class AnnotationConfigServletWebServerApplicationContext extends ServletWebServerApplicationContext implements AnnotationConfigRegistry {
 
 	private final AnnotatedBeanDefinitionReader reader;
 

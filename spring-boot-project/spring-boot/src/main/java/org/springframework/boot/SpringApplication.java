@@ -600,6 +600,11 @@ public class SpringApplication {
      */
     protected ConfigurableApplicationContext createApplicationContext() {
         Class<?> contextClass = this.applicationContextClass;
+        // 这里就是根据我们的 webApplicationType 来判断创建哪种类型的 Servlet,代码中分别对应着:
+        // Web 类型(SERVLET),
+        // 响应式 Web 类型（REACTIVE),
+        // 非 Web 类型（default),我们建立的是 Web 类型，
+        // 所以肯定实例化 DEFAULT_SERVLET_WEB_CONTEXT_CLASS 指定的类，也就是 AnnotationConfigServletWebServerApplicationContext 类
         if (contextClass == null) {
             try {
                 switch (this.webApplicationType) {
