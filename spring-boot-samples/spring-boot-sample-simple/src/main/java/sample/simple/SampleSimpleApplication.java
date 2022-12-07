@@ -51,7 +51,7 @@ public class SampleSimpleApplication implements CommandLineRunner {
 //		1）初始化 SpringApplication ；2）运行 SpringApplication 的过程。
 //		其中运行SpringApplication的过程又可以细分为以下几个部分：
 //		1）SpringApplicationRunListeners 引用启动监控模块
-//		2）ConfigrableEnvironment配置环境模块和监听：包括创建配置环境、加载属性配置文件和配置监听
+//		2）ConfigrableEnvironment配置环境模块和监听：包括创建配置环境、加载属性配置文件 和 发布配置环境已发布的事件
 //		3）ConfigrableApplicationContext配置应用上下文：包括配置应用上下文对象、配置基本属性和刷新应用上下文
 		SpringApplication.run(SampleSimpleApplication.class, args);
 	}

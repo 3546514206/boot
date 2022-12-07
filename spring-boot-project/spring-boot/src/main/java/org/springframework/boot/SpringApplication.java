@@ -307,16 +307,30 @@ public class SpringApplication {
 //
             configureIgnoreBeanInfo(environment);
             Banner printedBanner = printBanner(environment);
-//            步骤3
+//            步骤3  分为以下三步：
+//
+//             步骤3 -（1）配置Spring容器应用上下文对象，它的作用是创建Run方法的返回对象ConfigurableApplicationContext（应用配
+//            置上下文），此类主要继承了ApplicationContext、ApplicationLifeCycle、Closeable接口，而ApplicationContext是Spring框架中
+//            负责Bean注入容器的主要载体，负责bean加载、配置管理、维护bean之间依赖关系及Bean生命周期管理。
             context = createApplicationContext();
             exceptionReporters = getSpringFactoriesInstances(SpringBootExceptionReporter.class, new Class[]{ConfigurableApplicationContext.class}, context);
+//           步骤3 -（2）配置基本属性，对应prepareContext方法将listener、environment、banner、applicationArguments等重要组
+//          件与Spring容器上下文对象关联。借助SpringFactoriesLoader查找可用的ApplciationContextInitailizer, 它
+//          的initialize方法会对创建好的ApplicationContext进行初始化，然后它会调用SpringApplicationRunListener#contextPrepared方
+//          法，此时SpringBoot应用的ApplicationContext已经准备就绪，为刷新应用上下文准备好了容器。
             prepareContext(context, environment, listeners, applicationArguments, printedBanner);
+//           步骤3 -（3）刷新应用上下文，对应源码中的refreshContext(context) 方法将通过工程模式产生应用上下文中所
+//          需的bean。实现spring - boot - starter -*(mybatis、redis等)自动化配置的关键，
+//            包括spring.factories的加载、bean的实例化等核心工作。然后调用SpringApplicationRunListener#finish方法
+//            告诉SprignBoot应用程序，
+//            容器已经完成ApplicationContext装载。
             refreshContext(context);
             afterRefresh(context, applicationArguments);
             stopWatch.stop();
             if (this.logStartupInfo) {
                 new StartupInfoLogger(this.mainApplicationClass).logStarted(getApplicationLog(), stopWatch);
             }
+            // 发布 SpringApplication 应用已经启动的事件
             listeners.started(context);
             callRunners(context, applicationArguments);
         } catch (Throwable ex) {
@@ -325,7 +339,7 @@ public class SpringApplication {
         }
 
         try {
-//
+            // 应用已经启动完成的监听事件
             listeners.running(context);
         } catch (Throwable ex) {
             handleRunFailure(context, ex, exceptionReporters, null);
