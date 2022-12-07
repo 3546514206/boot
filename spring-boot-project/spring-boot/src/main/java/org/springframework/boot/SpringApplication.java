@@ -288,13 +288,26 @@ public class SpringApplication {
         ConfigurableApplicationContext context = null;
         Collection<SpringBootExceptionReporter> exceptionReporters = new ArrayList<>();
         configureHeadlessProperty();
+//        获取RunListeners
+//        步骤 1
+//        应用启动监控模块对应上述源码中的注释步骤1到步骤2之间的两行代码，它创建了应用的监听
+//        器SpringApplicationRunListeners并开始监听，监控模块通过调用getSpringFactoriesInstances私有
+//        协议从META-INF/spring.factories文件中取得SpringApplicationRunListener监听器实例。
+//        当前事件监听器SpringApplicationRunListener中只有一个EventPublishingRunlistener广播事件
+//        监听器，它的starting方法会封装成SpringApplicatiionEvent事件广播出去，被SpringApplication中配置
+//        的listener监听。这一步骤执行完成后也会同时通知SpringBoot其他模块目前监听初始化已经完成，可以开始执行启动方案了。
         SpringApplicationRunListeners listeners = getRunListeners(args);
+//        启动RunListeners
         listeners.starting();
         try {
+//           步骤 2
             ApplicationArguments applicationArguments = new DefaultApplicationArguments(args);
+//            创建配置环境，创建应用程序的环境信息。如果是Web程序，创建StandardServletEnvironment;否则创建StandardEnviroment；
             ConfigurableEnvironment environment = prepareEnvironment(listeners, applicationArguments);
+//
             configureIgnoreBeanInfo(environment);
             Banner printedBanner = printBanner(environment);
+//            步骤3
             context = createApplicationContext();
             exceptionReporters = getSpringFactoriesInstances(SpringBootExceptionReporter.class, new Class[]{ConfigurableApplicationContext.class}, context);
             prepareContext(context, environment, listeners, applicationArguments, printedBanner);
@@ -312,6 +325,7 @@ public class SpringApplication {
         }
 
         try {
+//
             listeners.running(context);
         } catch (Throwable ex) {
             handleRunFailure(context, ex, exceptionReporters, null);
@@ -320,13 +334,15 @@ public class SpringApplication {
         return context;
     }
 
-    private ConfigurableEnvironment prepareEnvironment(
-            SpringApplicationRunListeners listeners,
-            ApplicationArguments applicationArguments) {
+    private ConfigurableEnvironment prepareEnvironment(SpringApplicationRunListeners listeners, ApplicationArguments applicationArguments) {
         // Create and configure the environment
         ConfigurableEnvironment environment = getOrCreateEnvironment();
+//      加载属性配置文件,通过configPropertySource方法(查看该方法要点进下面方法)设置properties配置文件，通过执行configProfies方法设置profiles；
         configureEnvironment(environment, applicationArguments.getSourceArgs());
+//      发布environmentPrepared事件，也就是调用ApplicationListener#onApplicationEvent方法，通知SpringBoot应用的environment已经准备完成。
+//      这里的监听是指 Spring Boot 应用的启动监听模块，而不是 SpringApplication初始化时设置的监听
         listeners.environmentPrepared(environment);
+//      将配置环境 对象与当前的应用绑定
         bindToSpringApplication(environment);
         if (!this.isCustomEnvironment) {
             environment = new EnvironmentConverter(getClassLoader()).convertEnvironmentIfNecessary(environment, deduceEnvironmentClass());
