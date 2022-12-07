@@ -77,9 +77,15 @@ import org.springframework.core.io.support.SpringFactoriesLoader;
 @Documented
 @Inherited
 @AutoConfigurationPackage
+// 实际上关键在 @Import 注解，它会加载 AutoConfigurationImportSelector 类，
+// 然后就会触发这个类的 selectImports() 方法。根据返回的 String 数组（配置类的 Class 的名称）加载配置类。
 @Import(AutoConfigurationImportSelector.class)
+// 开启自动配置
+// 这个注解才是实现自动装配的关键，点进来之后发现，它是一个由
+// @AutoConfigurationPackage 和 @Import 注解组成的复合注解。
 public @interface EnableAutoConfiguration {
 
+//	自动配置类开关
 	String ENABLED_OVERRIDE_PROPERTY = "spring.boot.enableautoconfiguration";
 
 	/**

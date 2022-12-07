@@ -9,7 +9,9 @@
       </configuration>
     </facet>
     <facet type="Spring" name="Spring">
-      <configuration />
+      <configuration>
+        <fileset id="spring_boot_sample.jndi.SampleJndiApplication" profiles="app" autodetected="true" />
+      </configuration>
     </facet>
     <facet type="jpa" name="JPA">
       <configuration>

@@ -2,7 +2,9 @@
 <module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
   <component name="FacetManager">
     <facet type="Spring" name="Spring">
-      <configuration />
+      <configuration>
+        <fileset id="spring_boot_edu.zjnu.SampleH2Application" profiles="app" autodetected="true" />
+      </configuration>
     </facet>
     <facet type="jpa" name="JPA">
       <configuration>

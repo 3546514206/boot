@@ -4,14 +4,130 @@
     <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-actuator-autoconfigure/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-actuator/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-actuator/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-autoconfigure/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-autoconfigure/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-cli/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-cli/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-cli/target/generated-resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-devtools/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-devtools/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-docs/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-docs/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-parent/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-parent/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-properties-migrator/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-properties-migrator/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-activemq/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-activemq/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-actuator/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-actuator/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-amqp/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-amqp/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-aop/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-aop/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-artemis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-artemis/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-batch/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-batch/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-cache/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-cache/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-cloud-connectors/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-cloud-connectors/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-data-cassandra-reactive/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-data-cassandra-reactive/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-data-cassandra/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-data-cassandra/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-data-couchbase-reactive/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-data-couchbase-reactive/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-data-couchbase/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-data-couchbase/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-data-elasticsearch/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-data-elasticsearch/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-data-jdbc/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-data-jdbc/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-data-jpa/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-data-jpa/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-data-ldap/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-data-ldap/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-data-mongodb-reactive/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-data-mongodb-reactive/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-data-mongodb/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-data-mongodb/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-data-neo4j/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-data-neo4j/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-data-redis-reactive/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-data-redis-reactive/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-data-redis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-data-redis/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-data-rest/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-data-rest/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-data-solr/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-data-solr/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-freemarker/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-freemarker/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-groovy-templates/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-groovy-templates/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-hateoas/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-hateoas/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-integration/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-integration/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-jdbc/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-jdbc/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-jersey/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-jersey/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-jetty/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-jetty/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-jooq/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-jooq/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-json/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-json/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-jta-atomikos/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-jta-atomikos/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-jta-bitronix/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-jta-bitronix/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-log4j2/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-log4j2/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-logging/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-logging/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-mail/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-mail/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-mustache/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-mustache/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-oauth2-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-oauth2-client/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-oauth2-resource-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-oauth2-resource-server/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-parent/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-parent/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-quartz/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-quartz/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-reactor-netty/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-reactor-netty/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-security/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-security/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-test/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-test/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-thymeleaf/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-thymeleaf/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-tomcat/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-tomcat/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-undertow/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-undertow/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-validation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-validation/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-web-services/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-web-services/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-web/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-web/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-webflux/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-webflux/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-websocket/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter-websocket/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/spring-boot-starter/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-starters/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-test-autoconfigure/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-test-autoconfigure/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-test/src/main/java" charset="UTF-8" />
@@ -21,6 +137,7 @@
     <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-tools/spring-boot-autoconfigure-processor/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-tools/spring-boot-autoconfigure-processor/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-tools/spring-boot-configuration-metadata/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-tools/spring-boot-configuration-metadata/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-tools/spring-boot-configuration-processor/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-tools/spring-boot-configuration-processor/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-tools/spring-boot-gradle-plugin/src/main/java" charset="UTF-8" />
@@ -28,11 +145,17 @@
     <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-tools/spring-boot-loader-tools/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-tools/spring-boot-loader-tools/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-tools/spring-boot-loader/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-tools/spring-boot-loader/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-tools/spring-boot-maven-plugin/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-tools/spring-boot-maven-plugin/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-tools/spring-boot-test-support/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-tools/spring-boot-test-support/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-tools/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot-tools/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-project/spring-boot/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-samples-invoker/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-samples-invoker/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-samples/spring-boot-sample-activemq/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-samples/spring-boot-sample-actuator-custom-security/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-samples/spring-boot-sample-actuator-log4j2/src/main/java" charset="UTF-8" />
@@ -117,7 +240,19 @@
     <file url="file://$PROJECT_DIR$/spring-boot-samples/spring-boot-sample-websocket-tomcat/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-samples/spring-boot-sample-websocket-undertow/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-samples/spring-boot-sample-xml/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-samples/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-samples/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-tests/spring-boot-integration-tests/spring-boot-configuration-processor-tests/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-tests/spring-boot-integration-tests/spring-boot-configuration-processor-tests/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-tests/spring-boot-integration-tests/spring-boot-devtools-tests/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-tests/spring-boot-integration-tests/spring-boot-devtools-tests/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-tests/spring-boot-integration-tests/spring-boot-launch-script-tests/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-tests/spring-boot-integration-tests/spring-boot-launch-script-tests/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-tests/spring-boot-integration-tests/spring-boot-server-tests/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-tests/spring-boot-integration-tests/spring-boot-server-tests/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-tests/spring-boot-integration-tests/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-tests/spring-boot-integration-tests/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-tests/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-tests/src/main/resources" charset="UTF-8" />
   </component>
 </project>
