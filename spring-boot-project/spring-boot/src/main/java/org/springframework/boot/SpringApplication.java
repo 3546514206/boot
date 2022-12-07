@@ -277,6 +277,11 @@ public class SpringApplication {
      * @param args the application arguments (usually passed from a Java main method)
      * @return a running {@link ApplicationContext}
      */
+//     运行 SpringApplication
+//    SpringBoot正式启动加载过程，包括启动流程监控模块、配置环境加载模块、ApplicationContext容器上下文环境加载模
+//    块。refreshContext方法刷新应用上下文并进行自动化配置模块加载，也就是上文提到的SpringFactoriesLoader根据
+//    指定classpath加载META-INF/spring.factories文件的配置，实现自动配置核心功能。运行SpringApplication的。
+//    主要代码如下:
     public ConfigurableApplicationContext run(String... args) {
         StopWatch stopWatch = new StopWatch();
         stopWatch.start();
@@ -1273,6 +1278,9 @@ public class SpringApplication {
      * @return the running {@link ApplicationContext}
      */
     public static ConfigurableApplicationContext run(Class<?>[] primarySources, String[] args) {
+//        Spring Boot 的启动流程分为两大阶段：初始化SpringApplication 和 运行SpringApplication
+//        1）new SpringApplication 实例的时候完成了初始化
+//        2）run 方法运行SpringApplication
         return new SpringApplication(primarySources).run(args);
     }
 
