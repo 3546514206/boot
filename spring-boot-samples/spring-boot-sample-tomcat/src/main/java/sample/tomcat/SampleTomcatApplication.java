@@ -26,6 +26,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
+
+//  我们知道 SpringBoot 给我们带来了一个全新的开发体验，我们可以直接把 web 程序达成 jar 包，直接
+//  启动，这就得益于 SpringBoot 内置了容器，可以直接启动，本文将以 Tomcat 为例，来看看 SpringBoot 是
+//  如何启动 Tomcat 的，同时也将展开学习下 Tomcat 的源码，了解 Tomcat 的设计。
 @SpringBootApplication
 public class SampleTomcatApplication {
 

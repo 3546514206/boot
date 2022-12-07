@@ -238,12 +238,21 @@ public class SpringApplication {
      */
     @SuppressWarnings({"unchecked", "rawtypes"})
     public SpringApplication(ResourceLoader resourceLoader, Class<?>... primarySources) {
+//        在构造器中初始化进行SpringApplication的初始化，配置基本的环境变量、资源、构造器、监听器，初始化阶
+//        段的主要作用是为运行SpringApplication实例对象启动环境变量准备以及进行必要的资源构造器的初始化动作，
+//        代码如下：
         this.resourceLoader = resourceLoader;
         Assert.notNull(primarySources, "PrimarySources must not be null");
         this.primarySources = new LinkedHashSet<>(Arrays.asList(primarySources));
+//        deduceWebEnvironment方法用来判断当前应用的环境，该方法尝试获取某些类判断当前环境是否是Web环境
         this.webApplicationType = WebApplicationType.deduceFromClasspath();
-        setInitializers((Collection) getSpringFactoriesInstances(ApplicationContextInitializer.class));
-        setListeners((Collection) getSpringFactoriesInstances(ApplicationListener.class));
+        // getSpringFactoriesInstances 方法主要用来从 spring.factories 文件中找出 Key 为ApplicationContextInitiallizer 的类并实例化
+        Collection applicationContextInitializerSpringFactoriesInstances = getSpringFactoriesInstances(ApplicationContextInitializer.class);
+        //        找到了初始化器，设置到 SpringApplication 的
+        setInitializers(applicationContextInitializerSpringFactoriesInstances);
+//        调用setListener方法设置应用监听器，这个过程可以找到所有应用程序的监听器，然后找到应用启动主类名称。
+        Collection applicationListenerSpringFactoriesInstances = getSpringFactoriesInstances(ApplicationListener.class);
+        setListeners(applicationListenerSpringFactoriesInstances);
         this.mainApplicationClass = deduceMainApplicationClass();
     }
 
@@ -1251,8 +1260,7 @@ public class SpringApplication {
      * @param args          the application arguments (usually passed from a Java main method)
      * @return the running {@link ApplicationContext}
      */
-    public static ConfigurableApplicationContext run(Class<?> primarySource,
-                                                     String... args) {
+    public static ConfigurableApplicationContext run(Class<?> primarySource, String... args) {
         return run(new Class<?>[]{primarySource}, args);
     }
 
@@ -1264,8 +1272,7 @@ public class SpringApplication {
      * @param args           the application arguments (usually passed from a Java main method)
      * @return the running {@link ApplicationContext}
      */
-    public static ConfigurableApplicationContext run(Class<?>[] primarySources,
-                                                     String[] args) {
+    public static ConfigurableApplicationContext run(Class<?>[] primarySources, String[] args) {
         return new SpringApplication(primarySources).run(args);
     }
 

@@ -23,6 +23,10 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+// 每一个 Spring Boot 程序都有一个主入口，这个主入口就是 main 方法，而 main 方法中都会
+// 调用 SpringBootApplication.run 方法，一个快速了解 SpringBootApplication 启动过程的好方法
+// 就是在 run 方法中打一个断点，然后通过 Debug 的模式启动工程，逐步跟踪了解 SpringBoot 源码是如何完
+// 成环境准备和启动加载 bean 的。
 @SpringBootApplication
 public class SampleSimpleApplication implements CommandLineRunner {
 
@@ -35,6 +39,7 @@ public class SampleSimpleApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) {
+		System.out.println("........................................................");
 		System.out.println(this.helloWorldService.getHelloMessage());
 		if (args.length > 0 && args[0].equals("exitcode")) {
 			throw new ExitException();
@@ -42,6 +47,12 @@ public class SampleSimpleApplication implements CommandLineRunner {
 	}
 
 	public static void main(String[] args) {
+//		查看SpringBootApplication.run方法的源码就可以发现SpringBoot启动的流程主要分为两大阶段：
+//		1）初始化 SpringApplication ；2）运行 SpringApplication 的过程。
+//		其中运行SpringApplication的过程又可以细分为以下几个部分：
+//		1）SpringApplicationRunListeners 引用启动监控模块
+//		2）ConfigrableEnvironment配置环境模块和监听：包括创建配置环境、加载属性配置文件和配置监听
+//		3）ConfigrableApplicationContext配置应用上下文：包括配置应用上下文对象、配置基本属性和刷新应用上下文
 		SpringApplication.run(SampleSimpleApplication.class, args);
 	}
 
